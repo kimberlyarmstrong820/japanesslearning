@@ -1,0 +1,25 @@
+# 日本語練習（Japanese daily practice）
+
+每日日文練習嘅網頁版，可以**朗讀短文**。
+
+## 功能
+
+- 🔊 **讀全篇**：用瀏覽器內置嘅日文語音（Web Speech API）朗讀短文，讀緊嗰句會 highlight
+- 撳任何一句 → 由嗰句開始讀
+- 速度調校（0.5×–1.3×）
+- 詞彙、文法例句、答案都有 🔊 掣
+- 振假名開／關
+- 揀日子睇唔同日嘅練習（網址加 `#2026-11-02` 可以直接開嗰日）
+
+朗讀用括號入面嘅讀音代替漢字，所以就算語音引擎讀錯漢字，都會照住課文嘅讀音讀。
+
+## 點樣開
+
+- **本機**：直接雙擊 `index.html`（唔使 server）
+- **GitHub Pages**：Settings → Pages → Branch 揀 `main`、資料夾 `/ (root)` → Save，之後喺 `https://<username>.github.io/japanesslearning/` 打開
+
+> 語音要有日文 voice。Chrome / Edge / Safari（iPhone、Mac）一般都有；Windows 冇嘅話：設定 → 時間與語言 → 語音 → 加日文。
+
+## 新增一日
+
+喺 `data/lessons.js` 嘅陣列最頂加一個物件（同現有嗰日一樣嘅格式）。漢字讀音用全形括號寫，例如 `花火（はなび）`。
