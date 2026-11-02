@@ -6,28 +6,64 @@
 <title>日本語練習</title>
 <style>
   :root {
-    --bg: #faf8f4; --card: #ffffff; --ink: #1f1d1a; --muted: #6b665e;
-    --line: #e6e1d8; --accent: #b4442f; --hl: #fde9a9;
+    --bg-top: #fdf1f3; --bg-bot: #f7efe2;
+    --card: rgba(255, 252, 248, 0.88); --ink: #2a2421; --muted: #7a6f68;
+    --line: #ecdcd6; --accent: #b83a3a; --accent-ink: #fff; --hl: #ffe3a3;
+    --sakura: #f6b9c8; --sakura-deep: #e98aa3;
+    --hill-far: #e9d3d6; --hill-near: #dcc2c4;
+    --castle-wall: #fffaf3; --castle-roof: #4a4f5c; --castle-stone: #a59a91;
+    --cal-done: #fff3f5; --cal-empty: rgba(255,255,255,.45);
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #171614; --card: #211f1c; --ink: #ece8e1; --muted: #a39d93;
-            --line: #36332e; --accent: #e4775f; --hl: #5a4a12; }
+    :root {
+      --bg-top: #141a2e; --bg-bot: #231c2a;
+      --card: rgba(30, 28, 38, 0.88); --ink: #efe9e4; --muted: #a9a0a8;
+      --line: #3b3545; --accent: #ef7b7b; --accent-ink: #1b1620; --hl: #6b4e14;
+      --sakura: #c98a9c; --sakura-deep: #b06b80;
+      --hill-far: #2a2840; --hill-near: #211f33;
+      --castle-wall: #d8d2cc; --castle-roof: #3a3f52; --castle-stone: #4d4752;
+      --cal-done: rgba(239,123,123,.12); --cal-empty: rgba(255,255,255,.04);
+    }
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--ink);
+  html { background: var(--bg-bot); }
+  body { margin: 0; min-height: 100vh; color: var(--ink);
+         background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bot) 70%) fixed;
          font: 17px/1.75 "Hiragino Sans", "Noto Sans JP", "Noto Sans TC", system-ui, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 16px; }
+
+  /* ---- 背景：城 + 櫻花 ---- */
+  .scene { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .scene svg.land { position: absolute; left: 0; bottom: 0; width: 100%; height: 42vh; min-height: 220px; }
+  .scene svg.branch { position: absolute; top: -10px; right: -20px; width: min(46vw, 360px); }
+  .scene svg.branch.left { right: auto; left: -30px; transform: scaleX(-1); width: min(34vw, 260px); top: 30vh; opacity: .8; }
+  .moon { position: absolute; top: 9vh; left: 12vw; width: 70px; height: 70px; border-radius: 50%;
+          background: radial-gradient(circle at 40% 40%, #fff8e8, #f5d9a8); opacity: 0; }
+  @media (prefers-color-scheme: dark) { .moon { opacity: .9; box-shadow: 0 0 40px rgba(255,236,190,.35); } }
+  .petal { position: absolute; top: -5vh; width: 12px; height: 10px; background: var(--sakura);
+           border-radius: 12px 1px 12px 1px; opacity: .85; animation: fall linear infinite; }
+  @keyframes fall {
+    0%   { transform: translate(0, -5vh) rotate(0deg); }
+    50%  { transform: translate(-6vw, 50vh) rotate(200deg); }
+    100% { transform: translate(4vw, 110vh) rotate(420deg); }
+  }
+  @media (prefers-reduced-motion: reduce) { .petal { display: none; } }
+
+  main { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; padding: 16px 16px 30vh; }
   header { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
-  h1 { font-size: 1.4rem; margin: 8px 0; }
+  h1 { font-size: 1.5rem; margin: 8px 0; letter-spacing: .05em; }
+  h1 a { color: inherit; text-decoration: none; }
+  h1 .mon { color: var(--accent); }
   h2 { font-size: 1.1rem; margin: 0 0 8px; color: var(--accent); }
   select, button, input { font: inherit; }
   select { max-width: 100%; }
   select, button { border: 1px solid var(--line); background: var(--card); color: var(--ink);
                    border-radius: 8px; padding: 6px 12px; cursor: pointer; }
-  button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
-  button:disabled { opacity: .5; cursor: default; }
-  section { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
-            padding: 16px; margin: 14px 0; }
+  button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  button:disabled { opacity: .4; cursor: default; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+            padding: 16px; margin: 14px 0;
+            -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+            box-shadow: 0 2px 10px rgba(120, 60, 70, .06); }
   .muted { color: var(--muted); font-size: .9rem; }
   table { border-collapse: collapse; width: 100%; }
   td, th { border-bottom: 1px solid var(--line); padding: 6px 4px; text-align: left; vertical-align: top; }
@@ -44,21 +80,133 @@
   li { margin: 4px 0; }
   details { margin-top: 8px; }
   summary { cursor: pointer; color: var(--accent); }
-  .warn { background: #fff3cd; color: #5c4400; padding: 8px 12px; border-radius: 8px; font-size: .9rem; }
+  .warn { position: relative; z-index: 1; background: #fff3cd; color: #5c4400; padding: 8px 12px; border-radius: 8px; font-size: .9rem; }
+  a { color: var(--accent); }
+
+  /* ---- 月曆 ---- */
+  .cal-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+  .cal-head h2 { margin: 0; font-size: 1.25rem; }
+  .cal { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+  .cal .dow { text-align: center; font-weight: 600; color: var(--muted); font-size: .9rem; }
+  .cal .cell { min-height: 76px; border-radius: 10px; padding: 6px; background: var(--cal-empty);
+               border: 1px solid var(--line); font-size: .8rem; line-height: 1.35;
+               display: flex; flex-direction: column; gap: 2px; color: var(--muted);
+               text-decoration: none; overflow: hidden; }
+  .cal .cell .d { font-weight: 700; font-size: .95rem; color: var(--ink); }
+  .cal .cell.out { visibility: hidden; }
+  .cal .cell.done { background: var(--cal-done); color: var(--ink); border-color: var(--sakura);
+                    cursor: pointer; transition: transform .15s, box-shadow .15s; }
+  .cal .cell.done:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(184,58,58,.15); }
+  .cal .cell.done .d::after { content: " 🌸"; font-size: .8rem; }
+  .cal .cell.today { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .cal .cell .t { word-break: break-all; }
+  .cal .cell .g { color: var(--accent); font-size: .75rem; }
+  .stats { display: flex; gap: 16px; flex-wrap: wrap; font-size: .9rem; color: var(--muted); }
+  .stats b { color: var(--accent); font-size: 1.2rem; }
+  .list a { display: flex; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--line);
+            color: var(--ink); text-decoration: none; }
+  .list a:last-child { border-bottom: none; }
+  .list .dt { color: var(--muted); min-width: 6.6em; font-variant-numeric: tabular-nums; }
+  .list .gp { margin-left: auto; color: var(--accent); font-size: .85rem; white-space: nowrap; }
+
+  /* ---- 每日頁 ---- */
+  .nav { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin: 6px 0; }
+  .nav a, .nav span { padding: 6px 12px; border-radius: 8px; background: var(--card); border: 1px solid var(--line);
+                      text-decoration: none; color: var(--ink); font-size: .9rem; }
+  .nav span { opacity: .35; }
+  @media (max-width: 480px) {
+    .cal .cell { min-height: 64px; padding: 4px; font-size: .68rem; }
+    .cal .cell .g { display: none; }
+    .cal .cell .d { font-size: .85rem; }
+    .list .gp { display: none; }
+  }
 </style>
 </head>
 <body>
+<div class="scene" aria-hidden="true">
+  <div class="moon"></div>
+  <!-- 櫻花枝（右上） -->
+  <svg class="branch" viewBox="0 0 360 260">
+    <g fill="none" stroke="#6b4a3e" stroke-linecap="round">
+      <path d="M360 20 C 300 40, 250 60, 180 70 S 70 110, 20 150" stroke-width="7"/>
+      <path d="M250 58 C 240 100, 220 130, 190 160" stroke-width="4"/>
+      <path d="M150 80 C 130 60, 110 50, 80 45" stroke-width="3"/>
+      <path d="M90 118 C 80 150, 70 180, 60 210" stroke-width="3"/>
+    </g>
+    <defs><g id="bloom">
+      <g fill="var(--sakura)">
+        <circle cx="0" cy="-7" r="6"/><circle cx="6.7" cy="-2.2" r="6"/><circle cx="4.1" cy="5.7" r="6"/>
+        <circle cx="-4.1" cy="5.7" r="6"/><circle cx="-6.7" cy="-2.2" r="6"/>
+      </g>
+      <circle r="3" fill="var(--sakura-deep)"/>
+    </g></defs>
+    <use href="#bloom" x="300" y="38"/><use href="#bloom" x="270" y="60" transform="rotate(20 270 60)"/>
+    <use href="#bloom" x="220" y="66"/><use href="#bloom" x="185" y="82"/><use href="#bloom" x="150" y="76"/>
+    <use href="#bloom" x="110" y="52"/><use href="#bloom" x="80" y="44"/><use href="#bloom" x="120" y="102"/>
+    <use href="#bloom" x="245" y="105"/><use href="#bloom" x="225" y="132"/><use href="#bloom" x="196" y="158"/>
+    <use href="#bloom" x="60" y="132"/><use href="#bloom" x="30" y="150"/><use href="#bloom" x="85" y="160"/>
+    <use href="#bloom" x="72" y="196"/><use href="#bloom" x="330" y="26"/><use href="#bloom" x="165" y="56"/>
+  </svg>
+  <svg class="branch left" viewBox="0 0 360 260">
+    <path d="M360 40 C 290 60, 230 90, 150 100" fill="none" stroke="#6b4a3e" stroke-width="5" stroke-linecap="round"/>
+    <use href="#bloom" x="320" y="50"/><use href="#bloom" x="280" y="64"/><use href="#bloom" x="240" y="82"/>
+    <use href="#bloom" x="200" y="92"/><use href="#bloom" x="160" y="100"/><use href="#bloom" x="260" y="96"/>
+  </svg>
+
+  <!-- 山、城、櫻花樹（底部） -->
+  <svg class="land" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax slice">
+    <path d="M0 210 C 150 150, 300 170, 420 190 S 700 120, 900 160 S 1100 150, 1200 170 L1200 320 L0 320Z" fill="var(--hill-far)"/>
+    <!-- 城 -->
+    <g transform="translate(-220 0)">
+      <path d="M738 302 L902 302 L882 248 L758 248 Z" fill="var(--castle-stone)"/>
+      <path d="M758 262 L882 262 M752 278 L888 278 M746 292 L894 292" stroke="rgba(0,0,0,.12)" stroke-width="1.5"/>
+      <rect x="766" y="214" width="108" height="36" fill="var(--castle-wall)"/>
+      <path d="M744 222 Q760 214 776 204 L864 204 Q880 214 896 222 Q870 216 820 216 Q770 216 744 222Z" fill="var(--castle-roof)"/>
+      <rect x="781" y="181" width="78" height="25" fill="var(--castle-wall)"/>
+      <path d="M764 188 Q778 180 790 171 L850 171 Q862 180 876 188 Q850 183 820 183 Q790 183 764 188Z" fill="var(--castle-roof)"/>
+      <path d="M802 172 Q820 154 838 172Z" fill="var(--castle-roof)"/>
+      <rect x="793" y="149" width="54" height="24" fill="var(--castle-wall)"/>
+      <path d="M778 156 Q790 148 800 139 L840 139 Q850 148 862 156 Q840 151 820 151 Q800 151 778 156Z" fill="var(--castle-roof)"/>
+      <rect x="803" y="121" width="34" height="20" fill="var(--castle-wall)"/>
+      <path d="M788 127 Q800 118 808 108 L832 108 Q840 118 852 127 Q836 122 820 122 Q804 122 788 127Z" fill="var(--castle-roof)"/>
+      <path d="M806 108 l3 -7 l3 7 M828 108 l3 -7 l3 7" stroke="#c9a24a" stroke-width="2.5" fill="none"/>
+      <g fill="var(--castle-roof)" opacity=".75">
+        <rect x="780" y="228" width="8" height="10"/><rect x="800" y="228" width="8" height="10"/>
+        <rect x="832" y="228" width="8" height="10"/><rect x="852" y="228" width="8" height="10"/>
+        <rect x="796" y="191" width="7" height="8"/><rect x="816" y="191" width="7" height="8"/><rect x="837" y="191" width="7" height="8"/>
+        <rect x="806" y="158" width="6" height="7"/><rect x="828" y="158" width="6" height="7"/>
+        <rect x="816" y="128" width="8" height="7"/>
+      </g>
+      <!-- 小櫓 -->
+      <path d="M660 302 L730 302 L722 270 L668 270 Z" fill="var(--castle-stone)"/>
+      <rect x="672" y="248" width="46" height="23" fill="var(--castle-wall)"/>
+      <path d="M660 254 Q670 247 678 240 L712 240 Q720 247 730 254 Q712 250 695 250 Q678 250 660 254Z" fill="var(--castle-roof)"/>
+    </g>
+    <path d="M0 260 C 200 230, 380 250, 560 262 S 900 250, 1200 240 L1200 320 L0 320Z" fill="var(--hill-near)"/>
+    <!-- 櫻花樹 -->
+    <g fill="var(--sakura)" opacity=".9">
+      <circle cx="330" cy="262" r="30"/><circle cx="365" cy="250" r="34"/><circle cx="400" cy="266" r="26"/>
+      <circle cx="745" cy="262" r="28"/><circle cx="780" cy="250" r="34"/><circle cx="815" cy="266" r="26"/>
+      <circle cx="120" cy="250" r="26"/><circle cx="150" cy="240" r="30"/><circle cx="180" cy="254" r="22"/>
+      <circle cx="1100" cy="236" r="24"/><circle cx="1130" cy="228" r="28"/><circle cx="1160" cy="240" r="22"/>
+    </g>
+    <g fill="var(--sakura-deep)" opacity=".5">
+      <circle cx="362" cy="262" r="16"/><circle cx="778" cy="262" r="16"/><circle cx="150" cy="252" r="14"/><circle cx="1128" cy="240" r="13"/>
+    </g>
+    <path d="M0 292 C 300 280, 600 300, 900 288 S 1150 290, 1200 286 L1200 320 L0 320Z" fill="var(--hill-near)" opacity=".9"/>
+  </svg>
+</div>
+
 <main>
   <header>
-    <h1>日本語練習</h1>
-    <div class="controls">
-      <select id="day" aria-label="揀日子"></select>
+    <h1><a href="#">日本語<span class="mon">練習</span></a></h1>
+    <div class="controls" style="margin:0">
       <label><input type="checkbox" id="furi" checked> 振假名</label>
     </div>
   </header>
 
   <div id="nospeech" class="warn" hidden>呢個瀏覽器唔支援朗讀（Web Speech API）。試吓用 Chrome、Edge 或 Safari。</div>
-  <div id="lesson"></div>
+  <div id="view"></div>
 </main>
 
 <script src="data/lessons.js"></script>
@@ -100,42 +248,201 @@ if (synth) {
   document.getElementById("nospeech").hidden = false;
 }
 
-function speak(text, { onstart, onend } = {}) {
-  if (!synth) return;
+// 一次只放一句入語音引擎，讀完先放下一句。
+// （一次過排晒全部句子，iPhone Safari / Chrome 好多時讀完第一句就冇聲，cancel 亦唔靈。）
+let playId = 0;        // 每次撳「讀」或「停」都加一，舊嘅播放就會自動停
+let current = null;    // 保留住而家嗰句，避免被瀏覽器回收（Chrome 會因此唔觸發 onend）
+let watchdog = null;
+
+function clearWatchdog() { if (watchdog) { clearInterval(watchdog); watchdog = null; } }
+
+// 讀一句；讀完（或者出錯、或者瀏覽器冇通知但其實已經靜咗）就 call done()
+function speakOne(text, done) {
   const u = new SpeechSynthesisUtterance(speechText(text));
   u.lang = "ja-JP";
   if (jaVoice) u.voice = jaVoice;
   u.rate = rate;
-  if (onstart) u.onstart = onstart;
-  if (onend) { u.onend = onend; u.onerror = onend; }
+  current = u;
+
+  let finished = false;
+  let started = false;
+  const t0 = Date.now();
+  const finish = () => {
+    if (finished) return;
+    finished = true;
+    clearWatchdog();
+    done();
+  };
+  u.onstart = () => { started = true; };
+  u.onend = finish;
+  u.onerror = finish;
+
+  // 後備：有啲瀏覽器唔會觸發 onend，就自己睇吓引擎係咪已經靜咗
+  clearWatchdog();
+  watchdog = setInterval(() => {
+    const busy = synth.speaking || synth.pending;
+    if (!busy && (started || Date.now() - t0 > 3000)) finish();
+  }, 300);
+
   synth.speak(u);
 }
 
-function stopAll() {
-  if (synth) synth.cancel();
-  document.querySelectorAll(".passage .s.on").forEach(el => el.classList.remove("on"));
+function setPlaying(on) {
+  const play = document.getElementById("play");
+  if (play) play.textContent = on ? "⟳ 由頭再讀" : "▶︎ 讀全篇";
+  document.body.classList.toggle("playing", on);
 }
 
-// 由第 start 句開始逐句讀，讀緊嗰句會highlight
-function readPassage(start = 0) {
+function stopAll() {
+  playId++;
+  clearWatchdog();
+  current = null;
+  if (synth) {
+    synth.cancel();
+    // iPhone 有時 cancel 一次唔停，再補多一次
+    setTimeout(() => synth.cancel(), 50);
+  }
+  document.querySelectorAll(".passage .s.on").forEach(el => el.classList.remove("on"));
+  setPlaying(false);
+}
+
+// 讀一串句子（each = 每句開始前 call，用嚟 highlight）
+function playQueue(texts, each) {
+  if (!synth) return;
+  const wasBusy = synth.speaking || synth.pending;
   stopAll();
-  const spans = [...document.querySelectorAll(".passage .s")];
-  spans.slice(start).forEach(el => {
-    speak(el.dataset.text, {
-      onstart: () => { spans.forEach(s => s.classList.remove("on")); el.classList.add("on"); },
-      onend: () => el.classList.remove("on")
-    });
+  const id = playId;
+  setPlaying(true);
+
+  const step = i => {
+    if (id !== playId) return;               // 已經撳咗停／再撳過讀
+    if (i >= texts.length) { stopAll(); return; }
+    if (each) each(i);
+    speakOne(texts[i], () => step(i + 1));
+  };
+  // 啱啱 cancel 完要等一陣先讀，否則 Safari 會食咗第一句；
+  // 本身靜嘅話就即刻讀（iPhone 要喺撳掣嗰下開始讀先有聲）
+  if (wasBusy) setTimeout(() => step(0), 250); else step(0);
+}
+
+// 由第 start 句開始逐句讀，讀緊嗰句會 highlight
+function readPassage(start = 0) {
+  const spans = [...document.querySelectorAll(".passage .s")].slice(start);
+  playQueue(spans.map(s => s.dataset.text), i => {
+    document.querySelectorAll(".passage .s.on").forEach(el => el.classList.remove("on"));
+    spans[i].classList.add("on");
   });
 }
 
-// ---------- 畫面 ----------
-const speakBtn = text => `<button class="speak" title="朗讀" data-say="${esc(text)}">🔊</button>`;
+function speak(text) { playQueue([text]); }
 
-function render(lesson) {
-  stopAll();
+// ---------- 共用 ----------
+const speakBtn = text => `<button class="speak" title="朗讀" data-say="${esc(text)}">🔊</button>`;
+const plain = text => text.replace(FURI_RE, "$1");          // 去走讀音：「花火（はなび）」→「花火」
+const lessons = (window.LESSONS || []).slice().sort((a, b) => a.date.localeCompare(b.date)); // 舊 → 新
+const byDate = Object.fromEntries(lessons.map(l => [l.date, l]));
+const view = document.getElementById("view");
+const DOW = ["日", "一", "二", "三", "四", "五", "六"];
+
+function todayLondon() {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/London" }).format(new Date());
+}
+const pad = n => String(n).padStart(2, "0");
+const ymd = d => `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`;
+
+// ---------- 首頁：月曆 ----------
+function monthsAvailable() {
+  const set = new Set(lessons.map(l => l.date.slice(0, 7)));
+  set.add(todayLondon().slice(0, 7));
+  return [...set].sort();
+}
+
+function renderCalendar(month) {
+  const months = monthsAvailable();
+  if (!months.includes(month)) month = months[months.length - 1];
+  const idx = months.indexOf(month);
+  const [y, m] = month.split("-").map(Number);
+  const first = new Date(Date.UTC(y, m - 1, 1));
+  const last = new Date(Date.UTC(y, m, 0));
+  const today = todayLondon();
+
+  // 由包含 1 號嗰個星期嘅星期一開始（1 號係六日就由下個星期一開始）
+  let start = new Date(first);
+  const wd = first.getUTCDay();
+  if (wd === 0) start.setUTCDate(2);
+  else if (wd === 6) start.setUTCDate(3);
+  else start.setUTCDate(1 - (wd - 1));
+
+  let cells = "";
+  for (let wk = new Date(start); wk <= last; wk.setUTCDate(wk.getUTCDate() + 7)) {
+    for (let i = 0; i < 5; i++) {
+      const d = new Date(wk); d.setUTCDate(wk.getUTCDate() + i);
+      const key = ymd(d);
+      const inMonth = d.getUTCMonth() === m - 1;
+      const l = byDate[key];
+      const cls = ["cell", inMonth ? "" : "out", l ? "done" : "", key === today ? "today" : ""].join(" ");
+      if (l && inMonth) {
+        cells += `<a class="${cls}" href="#${key}"><span class="d">${d.getUTCDate()}</span>
+          <span class="t">${esc(plain(l.title))}</span><span class="g">${esc(l.grammar.point)}</span></a>`;
+      } else {
+        cells += `<div class="${cls}"><span class="d">${d.getUTCDate()}</span></div>`;
+      }
+    }
+  }
+
+  const words = lessons.reduce((n, l) => n + l.vocab.length, 0);
+  const newest = lessons.slice().reverse();
+
+  view.innerHTML = `
+    <section>
+      <div class="cal-head">
+        <button id="prevM" ${idx === 0 ? "disabled" : ""} aria-label="上個月">‹</button>
+        <h2>${y}年${m}月</h2>
+        <button id="nextM" ${idx === months.length - 1 ? "disabled" : ""} aria-label="下個月">›</button>
+      </div>
+      <div class="cal">
+        ${["一", "二", "三", "四", "五"].map(d => `<div class="dow">${d}</div>`).join("")}
+        ${cells}
+      </div>
+      <p class="muted" style="margin:10px 0 0">撳有 🌸 嘅日子入去睇嗰日嘅練習。星期六日休息。</p>
+    </section>
+
+    <section class="stats">
+      <div><b>${lessons.length}</b> 日練習</div>
+      <div><b>${words}</b> 個詞彙</div>
+      <div><b>${lessons.length}</b> 個文法</div>
+    </section>
+
+    <section>
+      <h2>全部練習</h2>
+      <div class="list">${newest.map(l => `
+        <a href="#${l.date}"><span class="dt">${Number(l.date.slice(5, 7))}/${Number(l.date.slice(8))}（${esc(l.weekday)}）</span>
+          <span>${esc(plain(l.title))}</span><span class="gp">${esc(l.grammar.point)}</span></a>`).join("")}
+      </div>
+    </section>`;
+
+  document.getElementById("prevM").onclick = () => { location.hash = "m-" + months[idx - 1]; };
+  document.getElementById("nextM").onclick = () => { location.hash = "m-" + months[idx + 1]; };
+  document.title = "日本語練習";
+}
+
+// ---------- 每日頁 ----------
+function navBar(lesson) {
+  const i = lessons.indexOf(lesson);
+  const prev = lessons[i - 1], next = lessons[i + 1];
+  return `<div class="nav">
+    <a href="#m-${lesson.date.slice(0, 7)}">← 月曆</a>
+    <div style="display:flex;gap:8px">
+      ${prev ? `<a href="#${prev.date}">‹ ${Number(prev.date.slice(5, 7))}/${Number(prev.date.slice(8))}</a>` : `<span>‹</span>`}
+      ${next ? `<a href="#${next.date}">${Number(next.date.slice(5, 7))}/${Number(next.date.slice(8))} ›</a>` : `<span>›</span>`}
+    </div>
+  </div>`;
+}
+
+function renderLesson(lesson) {
   const sents = sentences(lesson.passage);
-  const el = document.getElementById("lesson");
-  el.innerHTML = `
+  view.innerHTML = `
+    ${navBar(lesson)}
     <section>
       <h2>${esc(lesson.date)}（${esc(lesson.weekday)}）${ruby(lesson.title)}</h2>
       <div>${ruby(lesson.intro)}</div>
@@ -167,9 +474,9 @@ function render(lesson) {
 
     <section>
       <h2>文法：${esc(lesson.grammar.point)}</h2>
-      ${lesson.grammar.explain.map(p => `<div>${esc(p)}</div>`).join("")}
+      ${lesson.grammar.explain.map(p => `<div>${ruby(p)}</div>`).join("")}
       <ol>${lesson.grammar.examples.map(([jp, yue]) =>
-        `<li>${ruby(jp)} ${speakBtn(jp)}<br><span class="muted">${esc(yue)}</span></li>`).join("")}</ol>
+        `<li>${ruby(jp)} ${speakBtn(jp)}<br><span class="muted">${esc(yue || "")}</span></li>`).join("")}</ol>
     </section>
 
     <section>
@@ -179,7 +486,7 @@ function render(lesson) {
 
     <section>
       <h2>挑戰</h2>
-      <div>${esc(lesson.challenge)}</div>
+      <div>${ruby(lesson.challenge)}</div>
     </section>
 
     <section>
@@ -191,7 +498,8 @@ function render(lesson) {
           ${lesson.exercises.map(([, a], i) => `<li>練習 ${i + 1}：${ruby(a)}</li>`).join("")}
         </ul>
       </details>
-    </section>`;
+    </section>
+    ${navBar(lesson)}`;
 
   document.getElementById("play").onclick = () => readPassage(0);
   document.getElementById("stop").onclick = stopAll;
@@ -199,28 +507,49 @@ function render(lesson) {
     rate = parseFloat(e.target.value);
     document.getElementById("rateVal").textContent = rate.toFixed(1) + "×";
   };
-  el.querySelectorAll(".passage .s").forEach(s =>
+  view.querySelectorAll(".passage .s").forEach(s =>
     s.onclick = () => readPassage(parseInt(s.dataset.i, 10)));
+  document.title = `${plain(lesson.title)}｜日本語練習`;
 }
+
+// ---------- 路由：#  = 月曆，#m-2026-10 = 指定月份，#2026-10-07 = 嗰日 ----------
+function route() {
+  stopAll();
+  const h = decodeURIComponent(location.hash.slice(1));
+  if (byDate[h]) renderLesson(byDate[h]);
+  else if (/^m-\d{4}-\d{2}$/.test(h)) renderCalendar(h.slice(2));
+  else renderCalendar(todayLondon().slice(0, 7));
+  window.scrollTo(0, 0);
+}
+window.addEventListener("hashchange", route);
+route();
 
 // 🔊 掣（詞彙、例句、答案）
 document.addEventListener("click", e => {
   const b = e.target.closest("[data-say]");
-  if (b) { stopAll(); speak(b.dataset.say); }
+  if (b) speak(b.dataset.say);
 });
-
-// 揀日子
-const sel = document.getElementById("day");
-const lessons = window.LESSONS || [];
-sel.innerHTML = lessons.map((l, i) =>
-  `<option value="${i}">${esc(l.date)} ${esc(speechText(l.title))}</option>`).join("");
-const fromHash = lessons.findIndex(l => l.date === location.hash.slice(1));
-sel.value = fromHash >= 0 ? fromHash : 0;
-sel.onchange = () => { const l = lessons[sel.value]; location.hash = l.date; render(l); };
-if (lessons.length) render(lessons[sel.value]);
 
 document.getElementById("furi").onchange = e =>
   document.body.classList.toggle("no-furigana", !e.target.checked);
+
+// ---------- 飄落嘅櫻花瓣 ----------
+(function petals() {
+  const scene = document.querySelector(".scene");
+  const n = window.innerWidth < 500 ? 10 : 18;
+  for (let i = 0; i < n; i++) {
+    const p = document.createElement("div");
+    p.className = "petal";
+    const size = 8 + Math.random() * 8;
+    p.style.left = Math.random() * 100 + "vw";
+    p.style.width = size + "px";
+    p.style.height = size * 0.8 + "px";
+    p.style.animationDuration = 10 + Math.random() * 12 + "s";
+    p.style.animationDelay = -Math.random() * 20 + "s";
+    p.style.opacity = 0.5 + Math.random() * 0.4;
+    scene.appendChild(p);
+  }
+})();
 </script>
 </body>
 </html>
