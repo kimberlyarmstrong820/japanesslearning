@@ -254,15 +254,41 @@ function pickVoice() {
   const norm = v => v.lang.replace("_", "-").toLowerCase();
   const ja = all.filter(v => norm(v).startsWith("ja"));
   voice.ja = ja.find(v => /google|kyoko|otoya|nanami|haruka/i.test(v.name)) || ja[0] || null;
-  // 英式英文：優先 en-GB，冇就用其他英文
+  // 英式英文：自己揀過就用返嗰把；否則優先「英國女聲」，越自然越好
+  const en = enVoices();
+  let saved = null;
+  try { saved = localStorage.getItem("enVoice"); } catch (e) {}
+  voice.en = en.find(v => v.name === saved)
+    || en.slice().sort((a, b) => voiceScore(b) - voiceScore(a))[0] || null;
+}
+
+// 英國女聲（Edge／Windows、Chrome、Mac／iPhone 常見嘅名）
+const GB_FEMALE = /sonia|libby|maisie|abbi|bella|hollie|olivia|hazel|susan|serena|kate|stephanie|martha|fiona|google uk english female|\bfemale/i;
+const GB_MALE = /daniel|ryan|thomas|oliver|george|arthur|alfie|elliot|ethan|noah|google uk english male|\bmale\b/i;
+const NATURAL = /natural|neural|online|enhanced|premium|siri/i;
+
+function enVoices() {
+  const all = synth ? synth.getVoices() : [];
+  const norm = v => v.lang.replace("_", "-").toLowerCase();
   const gb = all.filter(v => norm(v) === "en-gb");
-  const en = all.filter(v => norm(v).startsWith("en"));
-  voice.en = gb.find(v => /google|sonia|libby|ryan|serena|daniel|kate|natural/i.test(v.name)) || gb[0]
-    || en.find(v => /uk|brit/i.test(v.name)) || en[0] || null;
+  return gb.length ? gb : all.filter(v => norm(v).startsWith("en"));
+}
+function isFemale(v) { return GB_FEMALE.test(v.name) && !GB_MALE.test(v.name.replace(/female/i, "")); }
+function voiceScore(v) {
+  const gb = /en[-_]gb/i.test(v.lang) ? 100 : 0;
+  const female = isFemale(v) ? 50 : GB_MALE.test(v.name) ? -50 : 0;
+  return gb + female + (NATURAL.test(v.name) ? 20 : 0) + (v.localService ? 0 : 5);
+}
+// 英文頁嘅「聲音」選單
+function voiceMenu() {
+  const list = enVoices();
+  if (!list.length) return "";
+  return `<label>聲音 <select id="enVoice">${list.map(v =>
+    `<option value="${esc(v.name)}" ${voice.en && v.name === voice.en.name ? "selected" : ""}>${isFemale(v) ? "♀ " : GB_MALE.test(v.name) ? "♂ " : ""}${esc(v.name.replace(/^Microsoft |\s*-\s*English \(United Kingdom\)|\s*\(English \(United Kingdom\)\)/g, ""))}</option>`).join("")}</select></label>`;
 }
 if (synth) {
   pickVoice();
-  synth.onvoiceschanged = pickVoice;
+  synth.onvoiceschanged = () => { pickVoice(); refreshVoiceMenu(); };
 } else {
   document.getElementById("nospeech").hidden = false;
 }
@@ -508,6 +534,7 @@ function readerSection(title, passage, lang) {
         <label>速度 <input type="range" id="rate" min="0.5" max="1.3" step="0.1" value="${rate}">
           <span id="rateVal">${rate.toFixed(1)}×</span></label>
         <label><input type="checkbox" id="shadow" ${shadow ? "checked" : ""}> 跟讀模式</label>
+        ${lang === "en" ? `<span id="voiceMenu">${voiceMenu()}</span>` : ""}
       </div>
       <div class="passage ${lang}" data-lang="${lang}" ${lang === "en" ? 'lang="en-GB"' : ""}>${sents.map((s, i) =>
         `<span class="s" data-i="${i}" data-text="${esc(s)}">${fmt(s)}</span>`).join(lang === "en" ? " " : "")}</div>
@@ -569,6 +596,21 @@ function renderEnglish(lesson) {
   document.title = `${en.title}｜English`;
 }
 
+function wireVoiceMenu() {
+  const sel = document.getElementById("enVoice");
+  if (!sel) return;
+  sel.onchange = () => {
+    voice.en = enVoices().find(v => v.name === sel.value) || voice.en;
+    try { localStorage.setItem("enVoice", sel.value); } catch (e) {}
+    speak("Hello, lovely to meet you.", "en");   // 試聽
+  };
+}
+// 語音遲咗載入（Chrome 常見）：載入完再整返個選單
+function refreshVoiceMenu() {
+  const box = document.getElementById("voiceMenu");
+  if (box) { box.innerHTML = voiceMenu(); wireVoiceMenu(); }
+}
+
 function wireReader() {
   document.getElementById("play").onclick = () => readPassage(0);
   document.getElementById("stop").onclick = stopAll;
@@ -577,6 +619,7 @@ function wireReader() {
     document.getElementById("rateVal").textContent = rate.toFixed(1) + "×";
   };
   document.getElementById("shadow").onchange = e => { shadow = e.target.checked; };
+  wireVoiceMenu();
   view.querySelectorAll(".passage .s").forEach(s =>
     s.onclick = () => readPassage(parseInt(s.dataset.i, 10)));
 }
