@@ -302,6 +302,7 @@ function speakOne(text, done, lang = "ja") {
     if (!busy && (started || Date.now() - t0 > 3000)) finish();
   }, 300);
 
+  synth.resume();   // Chrome 有時會卡咗喺「暫停」狀態，冇聲
   synth.speak(u);
 }
 
@@ -311,30 +312,37 @@ function setPlaying(on) {
   document.body.classList.toggle("playing", on);
 }
 
-function stopAll() {
+// 停低而家讀緊嘅嘢（cancel = 要唔要叫語音引擎停）
+function halt(cancel = true) {
   playId++;
   clearWatchdog();
   current = null;
-  if (synth) {
-    synth.cancel();
-    // iPhone 有時 cancel 一次唔停，再補多一次
-    setTimeout(() => synth.cancel(), 50);
-  }
+  if (synth && cancel) synth.cancel();
   document.querySelectorAll(".passage .s.on").forEach(el => el.classList.remove("on"));
   setPlaying(false);
+}
+
+// 「停」掣：停低，iPhone 有時 cancel 一次唔停，再補多一次。
+// 補嗰下只會喺之後冇再撳過「讀」先做，唔係就會將啱啱開始讀嗰句都 cancel 埋（以前冇聲就係因為咁）。
+function stopAll() {
+  halt();
+  if (synth) {
+    const id = playId;
+    setTimeout(() => { if (id === playId) synth.cancel(); }, 50);
+  }
 }
 
 // 讀一串句子（each = 每句開始前 call，用嚟 highlight；pause = 每句之後停一停俾人跟讀）
 function playQueue(texts, each, lang = "ja", pause = false) {
   if (!synth) return;
   const wasBusy = synth.speaking || synth.pending;
-  stopAll();
+  halt(wasBusy);                             // 本身靜就唔使 cancel，即刻讀
   const id = playId;
   setPlaying(true);
 
   const step = i => {
     if (id !== playId) return;               // 已經撳咗停／再撳過讀
-    if (i >= texts.length) { stopAll(); return; }
+    if (i >= texts.length) { halt(false); return; }
     if (each) each(i);
     speakOne(texts[i], ms => {
       if (!pause || i === texts.length - 1) return step(i + 1);
@@ -344,7 +352,10 @@ function playQueue(texts, each, lang = "ja", pause = false) {
   };
   // 啱啱 cancel 完要等一陣先讀，否則 Safari 會食咗第一句；
   // 本身靜嘅話就即刻讀（iPhone 要喺撳掣嗰下開始讀先有聲）
-  if (wasBusy) setTimeout(() => step(0), 250); else step(0);
+  if (wasBusy) {
+    setTimeout(() => { if (id === playId) synth.cancel(); }, 50);   // iPhone：補多一下 cancel
+    setTimeout(() => step(0), 250);
+  } else step(0);
 }
 
 // 由第 start 句開始逐句讀，讀緊嗰句會 highlight
