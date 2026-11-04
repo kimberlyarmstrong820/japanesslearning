@@ -654,7 +654,78 @@ window.LESSONS = [
         "今週末（こんしゅうまつ）、友達（ともだち）と公園（こうえん）に行（い）こうと思います。"
       ]
     ],
-    "challenge": "用「〜ようと思います／〜ようと思っています」寫一句你今個週末（或者去日本旅行時）打算做嘅事。"
+    "challenge": "用「〜ようと思います／〜ようと思っています」寫一句你今個週末（或者去日本旅行時）打算做嘅事。",
+    "en": {
+      "title": "Halloween in Pokémon GO",
+      "intro": "同一個故事嘅英式英文版：Pokémon GO 萬聖節活動，順便學 I'm thinking of + -ing（我諗住…）。",
+      "passage": "It's Halloween tomorrow. In Pokémon GO, there's a limited-time Halloween event on right now. Lots of Ghost-type Pokémon will appear, so tomorrow I'm thinking of walking all around the park. Last year a shiny Gengar didn't turn up, so I'm determined to find one this year. In the evening, I'm planning to dress up as a ghost with my friends and go to a party. But staying out until midnight is tiring, so I'm thinking of heading home before twelve.",
+      "vocab": [
+        [
+          "limited-time",
+          "期間限定"
+        ],
+        [
+          "event",
+          "活動"
+        ],
+        [
+          "appear",
+          "出現"
+        ],
+        [
+          "shiny",
+          "色違（閃光）"
+        ],
+        [
+          "turn up",
+          "出現（口語）"
+        ],
+        [
+          "be determined to",
+          "決心要"
+        ],
+        [
+          "dress up as",
+          "扮成"
+        ],
+        [
+          "head home",
+          "返屋企"
+        ]
+      ],
+      "phrase": {
+        "point": "I'm thinking of + -ing / I'm planning to …（我諗住…）",
+        "explain": [
+          "日文「〜ようと思います」= 我諗住…，英文用 I'm thinking of + -ing 或者 I'm planning to …。",
+          "決心要做：I'm determined to …",
+          "英國人講返屋企會講 head home；扮嘢講 dress up as …。"
+        ],
+        "examples": [
+          [
+            "I'm thinking of going to Japan next spring.",
+            "我諗住明年春天去日本。"
+          ],
+          [
+            "I'm planning to dress up as a witch.",
+            "我打算扮巫婆。"
+          ],
+          [
+            "I'm determined to catch a shiny this time.",
+            "今次我決心要捉到色違。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Where is the writer thinking of walking tomorrow?",
+          "All around the park."
+        ],
+        [
+          "Why is the writer thinking of heading home before twelve?",
+          "Because staying out until midnight is tiring."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-29",
@@ -756,7 +827,78 @@ window.LESSONS = [
         "私（わたし）は先生（せんせい）に褒（ほ）められました。"
       ]
     ],
-    "challenge": "用受身形寫一句你「俾人做咗某件事」嘅經歷（例如劍道俾人擊中、玩 Pokémon GO 俾人問路、看輕小說俾家人笑）。"
+    "challenge": "用受身形寫一句你「俾人做咗某件事」嘅經歷（例如劍道俾人擊中、玩 Pokémon GO 俾人問路、看輕小說俾家人笑）。",
+    "en": {
+      "title": "My Kendo Match",
+      "intro": "同一個故事嘅英式英文版：第一次參加劍道比賽，順便學被動式 was / got + 過去分詞（被…）。",
+      "passage": "Last Saturday, I took part in a kendo match for the first time. My opponent was really fast, and I got hit on the wrist straight away. But my friends cheered me on loudly, and that gave me energy. In the end, I struck my opponent's body and won the point. All three referees raised their flags. After the match, I was praised by my teacher, who said, \"Well done, you tried really hard.\"",
+      "vocab": [
+        [
+          "take part in",
+          "參加"
+        ],
+        [
+          "match",
+          "比賽"
+        ],
+        [
+          "opponent",
+          "對手"
+        ],
+        [
+          "get hit",
+          "被打中"
+        ],
+        [
+          "cheer on",
+          "打氣"
+        ],
+        [
+          "referee",
+          "裁判"
+        ],
+        [
+          "raise a flag",
+          "舉旗"
+        ],
+        [
+          "praise",
+          "讚"
+        ]
+      ],
+      "phrase": {
+        "point": "被動式：was / got + 過去分詞（被…）",
+        "explain": [
+          "日文受身形「〜られる」，英文用被動式：be / get + 過去分詞。",
+          "was praised（被讚）；口語常用 get：I got hit.（我被打中）",
+          "英國人讚人會講 Well done!（做得好！）"
+        ],
+        "examples": [
+          [
+            "I got hit on the head.",
+            "我被人打中個頭。"
+          ],
+          [
+            "I was praised by my teacher.",
+            "我被老師讚。"
+          ],
+          [
+            "This castle was built four hundred years ago.",
+            "呢座城係四百年前起嘅。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What happened at the start of the match?",
+          "The writer got hit on the wrist."
+        ],
+        [
+          "What did the teacher say after the match?",
+          "Well done, you tried really hard."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-28",
@@ -858,7 +1000,78 @@ window.LESSONS = [
         "この靴（くつ）は小（ちい）さすぎます。"
       ]
     ],
-    "challenge": "用「〜すぎる」寫一句你自己「太…」嘅經驗（例如食太多、行太多路、玩 Pokémon GO 玩太耐）。"
+    "challenge": "用「〜すぎる」寫一句你自己「太…」嘅經驗（例如食太多、行太多路、玩 Pokémon GO 玩太耐）。",
+    "en": {
+      "title": "A Seafood Bowl in Abashiri",
+      "intro": "同一個故事嘅英式英文版：網走市場食海鮮丼，順便學 too + 形容詞（太…）。",
+      "passage": "I ordered a seafood rice bowl at the market in Abashiri. The salmon roe and sea urchin were really fresh and delicious. But the portion was too big, so I couldn't finish it all. It cost three thousand yen, and I thought it was a bit too expensive. I'm absolutely stuffed now. Next time, I'll get the small size.",
+      "vocab": [
+        [
+          "seafood rice bowl",
+          "海鮮丼"
+        ],
+        [
+          "market",
+          "市場"
+        ],
+        [
+          "salmon roe",
+          "三文魚子"
+        ],
+        [
+          "sea urchin",
+          "海膽"
+        ],
+        [
+          "portion",
+          "份量"
+        ],
+        [
+          "finish",
+          "食晒"
+        ],
+        [
+          "expensive",
+          "貴"
+        ],
+        [
+          "stuffed",
+          "好飽（口語）"
+        ]
+      ],
+      "phrase": {
+        "point": "too + 形容詞 / too much（太…）",
+        "explain": [
+          "日文「〜すぎる」= 太…，英文用 too + 形容詞：too big、too expensive。",
+          "too much：I ate too much.（食得太多）",
+          "英國人話好飽會講 I'm stuffed! 或者 I'm full up."
+        ],
+        "examples": [
+          [
+            "This bowl is too big for me.",
+            "呢碗對我嚟講太大。"
+          ],
+          [
+            "I ate too much at lunch.",
+            "我晏晝食得太多。"
+          ],
+          [
+            "It's a bit too expensive for me.",
+            "對我嚟講貴咗少少。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Why couldn't the writer finish it all?",
+          "Because the portion was too big."
+        ],
+        [
+          "How much was the seafood bowl?",
+          "Three thousand yen."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-27",
@@ -960,7 +1173,78 @@ window.LESSONS = [
         "ハイキングの時（とき）、ヒグマを見（み）るかもしれないので、気（き）をつけてください。"
       ]
     ],
-    "challenge": "用「〜かもしれません」寫一句你去北海道時可能會發生嘅事（例如天氣、動物、Pokémon GO 捉到乜）。"
+    "challenge": "用「〜かもしれません」寫一句你去北海道時可能會發生嘅事（例如天氣、動物、Pokémon GO 捉到乜）。",
+    "en": {
+      "title": "Brown Bears in Shiretoko",
+      "intro": "同一個故事嘅英式英文版：知床嘅棕熊，順便學 might / may（可能…）。",
+      "passage": "I'm going to go to Shiretoko next summer. There are lots of wild brown bears in the forests of Shiretoko. When you go hiking, a bear might appear near the path. So I'll walk with a bell on my bag. Brown bears are very dangerous, so even if you see one, you mustn't go near it.",
+      "vocab": [
+        [
+          "wild",
+          "野生"
+        ],
+        [
+          "brown bear",
+          "棕熊"
+        ],
+        [
+          "forest",
+          "森林"
+        ],
+        [
+          "go hiking",
+          "去行山"
+        ],
+        [
+          "path",
+          "山徑、小路"
+        ],
+        [
+          "appear",
+          "出現"
+        ],
+        [
+          "bell",
+          "鈴"
+        ],
+        [
+          "go near",
+          "行近"
+        ]
+      ],
+      "phrase": {
+        "point": "might / may（可能…）",
+        "explain": [
+          "日文「〜かもしれない」= 可能…，英文用 might / may + 動詞。",
+          "might 比 may 少少更唔肯定，口語多數講 might。",
+          "英國人仲會講 just in case（以防萬一）。"
+        ],
+        "examples": [
+          [
+            "It might snow tomorrow.",
+            "聽日可能會落雪。"
+          ],
+          [
+            "The train may be late.",
+            "火車可能會遲。"
+          ],
+          [
+            "Take a map, just in case you get lost.",
+            "帶埋地圖，以防蕩失路。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Why will the writer put a bell on their bag?",
+          "Because a bear might appear near the path."
+        ],
+        [
+          "What mustn't you do if you see a brown bear?",
+          "You mustn't go near it."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-26",
@@ -1062,7 +1346,78 @@ window.LESSONS = [
         "忘（わす）れ物（もの）がないか、確認（かくにん）しておいてください。"
       ]
     ],
-    "challenge": "用「〜ておきます」寫一句你去日本之前會預先做嘅事（例如換錢、訂酒店、學某句日文）。"
+    "challenge": "用「〜ておきます」寫一句你去日本之前會預先做嘅事（例如換錢、訂酒店、學某句日文）。",
+    "en": {
+      "title": "Packing for Japan",
+      "intro": "同一個故事嘅英式英文版：去日本前執行李，順便學 in advance / get … ready（預先做好）。",
+      "passage": "I'm going to Hokkaido next week, so I did my packing today. First, I put some changes of clothes in my suitcase. Plugs in Japan are different from the ones in Britain, so I bought an adaptor in advance. It's easy to forget my phone charger, so I'll put it at the top of my bag. Tomorrow, I'm going to change some money into yen at the bank. Before I leave, I'll check once more that I haven't forgotten anything.",
+      "vocab": [
+        [
+          "do the packing",
+          "執行李"
+        ],
+        [
+          "a change of clothes",
+          "替換衫"
+        ],
+        [
+          "suitcase",
+          "行李箱"
+        ],
+        [
+          "plug",
+          "插頭"
+        ],
+        [
+          "adaptor",
+          "轉換插頭（英式串法）"
+        ],
+        [
+          "in advance",
+          "預先"
+        ],
+        [
+          "charger",
+          "充電器"
+        ],
+        [
+          "change money",
+          "換錢"
+        ]
+      ],
+      "phrase": {
+        "point": "in advance / get … ready（預先做好）",
+        "explain": [
+          "日文「〜ておく」= 預先做好…，英文常用 in advance、beforehand，或者 get … ready。",
+          "I bought an adaptor in advance.（預先買咗轉換插頭）",
+          "英國人會講 get everything sorted（搞掂晒）。"
+        ],
+        "examples": [
+          [
+            "I booked the tickets in advance.",
+            "我預先訂咗飛。"
+          ],
+          [
+            "Let's get everything ready tonight.",
+            "我哋今晚準備好晒啲嘢啦。"
+          ],
+          [
+            "I'll change some money beforehand.",
+            "我會預先換定啲錢。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Why did the writer buy an adaptor?",
+          "Because plugs in Japan are different from the ones in Britain."
+        ],
+        [
+          "What is the writer going to do tomorrow?",
+          "Change some money into yen at the bank."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-23",
@@ -1164,7 +1519,78 @@ window.LESSONS = [
         "丹頂（たんちょう）の鳴（な）き声（ごえ）を聞（き）くために、みんな静（しず）かにしていました。"
       ]
     ],
-    "challenge": "用「〜ために」寫一句你為咗某個目標而做緊嘅事（例如為咗去日本、為咗劍道升段、為咗種好啲花）。"
+    "challenge": "用「〜ために」寫一句你為咗某個目標而做緊嘅事（例如為咗去日本、為咗劍道升段、為咗種好啲花）。",
+    "en": {
+      "title": "Red-crowned Cranes in Kushiro",
+      "intro": "同一個故事嘅英式英文版：去釧路濕原睇丹頂鶴，順便學 to + 動詞 / so that（為咗…）。",
+      "passage": "When winter comes, lots of red-crowned cranes gather in the Kushiro Marshes. I went to the viewing platform early in the morning to see them. It was freezing, so I wore a thick winter coat. Through my binoculars, I saw two cranes spreading their wings and dancing. Everyone watched quietly so that they wouldn't startle the cranes. From far away, I could hear their beautiful calls.",
+      "vocab": [
+        [
+          "red-crowned crane",
+          "丹頂鶴"
+        ],
+        [
+          "marsh",
+          "濕地"
+        ],
+        [
+          "gather",
+          "聚集"
+        ],
+        [
+          "viewing platform",
+          "觀景台"
+        ],
+        [
+          "binoculars",
+          "望遠鏡"
+        ],
+        [
+          "spread their wings",
+          "張開翼"
+        ],
+        [
+          "startle",
+          "嚇親"
+        ],
+        [
+          "call",
+          "（雀鳥）叫聲"
+        ]
+      ],
+      "phrase": {
+        "point": "to + 動詞 / so that …（為咗…）",
+        "explain": [
+          "日文「〜ために」（目的）= 為咗…，英文最簡單係 to + 動詞：I went there to see the cranes.",
+          "正式啲可以講 in order to …。",
+          "「為咗唔好…」用 so that … won't / wouldn't …（好似日文「〜ないように」）。"
+        ],
+        "examples": [
+          [
+            "I'm learning Japanese to talk to my host family.",
+            "我學日文係為咗同寄宿家庭傾偈。"
+          ],
+          [
+            "I got up early to catch the first train.",
+            "我早起為咗搭頭班車。"
+          ],
+          [
+            "We spoke quietly so that we wouldn't wake the baby.",
+            "我哋細細聲講嘢，費事嘈醒個 BB。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Why did the writer go to the viewing platform early in the morning?",
+          "To see the red-crowned cranes."
+        ],
+        [
+          "What were the cranes doing?",
+          "They were spreading their wings and dancing."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-22",
@@ -1266,7 +1692,78 @@ window.LESSONS = [
         "温泉（おんせん）に入（はい）った後（あと）で、冷（つめ）たい牛乳（ぎゅうにゅう）を飲（の）みました。"
       ]
     ],
-    "challenge": "用「〜前に」或者「〜た後で」寫一句你平日嘅習慣（例如劍道練習前後、淋花之前做乜）。"
+    "challenge": "用「〜前に」或者「〜た後で」寫一句你平日嘅習慣（例如劍道練習前後、淋花之前做乜）。",
+    "en": {
+      "title": "A Soak in Dogo Onsen",
+      "intro": "同一個故事嘅英式英文版：去道後溫泉浸溫泉，順便學 before / after + -ing（…之前／之後）。",
+      "passage": "Last month, my friend Ken went to Dogo Onsen in Ehime. After arriving at the inn, he changed into a yukata. He took his clothes off in the changing room and washed himself thoroughly before getting into the bath. The water felt amazing, but he stayed in too long and got a bit light-headed. After his bath, he had a cold glass of mikan juice.",
+      "vocab": [
+        [
+          "inn",
+          "旅館"
+        ],
+        [
+          "change into",
+          "換上（衫）"
+        ],
+        [
+          "changing room",
+          "更衣室"
+        ],
+        [
+          "thoroughly",
+          "仔細、徹底"
+        ],
+        [
+          "get into the bath",
+          "落浴池"
+        ],
+        [
+          "light-headed",
+          "頭暈暈"
+        ],
+        [
+          "feel amazing",
+          "感覺好正"
+        ],
+        [
+          "a cold glass of …",
+          "一杯凍嘅…"
+        ]
+      ],
+      "phrase": {
+        "point": "before / after + -ing（…之前／之後）",
+        "explain": [
+          "日文「〜前に／〜た後で」= …之前／…之後，英文用 before / after + -ing（或者 + 句子）。",
+          "before getting in = before he got in；after arriving = after he arrived。",
+          "英國人講 have a bath（浸浴）、have a shower（沖涼）。"
+        ],
+        "examples": [
+          [
+            "Wash yourself before getting into the bath.",
+            "落浴池之前要洗乾淨身。"
+          ],
+          [
+            "After eating, we went for a walk.",
+            "食完飯之後，我哋去咗散步。"
+          ],
+          [
+            "I always have a shower before going to bed.",
+            "我瞓覺前一定會沖涼。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What did Ken do before getting into the bath?",
+          "He washed himself thoroughly."
+        ],
+        [
+          "Why did Ken get light-headed?",
+          "Because he stayed in too long."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-21",
@@ -1368,7 +1865,78 @@ window.LESSONS = [
         "剣道場（けんどうじょう）の中（なか）で靴（くつ）を履（は）いてはいけません。"
       ]
     ],
-    "challenge": "用「〜てもいいですか」問你嘅ホストファミリー一個問題，或者用「〜てはいけません」講一條你屋企／劍道場嘅規矩。"
+    "challenge": "用「〜てもいいですか」問你嘅ホストファミリー一個問題，或者用「〜てはいけません」講一條你屋企／劍道場嘅規矩。",
+    "en": {
+      "title": "House Rules at a Homestay",
+      "intro": "同一個故事嘅英式英文版：寄宿家庭嘅規矩，順便學 Can I …? / You mustn't …（可唔可以／唔准）。",
+      "passage": "Next month, I'm doing a homestay in Abashiri. I asked my host family about the house rules. They told me to take my shoes off at the entrance, and said I mustn't wear shoes inside the house. Apparently, I can use the kitchen and the washing machine whenever I like. But I have to sort the rubbish properly. Burnable rubbish goes out on Tuesdays and Fridays. The curfew is ten o'clock at night, so I mustn't come home later than that.",
+      "vocab": [
+        [
+          "homestay",
+          "寄宿家庭"
+        ],
+        [
+          "host family",
+          "寄宿家庭嘅家人"
+        ],
+        [
+          "entrance",
+          "玄關、門口"
+        ],
+        [
+          "washing machine",
+          "洗衣機"
+        ],
+        [
+          "sort the rubbish",
+          "垃圾分類（英式 rubbish）"
+        ],
+        [
+          "burnable",
+          "可燃"
+        ],
+        [
+          "curfew",
+          "門禁時間"
+        ],
+        [
+          "apparently",
+          "聽講、好似話"
+        ]
+      ],
+      "phrase": {
+        "point": "Can I …? / You can … / You mustn't …",
+        "explain": [
+          "日文「〜てもいいですか」= 可唔可以…，英文用 Can I …? / Is it OK if I …?",
+          "可以：You can …；唔准：You mustn't …（英式好常用，美式多數講 You can't）。",
+          "英式用字：rubbish（垃圾，美式 trash）、bin（垃圾桶）。"
+        ],
+        "examples": [
+          [
+            "Can I use the washing machine?",
+            "我可以用洗衣機嗎？"
+          ],
+          [
+            "Is it OK if I come home a bit late tonight?",
+            "我今晚遲少少返嚟得唔得？"
+          ],
+          [
+            "You mustn't put bottles in this bin.",
+            "唔可以將啲樽掉入呢個垃圾桶。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What mustn't you do inside the house?",
+          "You mustn't wear shoes."
+        ],
+        [
+          "What time is the curfew?",
+          "Ten o'clock at night."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-20",
@@ -1470,7 +2038,79 @@ window.LESSONS = [
         "荷物（にもつ）はあまり持（も）っていかないほうがいいです。"
       ]
     ],
-    "challenge": "用「〜たほうがいい」或者「〜ないほうがいい」，俾一個第一次去日本旅行嘅朋友一個建議。"
+    "challenge": "用「〜たほうがいい」或者「〜ないほうがいい」，俾一個第一次去日本旅行嘅朋友一個建議。",
+    "en": {
+      "title": "Travelling by Train",
+      "intro": "同一個故事嘅英式英文版：搭火車遊日本嘅貼士，順便學 should / you'd better（最好…）。",
+      "passage": "I asked a Japanese friend about travelling by train. They told me, \"For a long journey, you'd better book a reserved seat, because the unreserved carriages often get crowded.\" They also said, \"When you have lots of changes, you'd better not take big luggage.\" I'm looking forward to sitting by the window and eating a station bento. But I should check the time of the last train first.",
+      "vocab": [
+        [
+          "reserved seat",
+          "指定席"
+        ],
+        [
+          "unreserved",
+          "自由席（唔對號）"
+        ],
+        [
+          "carriage",
+          "車卡（英式）"
+        ],
+        [
+          "crowded",
+          "迫"
+        ],
+        [
+          "change trains",
+          "轉車"
+        ],
+        [
+          "luggage",
+          "行李"
+        ],
+        [
+          "look forward to",
+          "期待"
+        ],
+        [
+          "the last train",
+          "尾班車"
+        ]
+      ],
+      "phrase": {
+        "point": "should / you'd better（最好…）",
+        "explain": [
+          "日文「〜たほうがいい」= 最好…，英文用 should 或者 had better（you'd better）。",
+          "否定：you'd better not …／you shouldn't …。",
+          "had better 語氣比較強，好似「唔係會有麻煩」；一般建議用 should 就得。",
+          "英式用字：carriage（車卡）、luggage（行李）、return ticket（來回票）。"
+        ],
+        "examples": [
+          [
+            "You should buy a return ticket.",
+            "你最好買來回票。"
+          ],
+          [
+            "You'd better leave early, or you'll miss the train.",
+            "你最好早啲出門，唔係會趕唔切火車。"
+          ],
+          [
+            "You'd better not bring too much luggage.",
+            "你最好唔好帶太多行李。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Why is it better to book a reserved seat?",
+          "Because the unreserved carriages often get crowded."
+        ],
+        [
+          "What shouldn't you do when you have lots of changes?",
+          "You'd better not take big luggage."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-19",
@@ -1572,7 +2212,78 @@ window.LESSONS = [
         "一巻（いっかん）を読（よ）み終（お）わったら、続（つづ）きを買（か）いたいです。"
       ]
     ],
-    "challenge": "用「〜てみたい」寫一句：去到日本，你最想試下做乜？"
+    "challenge": "用「〜てみたい」寫一句：去到日本，你最想試下做乜？",
+    "en": {
+      "title": "Reading a Light Novel",
+      "intro": "同一個故事嘅英式英文版：第一次讀日文輕小說，順便學 try + -ing / have a go（試吓）。",
+      "passage": "Last week, I tried reading a light novel in Japanese for the first time. It's the original story of an anime I'd watched. There were lots of words I didn't know, so I read it while looking them up in a dictionary. It had lots of illustrations, and it was really enjoyable. I've finished the first volume, so next I'm going to try buying the next one.",
+      "vocab": [
+        [
+          "light novel",
+          "輕小說"
+        ],
+        [
+          "for the first time",
+          "第一次"
+        ],
+        [
+          "original story",
+          "原作"
+        ],
+        [
+          "look up",
+          "查（字典）"
+        ],
+        [
+          "dictionary",
+          "字典"
+        ],
+        [
+          "illustration",
+          "插圖"
+        ],
+        [
+          "volume",
+          "（書）一卷"
+        ],
+        [
+          "have a go",
+          "試吓（英式口語）"
+        ]
+      ],
+      "phrase": {
+        "point": "try + -ing / have a go（試吓）",
+        "explain": [
+          "日文「〜てみる」= 試吓做…，英文用 try + -ing。",
+          "try + -ing = 試吓做（睇吓點）；try to + 動詞 = 努力去做（未必做到）。",
+          "英國人好鍾意講 have a go (at …)：Go on, have a go! = 試吓啦！"
+        ],
+        "examples": [
+          [
+            "I tried reading it without a dictionary.",
+            "我試吓唔用字典讀。"
+          ],
+          [
+            "Why don't you have a go at making onigiri?",
+            "不如你試吓整飯糰？"
+          ],
+          [
+            "Try asking the staff at the station.",
+            "試吓問車站職員啦。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Why did the writer use a dictionary?",
+          "Because there were lots of words they didn't know."
+        ],
+        [
+          "What is the writer going to do next?",
+          "They're going to try buying the next volume."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-16",
@@ -1674,7 +2385,79 @@ window.LESSONS = [
         "もし人生（じんせい）をやり直（なお）せたら、本気（ほんき）で努力（どりょく）したいです。"
       ]
     ],
-    "challenge": "用「もし〜たら」寫一句：如果你轉生去異世界，你想做乜？"
+    "challenge": "用「もし〜たら」寫一句：如果你轉生去異世界，你想做乜？",
+    "en": {
+      "title": "Jobless Reincarnation",
+      "intro": "同一個故事嘅英式英文版：講《無職轉生》，順便學 If … / When …（如果／等到…）。",
+      "passage": "In his past life, Rudeus had a lot of regrets. One day, he died in an accident and was reborn as a baby in another world. He decided, \"If I get a second chance at life, this time I'll live it properly.\" Now he works hard every day, practises magic and looks after his family. When he grows up, he wants to travel the world.",
+      "vocab": [
+        [
+          "past life",
+          "前世"
+        ],
+        [
+          "regret",
+          "後悔"
+        ],
+        [
+          "accident",
+          "意外"
+        ],
+        [
+          "be reborn",
+          "轉生"
+        ],
+        [
+          "a second chance",
+          "第二次機會"
+        ],
+        [
+          "properly",
+          "認真、好好咁"
+        ],
+        [
+          "look after",
+          "照顧"
+        ],
+        [
+          "grow up",
+          "長大"
+        ]
+      ],
+      "phrase": {
+        "point": "If …, I'll … / When …（如果／等到…）",
+        "explain": [
+          "日文「〜たら」= 如果／等到…之後，英文要分：有可能嘅事用 If …, I'll …；一定會發生嘅用 When …。",
+          "When he grows up（佢長大之後）：一定會長大，所以用 when。",
+          "If / When 後面用現在式，唔講 when he will grow up。",
+          "英式口語：ring = 打電話（I'll ring you）。"
+        ],
+        "examples": [
+          [
+            "If I pass the exam, I'll go to Japan.",
+            "如果考試合格，我就去日本。"
+          ],
+          [
+            "When I get home, I'll ring you.",
+            "我返到屋企就打俾你。"
+          ],
+          [
+            "When I grow up, I want to be a teacher.",
+            "我大個想做老師。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What was Rudeus reborn as?",
+          "A baby in another world."
+        ],
+        [
+          "What does he want to do when he grows up?",
+          "He wants to travel the world."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-15",
@@ -1777,7 +2560,78 @@ window.LESSONS = [
         "今晩（こんばん）、日本語（にほんご）を勉強（べんきょう）しなければなりません。"
       ]
     ],
-    "challenge": "用「〜なければなりません」寫一句你今個星期一定要做嘅事（工作、打理花園、準備去日本都得）。"
+    "challenge": "用「〜なければなりません」寫一句你今個星期一定要做嘅事（工作、打理花園、準備去日本都得）。",
+    "en": {
+      "title": "The Shield Hero",
+      "intro": "同一個故事嘅英式英文版：講《盾之勇者成名錄》，順便學 have to / had to（一定要）。",
+      "passage": "Naofumi Iwatani was an ordinary university student, but one day he was summoned to another world. Naofumi is the Shield Hero, and his only weapon is a shield. The Shield Hero can't attack, so fighting alone is really hard. That's why he had to find companions he could trust. Now Raphtalia attacks with her sword, and Naofumi protects her with his shield. Before the next Wave comes, they have to become even stronger.",
+      "vocab": [
+        [
+          "ordinary",
+          "普通"
+        ],
+        [
+          "summon",
+          "召喚"
+        ],
+        [
+          "another world",
+          "異世界"
+        ],
+        [
+          "shield",
+          "盾"
+        ],
+        [
+          "weapon",
+          "武器"
+        ],
+        [
+          "attack",
+          "攻擊"
+        ],
+        [
+          "trust",
+          "信任"
+        ],
+        [
+          "protect",
+          "保護"
+        ]
+      ],
+      "phrase": {
+        "point": "have to / had to（一定要）",
+        "explain": [
+          "日文「〜なければならない」= 一定要，英文用 have to（過去式 had to）。",
+          "don't have to = 唔使（唔係「唔准」）；唔准要用 mustn't。",
+          "英國人口語好常講 I've got to go.（我要走喇）"
+        ],
+        "examples": [
+          [
+            "I have to finish my homework tonight.",
+            "我今晚一定要做完功課。"
+          ],
+          [
+            "He had to fight on his own.",
+            "佢當時要自己一個打。"
+          ],
+          [
+            "Sorry, I've got to go now.",
+            "唔好意思，我而家要走喇。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What is Naofumi's weapon?",
+          "A shield."
+        ],
+        [
+          "What do they have to do before the next Wave comes?",
+          "They have to become even stronger."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-14",
@@ -1880,7 +2734,78 @@ window.LESSONS = [
         "この温泉（おんせん）はとても熱（あつ）そうです。"
       ]
     ],
-    "challenge": "用「〜そうです」寫一句，形容你而家見到嘅嘢（手上嘅食物、窗外天氣、或者一張日本風景相）。"
+    "challenge": "用「〜そうです」寫一句，形容你而家見到嘅嘢（手上嘅食物、窗外天氣、或者一張日本風景相）。",
+    "en": {
+      "title": "Mikan Picking in Ehime",
+      "intro": "同一個故事嘅英式英文版：想去愛媛摘蜜柑，順便學 look + 形容詞（睇落好似…）。",
+      "passage": "I'd like to go to Ehime next autumn. Ehime is famous for mikan oranges, and you can go mikan picking. The mikan in the photo look really sweet. But the green ones look a bit sour. On the Shimanami Kaido, you cycle across the bridges between the islands. The scenery is beautiful, and it looks like great fun. At the end, I'd like to have a soak in Dogo Onsen.",
+      "vocab": [
+        [
+          "be famous for",
+          "以…出名"
+        ],
+        [
+          "picking",
+          "摘（生果）"
+        ],
+        [
+          "sweet",
+          "甜"
+        ],
+        [
+          "sour",
+          "酸"
+        ],
+        [
+          "cycle",
+          "踩單車"
+        ],
+        [
+          "bridge",
+          "橋"
+        ],
+        [
+          "scenery",
+          "風景"
+        ],
+        [
+          "have a soak",
+          "浸（溫泉、浴缸）"
+        ]
+      ],
+      "phrase": {
+        "point": "look + 形容詞 / look like …（睇落好似）",
+        "explain": [
+          "日文「〜そうです」（樣態）= 睇落好似…，英文用 look + 形容詞。",
+          "look + 形容詞：It looks sweet.；look like + 名詞：It looks like fun.",
+          "英國人口語好鍾意講 That looks lovely!（睇落好正！）"
+        ],
+        "examples": [
+          [
+            "This cake looks delicious.",
+            "呢個蛋糕睇落好好食。"
+          ],
+          [
+            "It looks like it's going to rain.",
+            "睇落好似就嚟落雨。"
+          ],
+          [
+            "The view from the bridge looks lovely.",
+            "喺橋度睇嘅風景好似好靚。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "How do the mikan in the photo look?",
+          "They look really sweet."
+        ],
+        [
+          "How do you cross the bridges on the Shimanami Kaido?",
+          "By bike."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-13",
@@ -1983,7 +2908,78 @@ window.LESSONS = [
         "日本語（にほんご）の漫画（まんが）が読（よ）めるようになりました。"
       ]
     ],
-    "challenge": "用「〜ようになりました」寫一句你學日文、練劍道或者打理花園之後變到識做嘅事。"
+    "challenge": "用「〜ようになりました」寫一句你學日文、練劍道或者打理花園之後變到識做嘅事。",
+    "en": {
+      "title": "Frieren and Magic",
+      "intro": "同一個故事嘅英式英文版：講《葬送的芙莉蓮》，順便學 now can … / learn to … / come to …（變得會）。",
+      "passage": "Frieren is an elf mage, and she lives for a very long time. Long ago, she travelled with the hero Himmel and her other companions. Now she's on a new journey with her apprentice, Fern. Fern practised every day, and now she can use powerful magic. Frieren loves learning rare spells. Through her travels, Frieren is slowly coming to understand how people feel.",
+      "vocab": [
+        [
+          "elf",
+          "精靈"
+        ],
+        [
+          "mage",
+          "魔法使"
+        ],
+        [
+          "companions",
+          "同伴"
+        ],
+        [
+          "journey",
+          "旅程"
+        ],
+        [
+          "apprentice",
+          "徒弟"
+        ],
+        [
+          "powerful",
+          "強大"
+        ],
+        [
+          "spell",
+          "咒文"
+        ],
+        [
+          "travelled",
+          "旅行過（英式串法雙 l）"
+        ]
+      ],
+      "phrase": {
+        "point": "now can … / learn to … / come to …（變得會）",
+        "explain": [
+          "日文「〜ようになる」講能力或者習慣慢慢改變，英文常用 now can …、learn to …、come to …。",
+          "學識咗：She learned to swim.／Now she can swim.",
+          "慢慢明白：come to understand / come to realise（英式串法 realise）。"
+        ],
+        "examples": [
+          [
+            "After a year, I learned to read hiragana.",
+            "一年之後，我識讀平假名喇。"
+          ],
+          [
+            "Now I can understand anime without subtitles.",
+            "而家我唔使字幕都睇得明動畫。"
+          ],
+          [
+            "She slowly came to realise how important her friends were.",
+            "佢慢慢明白到朋友有幾重要。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What happened after Fern practised every day?",
+          "Now she can use powerful magic."
+        ],
+        [
+          "What does Frieren love learning?",
+          "Rare spells."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-12",
@@ -2085,7 +3081,78 @@ window.LESSONS = [
         "「ながら」前後要同一個人。改做：私（わたし）は散歩（さんぽ）しながら、ポケモンを捕（つか）まえます。"
       ]
     ],
-    "challenge": "用「〜ながら」寫一句你平時一邊做乜一邊做乜（例如睇《葬送のフリーレン》、練劍道、打理花園）。"
+    "challenge": "用「〜ながら」寫一句你平時一邊做乜一邊做乜（例如睇《葬送のフリーレン》、練劍道、打理花園）。",
+    "en": {
+      "title": "A Walk with Pokémon GO",
+      "intro": "同一個故事嘅英式英文版：一路玩 Pokémon GO 一路散步，順便學 while + -ing（一邊…一邊…）。",
+      "passage": "Every morning, I walk around the park while playing Pokémon GO. If you walk a lot, your eggs hatch, so it's really fun. Yesterday, I caught a rare Pokémon in the park. But walking while looking at your phone is dangerous, so I'm careful. Today, I did ten thousand steps.",
+      "vocab": [
+        [
+          "hatch",
+          "孵化"
+        ],
+        [
+          "egg",
+          "蛋"
+        ],
+        [
+          "rare",
+          "罕有"
+        ],
+        [
+          "catch / caught",
+          "捉（過去式 caught）"
+        ],
+        [
+          "dangerous",
+          "危險"
+        ],
+        [
+          "be careful",
+          "小心"
+        ],
+        [
+          "steps",
+          "步數"
+        ],
+        [
+          "go for a walk",
+          "去散步"
+        ]
+      ],
+      "phrase": {
+        "point": "while + -ing（一邊…一邊…）",
+        "explain": [
+          "日文「〜ながら」= 一邊…一邊…，英文用 while + -ing。",
+          "主要動作放前面：I walk while playing（散步係主要）。",
+          "英國人過馬路會聽到 Look both ways!（睇清楚兩邊）"
+        ],
+        "examples": [
+          [
+            "I listen to podcasts while cooking.",
+            "我一邊煮飯一邊聽 podcast。"
+          ],
+          [
+            "Don't look at your phone while crossing the road.",
+            "過馬路嗰陣唔好睇手機。"
+          ],
+          [
+            "I had a cup of tea while reading the paper.",
+            "我一邊飲茶一邊睇報紙。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What does the writer do while walking in the park?",
+          "They play Pokémon GO."
+        ],
+        [
+          "What happened in the park yesterday?",
+          "They caught a rare Pokémon."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-09",
@@ -2188,7 +3255,78 @@ window.LESSONS = [
         "とても寒（さむ）いので、厚（あつ）い手袋（てぶくろ）を買（か）うつもりです。"
       ]
     ],
-    "challenge": "用「〜つもりです」寫一句你去日本（網走、愛媛都得）打算做嘅事。"
+    "challenge": "用「〜つもりです」寫一句你去日本（網走、愛媛都得）打算做嘅事。",
+    "en": {
+      "title": "Drift Ice in Abashiri",
+      "intro": "同一個故事嘅英式英文版：計劃去網走睇流冰，順便學 I'm going to …（打算）。",
+      "passage": "I'm going to go to Abashiri in Hokkaido next February. In Abashiri, I want to go on an icebreaker and see the drift ice. The cold in Abashiri in February is really harsh, so I'm going to buy some warm gloves. I'm also going to visit the Abashiri Prison Museum. But driving on snowy roads is scary, so I'm not going to hire a car. I'm going to book the hotel this weekend.",
+      "vocab": [
+        [
+          "icebreaker",
+          "破冰船"
+        ],
+        [
+          "drift ice",
+          "流冰"
+        ],
+        [
+          "harsh",
+          "嚴酷"
+        ],
+        [
+          "gloves",
+          "手套"
+        ],
+        [
+          "prison",
+          "監獄"
+        ],
+        [
+          "snowy roads",
+          "雪地路"
+        ],
+        [
+          "hire a car",
+          "租車（英式，美式 rent）"
+        ],
+        [
+          "book",
+          "訂（酒店、飛）"
+        ]
+      ],
+      "phrase": {
+        "point": "I'm going to … / I'm not going to …（打算）",
+        "explain": [
+          "日文「〜つもりです」講已經決定咗嘅計劃，英文最常用 be going to + 動詞。",
+          "否定：I'm not going to …（我唔打算…）。",
+          "英國人租車講 hire a car，美國人講 rent a car。"
+        ],
+        "examples": [
+          [
+            "I'm going to go to Japan next year.",
+            "我打算明年去日本。"
+          ],
+          [
+            "I'm not going to drive in the snow.",
+            "我唔打算喺雪地揸車。"
+          ],
+          [
+            "I'm going to book the flights tonight.",
+            "我打算今晚訂機票。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What does the writer want to go on in Abashiri?",
+          "An icebreaker."
+        ],
+        [
+          "Why isn't the writer going to hire a car?",
+          "Because driving on snowy roads is scary."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-08",
@@ -2291,7 +3429,79 @@ window.LESSONS = [
         "ケーキを一人（ひとり）で全部（ぜんぶ）食（た）べてしまいました。"
       ]
     ],
-    "challenge": "用「〜てしまいました」寫一句你最近「唔小心」做咗嘅事（劍道、Pokémon GO、花園都得）。"
+    "challenge": "用「〜てしまいました」寫一句你最近「唔小心」做咗嘅事（劍道、Pokémon GO、花園都得）。",
+    "en": {
+      "title": "Kendo Practice",
+      "intro": "同一個故事嘅英式英文版：劍道練習出晒事，順便學 I left … / I ended up …（唔小心…咗）。",
+      "passage": "Yesterday, I had kendo practice at the dojo. But I was in a hurry, so I left my armour at home. There was nothing I could do, so I borrowed my teacher's armour. Halfway through practice, my bamboo sword broke as well. Even so, I did lots of head strikes and worked up a real sweat. When I got home, I fell asleep straight away.",
+      "vocab": [
+        [
+          "dojo",
+          "道場"
+        ],
+        [
+          "armour",
+          "防具、盔甲（英式串法）"
+        ],
+        [
+          "in a hurry",
+          "趕時間"
+        ],
+        [
+          "borrow",
+          "借（入）"
+        ],
+        [
+          "halfway through",
+          "做到一半"
+        ],
+        [
+          "bamboo sword",
+          "竹刀"
+        ],
+        [
+          "work up a sweat",
+          "出一身汗"
+        ],
+        [
+          "straight away",
+          "即刻（英式）"
+        ]
+      ],
+      "phrase": {
+        "point": "I left … / I ended up …（唔小心…咗）",
+        "explain": [
+          "日文「〜てしまう」有「唔小心…咗、好可惜」嘅語氣，英文冇一個固定講法，要睇情況。",
+          "漏低嘢：I left my … at home.",
+          "結果唔係自己想：I ended up + -ing（I ended up falling asleep）。",
+          "英式口語：Oh no, I've gone and broken it!（唉，我整爛咗！）"
+        ],
+        "examples": [
+          [
+            "I left my umbrella on the train.",
+            "我唔小心將把遮留咗喺火車度。"
+          ],
+          [
+            "I ended up eating the whole cake.",
+            "我最後食晒成個蛋糕。"
+          ],
+          [
+            "Oh no, I've gone and broken my bamboo sword!",
+            "唉，我整爛咗支竹刀！"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What did the writer leave at home?",
+          "Their armour."
+        ],
+        [
+          "What happened halfway through practice?",
+          "Their bamboo sword broke."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-07",
@@ -2394,6 +3604,77 @@ window.LESSONS = [
         "霜（しも）が降（お）りる前（まえ）に、トマトを全部（ぜんぶ）収穫（しゅうかく）します。"
       ]
     ],
-    "challenge": "用「〜ようにしています」寫一句你自己嘅習慣。"
+    "challenge": "用「〜ようにしています」寫一句你自己嘅習慣。",
+    "en": {
+      "title": "Autumn in the Garden",
+      "intro": "同一個故事嘅英式英文版：秋天打理花園，順便學 I try to … / I try not to …（盡量…）。",
+      "passage": "It's October now, and it's getting colder and colder in Britain. At the weekend, I planted tulip bulbs in the garden. I also put in a bit of fertiliser for the spring flowers. Before the first frost, I picked all the tomatoes. These days, I try to rake up the fallen leaves every morning. But on cold days, I try not to overwater the plants.",
+      "vocab": [
+        [
+          "tulip bulbs",
+          "鬱金香球莖"
+        ],
+        [
+          "plant",
+          "種"
+        ],
+        [
+          "fertiliser",
+          "肥料（英式串法）"
+        ],
+        [
+          "the first frost",
+          "第一次落霜"
+        ],
+        [
+          "pick",
+          "摘、收成"
+        ],
+        [
+          "rake up",
+          "用耙掃埋"
+        ],
+        [
+          "fallen leaves",
+          "落葉"
+        ],
+        [
+          "overwater",
+          "淋太多水"
+        ]
+      ],
+      "phrase": {
+        "point": "I try to … / I try not to …（盡量…）",
+        "explain": [
+          "日文「〜ようにしている」講自己盡量保持嘅習慣，英文就係 I try to … every day.",
+          "否定：I try not to …（盡量唔…），not 放喺 to 前面。",
+          "英式：fertiliser（美式 fertilizer）；at the weekend（美式 on the weekend）。"
+        ],
+        "examples": [
+          [
+            "I try to read some Japanese every day.",
+            "我盡量每日都讀啲日文。"
+          ],
+          [
+            "I try not to stay up too late.",
+            "我盡量唔捱夜。"
+          ],
+          [
+            "I try to practise kendo every week.",
+            "我盡量每個星期都練劍道。（英式 practise 做動詞）"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What did the writer plant at the weekend?",
+          "Tulip bulbs."
+        ],
+        [
+          "What does the writer try to do every morning?",
+          "They try to rake up the fallen leaves."
+        ]
+      ]
+    }
   }
 ];
