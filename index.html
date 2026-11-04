@@ -114,9 +114,17 @@
   .nav a, .nav span { padding: 6px 12px; border-radius: 8px; background: var(--card); border: 1px solid var(--line);
                       text-decoration: none; color: var(--ink); font-size: .9rem; }
   .nav span { opacity: .35; }
+  .en-title { display: block; font-size: .95rem; color: var(--muted); font-weight: 600; margin-top: 2px; }
+  .tabs { display: flex; gap: 6px; margin: 14px 0 0; }
+  .tabs a { flex: 1; text-align: center; padding: 8px 12px; border-radius: 10px; text-decoration: none;
+            background: var(--card); border: 1px solid var(--line); color: var(--ink); font-weight: 600; }
+  .tabs a.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .passage.en { font-size: 1.12rem; line-height: 2; }
+  .cal .cell .e { color: var(--muted); font-size: .72rem; }
   @media (max-width: 480px) {
     .cal .cell { min-height: 64px; padding: 4px; font-size: .68rem; }
     .cal .cell .g { display: none; }
+    .cal .cell .e { display: none; }
     .cal .cell .d { font-size: .85rem; }
     .list .gp { display: none; }
   }
@@ -226,20 +234,29 @@ function ruby(text) {
 function speechText(text) {
   return text.replace(FURI_RE, "$2");
 }
-// 用「。」「！」「？」分句
-function sentences(text) {
-  return text.match(/[^。！？]+[。！？]?/g)?.map(s => s.trim()).filter(Boolean) ?? [];
+// 用「。」「！」「？」分句；英文就用 . ! ?
+function sentences(text, lang = "ja") {
+  const re = lang === "en" ? /[^.!?]+[.!?]+["'’”)]?/g : /[^。！？]+[。！？]?/g;
+  return text.match(re)?.map(s => s.trim()).filter(Boolean) ?? [];
 }
 
 // ---------- 朗讀 ----------
 const synth = window.speechSynthesis;
-let jaVoice = null;
+const voice = { ja: null, en: null };
 let rate = 0.9;
+let shadow = false;    // 跟讀模式：每句讀完停一停，俾你跟住講
 
 function pickVoice() {
   if (!synth) return;
-  const voices = synth.getVoices().filter(v => v.lang.replace("_", "-").toLowerCase().startsWith("ja"));
-  jaVoice = voices.find(v => /google|kyoko|otoya|nanami|haruka/i.test(v.name)) || voices[0] || null;
+  const all = synth.getVoices();
+  const norm = v => v.lang.replace("_", "-").toLowerCase();
+  const ja = all.filter(v => norm(v).startsWith("ja"));
+  voice.ja = ja.find(v => /google|kyoko|otoya|nanami|haruka/i.test(v.name)) || ja[0] || null;
+  // 英式英文：優先 en-GB，冇就用其他英文
+  const gb = all.filter(v => norm(v) === "en-gb");
+  const en = all.filter(v => norm(v).startsWith("en"));
+  voice.en = gb.find(v => /google|sonia|libby|ryan|serena|daniel|kate|natural/i.test(v.name)) || gb[0]
+    || en.find(v => /uk|brit/i.test(v.name)) || en[0] || null;
 }
 if (synth) {
   pickVoice();
@@ -257,23 +274,24 @@ let watchdog = null;
 function clearWatchdog() { if (watchdog) { clearInterval(watchdog); watchdog = null; } }
 
 // 讀一句；讀完（或者出錯、或者瀏覽器冇通知但其實已經靜咗）就 call done()
-function speakOne(text, done) {
-  const u = new SpeechSynthesisUtterance(speechText(text));
-  u.lang = "ja-JP";
-  if (jaVoice) u.voice = jaVoice;
+function speakOne(text, done, lang = "ja") {
+  const u = new SpeechSynthesisUtterance(lang === "ja" ? speechText(text) : text);
+  u.lang = lang === "ja" ? "ja-JP" : "en-GB";
+  if (voice[lang]) u.voice = voice[lang];
   u.rate = rate;
   current = u;
 
   let finished = false;
   let started = false;
+  let tStart = Date.now();
   const t0 = Date.now();
   const finish = () => {
     if (finished) return;
     finished = true;
     clearWatchdog();
-    done();
+    done(Date.now() - tStart);   // 傳返讀咗幾耐（跟讀模式用）
   };
-  u.onstart = () => { started = true; };
+  u.onstart = () => { started = true; tStart = Date.now(); };
   u.onend = finish;
   u.onerror = finish;
 
@@ -306,8 +324,8 @@ function stopAll() {
   setPlaying(false);
 }
 
-// 讀一串句子（each = 每句開始前 call，用嚟 highlight）
-function playQueue(texts, each) {
+// 讀一串句子（each = 每句開始前 call，用嚟 highlight；pause = 每句之後停一停俾人跟讀）
+function playQueue(texts, each, lang = "ja", pause = false) {
   if (!synth) return;
   const wasBusy = synth.speaking || synth.pending;
   stopAll();
@@ -318,7 +336,11 @@ function playQueue(texts, each) {
     if (id !== playId) return;               // 已經撳咗停／再撳過讀
     if (i >= texts.length) { stopAll(); return; }
     if (each) each(i);
-    speakOne(texts[i], () => step(i + 1));
+    speakOne(texts[i], ms => {
+      if (!pause || i === texts.length - 1) return step(i + 1);
+      // 跟讀：停大約同一句咁長（再加少少），然後先讀下一句
+      setTimeout(() => step(i + 1), Math.min(12000, Math.max(1500, ms * 1.3 + 600)));
+    }, lang);
   };
   // 啱啱 cancel 完要等一陣先讀，否則 Safari 會食咗第一句；
   // 本身靜嘅話就即刻讀（iPhone 要喺撳掣嗰下開始讀先有聲）
@@ -327,17 +349,20 @@ function playQueue(texts, each) {
 
 // 由第 start 句開始逐句讀，讀緊嗰句會 highlight
 function readPassage(start = 0) {
-  const spans = [...document.querySelectorAll(".passage .s")].slice(start);
+  const box = document.querySelector(".passage");
+  const lang = box?.dataset.lang || "ja";
+  const spans = [...box.querySelectorAll(".s")].slice(start);
   playQueue(spans.map(s => s.dataset.text), i => {
     document.querySelectorAll(".passage .s.on").forEach(el => el.classList.remove("on"));
     spans[i].classList.add("on");
-  });
+  }, lang, shadow);
 }
 
-function speak(text) { playQueue([text]); }
+function speak(text, lang = "ja") { playQueue([text], null, lang); }
 
 // ---------- 共用 ----------
-const speakBtn = text => `<button class="speak" title="朗讀" data-say="${esc(text)}">🔊</button>`;
+const speakBtn = (text, lang = "ja") =>
+  `<button class="speak" title="朗讀" data-say="${esc(text)}" data-lang="${lang}">🔊</button>`;
 const plain = text => text.replace(FURI_RE, "$1");          // 去走讀音：「花火（はなび）」→「花火」
 const lessons = (window.LESSONS || []).slice().sort((a, b) => a.date.localeCompare(b.date)); // 舊 → 新
 const byDate = Object.fromEntries(lessons.map(l => [l.date, l]));
@@ -383,7 +408,8 @@ function renderCalendar(month) {
       const cls = ["cell", inMonth ? "" : "out", l ? "done" : "", key === today ? "today" : ""].join(" ");
       if (l && inMonth) {
         cells += `<a class="${cls}" href="#${key}"><span class="d">${d.getUTCDate()}</span>
-          <span class="t">${esc(plain(l.title))}</span><span class="g">${esc(l.grammar.point)}</span></a>`;
+          <span class="t">${esc(plain(l.title))}</span>${l.en ? `<span class="e">🇬🇧 ${esc(l.en.title)}</span>` : ""}
+          <span class="g">${esc(l.grammar.point)}</span></a>`;
       } else {
         cells += `<div class="${cls}"><span class="d">${d.getUTCDate()}</span></div>`;
       }
@@ -417,7 +443,8 @@ function renderCalendar(month) {
       <h2>全部練習</h2>
       <div class="list">${newest.map(l => `
         <a href="#${l.date}"><span class="dt">${Number(l.date.slice(5, 7))}/${Number(l.date.slice(8))}（${esc(l.weekday)}）</span>
-          <span>${esc(plain(l.title))}</span><span class="gp">${esc(l.grammar.point)}</span></a>`).join("")}
+          <span>${esc(plain(l.title))}${l.en ? `<span class="en-title">${esc(l.en.title)}</span>` : ""}</span>
+          <span class="gp">${esc(l.grammar.point)}</span></a>`).join("")}
       </div>
     </section>`;
 
@@ -427,38 +454,112 @@ function renderCalendar(month) {
 }
 
 // ---------- 每日頁 ----------
-function navBar(lesson) {
+function navBar(lesson, tab = "ja") {
   const i = lessons.indexOf(lesson);
   const prev = lessons[i - 1], next = lessons[i + 1];
+  // 喺英文版撳前／後一日，有英文就留喺英文版
+  const link = l => `#${l.date}${tab === "en" && l.en ? "/en" : ""}`;
   return `<div class="nav">
     <a href="#m-${lesson.date.slice(0, 7)}">← 月曆</a>
     <div style="display:flex;gap:8px">
-      ${prev ? `<a href="#${prev.date}">‹ ${Number(prev.date.slice(5, 7))}/${Number(prev.date.slice(8))}</a>` : `<span>‹</span>`}
-      ${next ? `<a href="#${next.date}">${Number(next.date.slice(5, 7))}/${Number(next.date.slice(8))} ›</a>` : `<span>›</span>`}
+      ${prev ? `<a href="${link(prev)}">‹ ${Number(prev.date.slice(5, 7))}/${Number(prev.date.slice(8))}</a>` : `<span>‹</span>`}
+      ${next ? `<a href="${link(next)}">${Number(next.date.slice(5, 7))}/${Number(next.date.slice(8))} ›</a>` : `<span>›</span>`}
     </div>
   </div>`;
 }
 
-function renderLesson(lesson) {
-  const sents = sentences(lesson.passage);
-  view.innerHTML = `
-    ${navBar(lesson)}
-    <section>
-      <h2>${esc(lesson.date)}（${esc(lesson.weekday)}）${ruby(lesson.title)}</h2>
-      <div>${ruby(lesson.intro)}</div>
-    </section>
-
-    <section>
-      <h2>短文閱讀</h2>
+// 短文 + 朗讀掣（日文、英文共用）
+function readerSection(title, passage, lang) {
+  const sents = sentences(passage, lang);
+  const fmt = lang === "ja" ? ruby : esc;
+  return `
+      <h2>${title}</h2>
       <div class="controls">
         <button class="primary" id="play">▶︎ 讀全篇</button>
         <button id="stop">■ 停</button>
         <label>速度 <input type="range" id="rate" min="0.5" max="1.3" step="0.1" value="${rate}">
           <span id="rateVal">${rate.toFixed(1)}×</span></label>
+        <label><input type="checkbox" id="shadow" ${shadow ? "checked" : ""}> 跟讀模式</label>
       </div>
-      <div class="passage">${sents.map((s, i) =>
-        `<span class="s" data-i="${i}" data-text="${esc(s)}">${ruby(s)}</span>`).join("")}</div>
-      <p class="muted">撳任何一句就由嗰句開始讀。</p>
+      <div class="passage ${lang}" data-lang="${lang}" ${lang === "en" ? 'lang="en-GB"' : ""}>${sents.map((s, i) =>
+        `<span class="s" data-i="${i}" data-text="${esc(s)}">${fmt(s)}</span>`).join(lang === "en" ? " " : "")}</div>
+      <p class="muted">撳任何一句就由嗰句開始讀。開咗「跟讀模式」會每句讀完停一停，等你跟住講（shadowing）。</p>`;
+}
+
+function headSection(lesson, tab) {
+  const tabs = lesson.en ? `
+    <div class="tabs">
+      <a href="#${lesson.date}" class="${tab === "ja" ? "on" : ""}">🇯🇵 日本語</a>
+      <a href="#${lesson.date}/en" class="${tab === "en" ? "on" : ""}">🇬🇧 English</a>
+    </div>` : "";
+  return `
+    <section>
+      <h2>${esc(lesson.date)}（${esc(lesson.weekday)}）${ruby(lesson.title)}
+        ${lesson.en ? `<span class="en-title" lang="en-GB">${esc(lesson.en.title)}</span>` : ""}</h2>
+      <div>${ruby(tab === "en" && lesson.en.intro ? lesson.en.intro : lesson.intro)}</div>
+      ${tabs}
+    </section>`;
+}
+
+function renderEnglish(lesson) {
+  const en = lesson.en;
+  view.innerHTML = `
+    ${navBar(lesson)}
+    ${headSection(lesson, "en")}
+
+    <section>
+      ${readerSection("Reading（英式英文）", en.passage, "en")}
+      ${en.questions?.length ? `<b>Questions</b>
+      <ol lang="en-GB">${en.questions.map(([q]) => `<li>${esc(q)} ${speakBtn(q, "en")}</li>`).join("")}</ol>` : ""}
+    </section>
+
+    <section>
+      <h2>Vocabulary</h2>
+      <table lang="en-GB">
+        <tr><th>English</th><th>意思</th><th></th></tr>
+        ${en.vocab.map(([w, m]) =>
+          `<tr><td>${esc(w)}</td><td>${esc(m)}</td><td>${speakBtn(w, "en")}</td></tr>`).join("")}
+      </table>
+    </section>
+
+    ${en.phrase ? `<section>
+      <h2>Phrase：${esc(en.phrase.point)}</h2>
+      ${en.phrase.explain.map(p => `<div>${esc(p)}</div>`).join("")}
+      <ol>${en.phrase.examples.map(([e, yue]) =>
+        `<li lang="en-GB">${esc(e)} ${speakBtn(e, "en")}<br><span class="muted" lang="zh-Hant-HK">${esc(yue || "")}</span></li>`).join("")}</ol>
+    </section>` : ""}
+
+    ${en.questions?.length ? `<section>
+      <h2>答案</h2>
+      <details>
+        <summary>撳嚟睇答案（做完先睇！）</summary>
+        <ul lang="en-GB">${en.questions.map(([, a], i) => `<li>Q${i + 1}：${esc(a)} ${speakBtn(a, "en")}</li>`).join("")}</ul>
+      </details>
+    </section>` : ""}
+    ${navBar(lesson, "en")}`;
+  wireReader();
+  document.title = `${en.title}｜English`;
+}
+
+function wireReader() {
+  document.getElementById("play").onclick = () => readPassage(0);
+  document.getElementById("stop").onclick = stopAll;
+  document.getElementById("rate").oninput = e => {
+    rate = parseFloat(e.target.value);
+    document.getElementById("rateVal").textContent = rate.toFixed(1) + "×";
+  };
+  document.getElementById("shadow").onchange = e => { shadow = e.target.checked; };
+  view.querySelectorAll(".passage .s").forEach(s =>
+    s.onclick = () => readPassage(parseInt(s.dataset.i, 10)));
+}
+
+function renderLesson(lesson) {
+  view.innerHTML = `
+    ${navBar(lesson)}
+    ${headSection(lesson, "ja")}
+
+    <section>
+      ${readerSection("短文閱讀", lesson.passage, "ja")}
       <b>問題</b>
       <ol>${lesson.questions.map(([q]) => `<li>${ruby(q)} ${speakBtn(q)}</li>`).join("")}</ol>
     </section>
@@ -501,14 +602,7 @@ function renderLesson(lesson) {
     </section>
     ${navBar(lesson)}`;
 
-  document.getElementById("play").onclick = () => readPassage(0);
-  document.getElementById("stop").onclick = stopAll;
-  document.getElementById("rate").oninput = e => {
-    rate = parseFloat(e.target.value);
-    document.getElementById("rateVal").textContent = rate.toFixed(1) + "×";
-  };
-  view.querySelectorAll(".passage .s").forEach(s =>
-    s.onclick = () => readPassage(parseInt(s.dataset.i, 10)));
+  wireReader();
   document.title = `${plain(lesson.title)}｜日本語練習`;
 }
 
@@ -516,7 +610,9 @@ function renderLesson(lesson) {
 function route() {
   stopAll();
   const h = decodeURIComponent(location.hash.slice(1));
-  if (byDate[h]) renderLesson(byDate[h]);
+  const [day, tab] = h.split("/");
+  if (byDate[day] && tab === "en" && byDate[day].en) renderEnglish(byDate[day]);
+  else if (byDate[day]) renderLesson(byDate[day]);
   else if (/^m-\d{4}-\d{2}$/.test(h)) renderCalendar(h.slice(2));
   else renderCalendar(todayLondon().slice(0, 7));
   window.scrollTo(0, 0);
@@ -527,7 +623,7 @@ route();
 // 🔊 掣（詞彙、例句、答案）
 document.addEventListener("click", e => {
   const b = e.target.closest("[data-say]");
-  if (b) speak(b.dataset.say);
+  if (b) speak(b.dataset.say, b.dataset.lang || "ja");
 });
 
 document.getElementById("furi").onchange = e =>

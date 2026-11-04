@@ -110,7 +110,83 @@ window.LESSONS = [
         "雪（ゆき）が降（ふ）ると、道（みち）がとても滑（すべ）りやすくなります。"
       ]
     ],
-    "challenge": "用「〜と」寫一句：由你屋企或者車站點樣行去附近一個地方？（提示：駅を出ると、…）"
+    "challenge": "用「〜と」寫一句：由你屋企或者車站點樣行去附近一個地方？（提示：駅を出ると、…）",
+    "en": {
+      "title": "First Snow in Sapporo",
+      "intro": "同一個故事嘅英式英文版：講札幌落雪，順便學用 When / If + 現在式講「一…就…」同埋指路。",
+      "passage": "In November, it starts to snow in Hokkaido. Sapporo usually gets its first snow around the end of October. When the temperature drops, the roads freeze and get really slippery. So when winter comes, everyone wears shoes with a good grip. If you walk straight along Odori Park, you'll see the TV Tower. When it gets dark, the lights are absolutely beautiful. But if you stay outside for too long, your hands get freezing, so don't forget your gloves.",
+      "vocab": [
+        [
+          "first snow",
+          "第一場雪"
+        ],
+        [
+          "the temperature drops",
+          "氣溫下降"
+        ],
+        [
+          "freeze",
+          "結冰"
+        ],
+        [
+          "slippery",
+          "跣、滑"
+        ],
+        [
+          "a good grip",
+          "（鞋底）抓地力好、唔跣"
+        ],
+        [
+          "walk straight along",
+          "沿住一直行"
+        ],
+        [
+          "freezing",
+          "好凍、凍到僵（英國口語）"
+        ],
+        [
+          "gloves",
+          "手套"
+        ]
+      ],
+      "phrase": {
+        "point": "When / If + 現在式, …（一…就…）",
+        "explain": [
+          "日文「〜と」講必然結果，英文最自然係 When…, … 或者 If…, …，兩邊都用現在式。",
+          "When it snows, the roads get slippery.（一落雪條路就跣）",
+          "指路常用：If you go straight on, you'll see… 或者 Go straight on, and … is on your right.",
+          "get + 形容詞 = 變得…（get dark、get cold）；英國人話好凍會講 It's freezing!"
+        ],
+        "examples": [
+          [
+            "When spring comes, the cherry blossoms come out.",
+            "一到春天，櫻花就會開。"
+          ],
+          [
+            "If you press this button, hot water comes out.",
+            "一撳呢個掣，就有熱水出。"
+          ],
+          [
+            "Go straight on, and the TV Tower is on your right.",
+            "一直行，右手邊就係電視塔。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "When does Sapporo usually get its first snow?",
+          "Around the end of October."
+        ],
+        [
+          "What happens when the temperature drops?",
+          "The roads freeze and get really slippery."
+        ],
+        [
+          "What can you see if you walk straight along Odori Park?",
+          "You can see the TV Tower."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-11-03",
@@ -221,7 +297,83 @@ window.LESSONS = [
         "今日（きょう）は休（やす）みだし、天気（てんき）もいいし、一緒（いっしょ）に山（やま）に登（のぼ）りましょう。"
       ]
     ],
-    "challenge": "用「〜し、〜し」寫一句：點解你鍾意學日文？（提示：アニメも好きだし、…）"
+    "challenge": "用「〜し、〜し」寫一句：點解你鍾意學日文？（提示：アニメも好きだし、…）",
+    "en": {
+      "title": "A Museum Trip on Culture Day",
+      "intro": "同一個故事嘅英式英文版：講日本嘅文化節，順便學用 and … too / as well, so … 一次過講幾個理由。",
+      "passage": "The third of November is Culture Day in Japan. It's a public holiday, so schools and offices are closed. On this day, some art galleries and museums are free to get into. The weather is usually lovely, and the autumn leaves are beautiful too, so it's the perfect day for a day out. I'd like to go to a museum in Kyoto and see some old Japanese swords. I do kendo, and I love history as well, so I'm sure it'll be great fun.",
+      "vocab": [
+        [
+          "public holiday",
+          "公眾假期"
+        ],
+        [
+          "closed",
+          "休息、唔開"
+        ],
+        [
+          "art gallery",
+          "美術館"
+        ],
+        [
+          "free to get into",
+          "免費入場"
+        ],
+        [
+          "autumn leaves",
+          "紅葉"
+        ],
+        [
+          "a day out",
+          "出去玩一日"
+        ],
+        [
+          "sword",
+          "刀、劍"
+        ],
+        [
+          "great fun",
+          "好好玩"
+        ]
+      ],
+      "phrase": {
+        "point": "…, and … too / as well, so …（列舉理由）",
+        "explain": [
+          "日文用「〜し、〜し」，英文通常用 and … too / as well 串埋幾個理由，最後用 so 帶出結論。",
+          "too、as well 放句尾；as well 聽落比較英式。",
+          "想再加一個理由可以講 What's more, …（仲有…）。",
+          "英式用字：art gallery（美術館）、autumn（秋天，唔講 fall）、a day out（出去玩一日）。"
+        ],
+        "examples": [
+          [
+            "The weather's lovely, and the leaves are beautiful too, so let's go for a walk.",
+            "天氣又好，紅葉又靚，去散步啦。"
+          ],
+          [
+            "This gallery is free, and it's close to the station as well, so it's really handy.",
+            "呢間美術館又免費，又近車站，好方便。"
+          ],
+          [
+            "It's a bank holiday, so I'm just going to relax.",
+            "今日公眾假期，就慢慢休息下。（英國叫 bank holiday）"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What is the third of November in Japan?",
+          "It's Culture Day, a public holiday."
+        ],
+        [
+          "Why is it the perfect day for a day out?",
+          "Because the weather is lovely, and the autumn leaves are beautiful too."
+        ],
+        [
+          "Why does the writer think the museum will be fun?",
+          "Because they do kendo, and they love history as well."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-11-02",
@@ -328,7 +480,79 @@ window.LESSONS = [
         "晴（は）れれば、花火（はなび）を見（み）に行（い）きましょう。"
       ]
     ],
-    "challenge": "用「〜ば」寫一句：如果去到日本（例如網走或者愛媛），你最想做咩？（提示：〜ば、〜たいです）"
+    "challenge": "用「〜ば」寫一句：如果去到日本（例如網走或者愛媛），你最想做咩？（提示：〜ば、〜たいです）",
+    "en": {
+      "title": "Bonfire Night Fireworks",
+      "intro": "同一個故事嘅英式英文版：學 Bonfire Night 嘅講法，順便學「如果…就…」嘅 If 句（If it's clear, we'll…）。",
+      "passage": "The fifth of November is Bonfire Night in Britain. In the local park, people light a huge bonfire and set off fireworks. There are food stalls in the park too, and if you wrap up warm, you can enjoy it even on a cold night. If the sky is clear, the fireworks look beautiful, and you can hear people cheering all around. But if it rains, it's a bit disappointing. Firework festivals in Japan are held in summer, so one day I'd like to put on a yukata and go and watch one.",
+      "vocab": [
+        [
+          "bonfire",
+          "篝火"
+        ],
+        [
+          "set off fireworks",
+          "放煙花"
+        ],
+        [
+          "food stall",
+          "小食檔"
+        ],
+        [
+          "wrap up warm",
+          "着暖啲"
+        ],
+        [
+          "cheering",
+          "歡呼聲"
+        ],
+        [
+          "a clear sky",
+          "晴天、冇雲"
+        ],
+        [
+          "disappointing",
+          "令人失望"
+        ],
+        [
+          "one day",
+          "總有一日、將來有一日"
+        ]
+      ],
+      "phrase": {
+        "point": "If + 現在式, … will / can（如果…就…）",
+        "explain": [
+          "講「如果…就…」而且真係有可能發生嘅事，同日文「〜ば」差唔多。",
+          "If 嗰半用現在式：If it rains（唔好講 If it will rain）。",
+          "結果嗰半用 will / can / 命令句：…we'll go／…you can see／…bring a coat.",
+          "wrap up warm（着暖啲）係好英式嘅講法，冬天成日聽到。"
+        ],
+        "examples": [
+          [
+            "If the sky is clear, we'll see the fireworks really well.",
+            "如果天晴，就睇得清啲煙花。"
+          ],
+          [
+            "If we go early, we can get a good spot.",
+            "早啲去就霸到好位。"
+          ],
+          [
+            "If you're cold, go and stand by the bonfire.",
+            "如果凍，就行埋篝火嗰邊啦。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What do people do in the park on Bonfire Night?",
+          "They light a huge bonfire and set off fireworks."
+        ],
+        [
+          "What happens if the sky is clear?",
+          "The fireworks look beautiful, and you can hear people cheering all around."
+        ]
+      ]
+    }
   },
   {
     "date": "2026-10-30",
