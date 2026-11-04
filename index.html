@@ -209,11 +209,13 @@
   <header>
     <h1><a href="#">日本語<span class="mon">練習</span></a></h1>
     <div class="controls" style="margin:0">
+      <button id="testVoice" type="button">🔈 測試聲音</button>
       <label><input type="checkbox" id="furi" checked> 振假名</label>
     </div>
   </header>
 
   <div id="nospeech" class="warn" hidden>呢個瀏覽器唔支援朗讀（Web Speech API）。試吓用 Chrome、Edge 或 Safari。</div>
+  <div id="speechStatus" class="warn" hidden></div>
   <div id="view"></div>
 </main>
 
@@ -274,7 +276,9 @@ let watchdog = null;
 function clearWatchdog() { if (watchdog) { clearInterval(watchdog); watchdog = null; } }
 
 // 讀一句；讀完（或者出錯、或者瀏覽器冇通知但其實已經靜咗）就 call done()
+let retried = false;
 function speakOne(text, done, lang = "ja") {
+  if (!voice.ja && !voice.en) pickVoice();   // 有啲瀏覽器頭一次撳先載入語音
   const u = new SpeechSynthesisUtterance(lang === "ja" ? speechText(text) : text);
   u.lang = lang === "ja" ? "ja-JP" : "en-GB";
   if (voice[lang]) u.voice = voice[lang];
@@ -291,9 +295,21 @@ function speakOne(text, done, lang = "ja") {
     clearWatchdog();
     done(Date.now() - tStart);   // 傳返讀咗幾耐（跟讀模式用）
   };
-  u.onstart = () => { started = true; tStart = Date.now(); };
+  u.onstart = () => { started = true; tStart = Date.now(); showStatus(""); };
   u.onend = finish;
-  u.onerror = finish;
+  u.onerror = e => {
+    const err = e && e.error;
+    if (err === "interrupted" || err === "canceled") return finish();   // 自己撳停，唔係出錯
+    // 揀咗嘅語音用唔到（例如要上網嘅 Google 語音）：唔指定語音，交返俾瀏覽器揀，再試一次
+    if (u.voice && !retried) {
+      retried = true;
+      voice[lang] = null;
+      clearWatchdog();
+      return speakOne(text, done, lang);
+    }
+    showStatus(`朗讀出錯（${err || "unknown"}）。撳上面「🔈 測試聲音」睇吓詳情。`);
+    finish();
+  };
 
   // 後備：有啲瀏覽器唔會觸發 onend，就自己睇吓引擎係咪已經靜咗
   clearWatchdog();
@@ -302,7 +318,7 @@ function speakOne(text, done, lang = "ja") {
     if (!busy && (started || Date.now() - t0 > 3000)) finish();
   }, 300);
 
-  synth.resume();   // Chrome 有時會卡咗喺「暫停」狀態，冇聲
+  try { if (synth.paused) synth.resume(); } catch (e) {}   // Chrome 有時會卡咗喺「暫停」狀態
   synth.speak(u);
 }
 
@@ -336,6 +352,7 @@ function stopAll() {
 function playQueue(texts, each, lang = "ja", pause = false) {
   if (!synth) return;
   const wasBusy = synth.speaking || synth.pending;
+  retried = false;
   halt(wasBusy);                             // 本身靜就唔使 cancel，即刻讀
   const id = playId;
   setPlaying(true);
@@ -636,6 +653,31 @@ document.addEventListener("click", e => {
   const b = e.target.closest("[data-say]");
   if (b) speak(b.dataset.say, b.dataset.lang || "ja");
 });
+
+// ---------- 聲音測試 / 出錯提示 ----------
+function showStatus(msg) {
+  const el = document.getElementById("speechStatus");
+  if (!el) return;
+  el.hidden = !msg;
+  el.innerHTML = msg;
+}
+document.getElementById("testVoice").onclick = () => {
+  if (!synth) return showStatus("呢個瀏覽器唔支援朗讀（冇 speechSynthesis）。試吓用 Chrome、Edge 或 Safari 直接開個網頁。");
+  pickVoice();
+  const all = synth.getVoices();
+  const ja = all.filter(v => /^ja/i.test(v.lang)).length;
+  const en = all.filter(v => /^en/i.test(v.lang)).length;
+  const inFrame = window.top !== window.self;
+  showStatus(`語音數目：全部 ${all.length}，日文 ${ja}，英文 ${en}<br>
+    日文用：${esc(voice.ja ? voice.ja.name : "（瀏覽器預設）")}；英文用：${esc(voice.en ? voice.en.name : "（瀏覽器預設）")}<br>
+    ${all.length === 0 ? "⚠️ 呢部機／瀏覽器冇任何語音，所以冇聲。<br>" : ""}
+    ${inFrame ? "⚠️ 網頁而家喺另一個 app 嘅預覽入面開，可能會被禁止出聲。試吓用 Safari／Chrome 直接開網址。<br>" : ""}
+    依家讀緊「こんにちは。Hello.」——聽唔到嘅話：檢查音量、iPhone 側邊靜音掣，同埋將截圖俾我睇。`);
+  retried = false;
+  halt(synth.speaking || synth.pending);
+  const id = playId;
+  speakOne("こんにちは。", () => { if (id === playId) speakOne("Hello.", () => halt(false), "en"); }, "ja");
+};
 
 document.getElementById("furi").onchange = e =>
   document.body.classList.toggle("no-furigana", !e.target.checked);
