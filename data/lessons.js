@@ -2,6 +2,192 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-06",
+    "weekday": "五",
+    "title": "新しいフラットに引っ越し",
+    "intro": "喺英國搬屋，好多人幫手。學用日文講「人哋幫我做…」（〜てくれる／〜てもらう），順便表達感激。",
+    "vocab": [
+      [
+        "引っ越す",
+        "ひっこす",
+        "搬屋"
+      ],
+      [
+        "手伝う",
+        "てつだう",
+        "幫手"
+      ],
+      [
+        "運ぶ",
+        "はこぶ",
+        "搬、運"
+      ],
+      [
+        "荷物",
+        "にもつ",
+        "行李、嘢"
+      ],
+      [
+        "隣",
+        "となり",
+        "隔籬"
+      ],
+      [
+        "教える",
+        "おしえる",
+        "教、話俾…知"
+      ],
+      [
+        "お礼",
+        "おれい",
+        "道謝、答謝"
+      ],
+      [
+        "助ける",
+        "たすける",
+        "幫、救"
+      ]
+    ],
+    "grammar": {
+      "point": "〜てくれる／〜てもらう（授受）",
+      "explain": [
+        "兩個都係「人哋幫我做…」，而且有感激嘅語氣，但係主語唔同。",
+        "〜てくれる：主語係幫手嗰個人。トムが（わたしに）荷物を運んでくれました。＝湯姆幫我搬嘢。",
+        "〜てもらう：主語係受惠嘅「我」，幫手嗰個人用「に」。わたしはトムに手伝ってもらいました。＝我搵湯姆幫手。",
+        "冇感激嘅意思，就直接講「運びました」。",
+        "〜てあげる（我幫人做）對長輩講會有「施恩」感覺，要小心用。"
+      ],
+      "examples": [
+        [
+          "友達（ともだち）が駅（えき）まで迎（むか）えに来（き）てくれました。",
+          "朋友嚟車站接我。"
+        ],
+        [
+          "先生（せんせい）に作文（さくぶん）を直（なお）してもらいました。",
+          "我請老師幫我改作文。"
+        ],
+        [
+          "母（はは）がお弁当（べんとう）を作（つく）ってくれました。",
+          "媽媽幫我整咗飯盒。"
+        ]
+      ]
+    },
+    "passage": "先週末（せんしゅうまつ）、新（あたら）しいフラットに引（ひ）っ越（こ）しました。一人（ひとり）では大変（たいへん）なので、友達（ともだち）のトムに手伝（てつだ）ってもらいました。トムは大（おお）きい車（くるま）を持（も）っているので、重（おも）い荷物（にもつ）を運（はこ）んでくれました。隣（となり）の人（ひと）も、ごみの日（ひ）や近（ちか）くのスーパーを教（おし）えてくれました。わたしはお礼（れい）に、二人（ふたり）にお茶（ちゃ）とケーキを出（だ）しました。みんなに助（たす）けてもらって、本当（ほんとう）にうれしかったです。",
+    "questions": [
+      [
+        "「わたし」はだれに引（ひ）っ越（こ）しを手伝（てつだ）ってもらいましたか。",
+        "友達（ともだち）のトムに手伝（てつだ）ってもらいました。"
+      ],
+      [
+        "トムは何（なに）をしてくれましたか。",
+        "大（おお）きい車（くるま）で重（おも）い荷物（にもつ）を運（はこ）んでくれました。"
+      ],
+      [
+        "隣（となり）の人（ひと）は何（なに）を教（おし）えてくれましたか。",
+        "ごみの日（ひ）や近（ちか）くのスーパーを教（おし）えてくれました。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：友達（ともだち）が写真（しゃしん）を ＿＿＿ くれました。（撮る）",
+        "撮（と）って"
+      ],
+      [
+        "填充：わたしは姉（あね）に髪（かみ）を ＿＿＿ もらいました。（切る）",
+        "切（き）って"
+      ],
+      [
+        "揀助詞：わたしは先生（せんせい）＿＿ 日本語（にほんご）を教（おし）えてもらいました。（に／が／を／で）",
+        "に"
+      ],
+      [
+        "改句子（てくれる → てもらう）：トムが荷物（にもつ）を運（はこ）んでくれました。",
+        "わたしはトムに荷物（にもつ）を運（はこ）んでもらいました。"
+      ],
+      [
+        "翻譯：隔籬屋嘅人話咗俾我知幾時倒垃圾。",
+        "隣（となり）の人（ひと）がごみの日（ひ）を教（おし）えてくれました。"
+      ]
+    ],
+    "challenge": "用「〜てくれる」同「〜てもらう」各寫一句：最近邊個幫過你手？",
+    "en": {
+      "title": "Moving into a New Flat",
+      "intro": "同一個故事嘅英式英文版：喺英國搬屋，順便學 get someone to … / … for me（人哋幫我做），同埋點樣多謝人。",
+      "passage": "Last weekend, I moved into a new flat. It's hard work on your own, so I got my friend Tom to help me. Tom has a big car, so he carried all the heavy boxes for me. My next-door neighbour also kindly told me which day the bins go out and where the nearest supermarket is. To say thank you, I made them both a cup of tea and gave them some cake. Everyone helped me so much, and I was really grateful.",
+      "vocab": [
+        [
+          "move into",
+          "搬入"
+        ],
+        [
+          "flat",
+          "住宅單位（英式，美式 apartment）"
+        ],
+        [
+          "on your own",
+          "自己一個"
+        ],
+        [
+          "get someone to …",
+          "搵人幫手做…"
+        ],
+        [
+          "next-door neighbour",
+          "隔籬屋嘅人（英式串法 neighbour）"
+        ],
+        [
+          "the bins go out",
+          "倒垃圾（將垃圾桶推出街）"
+        ],
+        [
+          "kindly",
+          "好好人咁"
+        ],
+        [
+          "grateful",
+          "感激"
+        ]
+      ],
+      "phrase": {
+        "point": "get someone to … / … for me（人哋幫我做）",
+        "explain": [
+          "日文「〜てもらう」= 我搵人幫我做，英文用 get someone to …：I got Tom to help me.",
+          "日文「〜てくれる」= 人哋幫我做，英文用 … for me 或者加 kindly：He carried the boxes for me. / She kindly told me …",
+          "英國人多謝人幫手會講 That's really kind of you. 或者口語 Cheers!",
+          "英式用字：flat（單位）、bins（垃圾桶）、bin day（倒垃圾日）。"
+        ],
+        "examples": [
+          [
+            "My friend came to pick me up from the station.",
+            "朋友嚟車站接我。"
+          ],
+          [
+            "I got my teacher to check my essay.",
+            "我請老師幫我改作文。"
+          ],
+          [
+            "Thanks for helping me move, that's really kind of you.",
+            "多謝你幫我搬屋，你真好人。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Who did the writer get to help with the move?",
+          "Their friend Tom."
+        ],
+        [
+          "What did Tom do?",
+          "He carried all the heavy boxes for them, because he has a big car."
+        ],
+        [
+          "What did the neighbour tell the writer?",
+          "Which day the bins go out and where the nearest supermarket is."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-05",
     "weekday": "四",
     "title": "高知の日曜市",
