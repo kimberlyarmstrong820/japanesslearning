@@ -109,6 +109,19 @@
   .list .dt { color: var(--muted); min-width: 6.6em; font-variant-numeric: tabular-nums; }
   .list .gp { margin-left: auto; color: var(--accent); font-size: .85rem; white-space: nowrap; }
 
+  /* ---- JLPT N3 進度 ---- */
+  .bar { height: 10px; border-radius: 6px; background: var(--line); overflow: hidden; margin: 6px 0 10px; }
+  .bar > i { display: block; height: 100%; background: var(--accent); border-radius: 6px; }
+  .n3 { display: grid; grid-template-columns: 3em minmax(0, 1fr) minmax(0, 1.2fr); gap: 2px 10px; font-size: .9rem; }
+  .n3 > * { padding: 5px 0; border-bottom: 1px solid var(--line); }
+  .n3 .no { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .n3 .done { color: var(--accent); font-weight: 600; }
+  .n3 .next { outline: 2px dashed var(--sakura-deep); outline-offset: 1px; border-radius: 4px; }
+  .n3 .m { color: var(--muted); }
+  .badge { display: inline-block; font-size: .75rem; padding: 1px 8px; border-radius: 10px; margin-left: 6px;
+           background: var(--accent); color: var(--accent-ink); vertical-align: middle; font-weight: 600; }
+  .ref { margin-top: 10px; padding: 10px 12px; border-radius: 10px; background: var(--cal-done); border: 1px dashed var(--sakura); }
+
   /* ---- 每日頁 ---- */
   .nav { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin: 6px 0; }
   .nav a, .nav span { padding: 6px 12px; border-radius: 8px; background: var(--card); border: 1px solid var(--line);
@@ -220,6 +233,7 @@
 </main>
 
 <script src="data/lessons.js"></script>
+<script src="data/n3.js"></script>
 <script>
 // ---------- 振假名 / 朗讀用文字 ----------
 const KANJI = "[\\u4E00-\\u9FFF\\u3400-\\u4DBF々〆ヶ]";
@@ -429,6 +443,43 @@ function todayLondon() {
 const pad = n => String(n).padStart(2, "0");
 const ymd = d => `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`;
 
+// ---------- JLPT N3 文法清單 ----------
+const N3 = (window.N3 || []).map(([no, point, meaning, form, ja, zh]) => ({ no, point, meaning, form, ja, zh }));
+const n3ByNo = Object.fromEntries(N3.map(g => [g.no, g]));
+const n3Lesson = Object.fromEntries(lessons.filter(l => l.n3).map(l => [l.n3, l]));
+
+function n3Section() {
+  if (!N3.length) return "";
+  const done = N3.filter(g => n3Lesson[g.no]).length;
+  const next = N3.find(g => !n3Lesson[g.no]);
+  const pct = Math.round(done / N3.length * 100);
+  return `<section>
+      <h2>JLPT N3 文法（${N3[0].no}–${N3[N3.length - 1].no}）</h2>
+      <div class="muted">已學 <b>${done}</b>／${N3.length}${next ? `　下一個：${esc(next.point)}（#${next.no}）` : "　全部學完 🎉"}</div>
+      <div class="bar"><i style="width:${pct}%"></i></div>
+      <details>
+        <summary>睇全部 ${N3.length} 個文法</summary>
+        <div class="n3">${N3.map(g => {
+          const l = n3Lesson[g.no];
+          const name = l ? `<a class="done" href="#${l.date}">✓ ${esc(g.point)}</a>` : esc(g.point);
+          return `<span class="no">${g.no}</span><span class="${next === g ? "next" : ""}">${name}</span><span class="m">${esc(g.meaning)}</span>`;
+        }).join("")}</div>
+      </details>
+    </section>`;
+}
+
+// 每日頁：課本嗰張表嘅原本解釋同例句
+function n3Ref(no) {
+  const g = n3ByNo[no];
+  if (!g) return "";
+  return `<div class="ref">
+      <b>📘 N3 文法表 #${g.no}：${esc(g.point)}</b>
+      <div class="muted">意思：${esc(g.meaning)}　接續：${esc(g.form)}</div>
+      <div>${esc(g.ja)} ${speakBtn(g.ja)}</div>
+      <div class="muted">${esc(g.zh)}</div>
+    </div>`;
+}
+
 // ---------- 首頁：月曆 ----------
 function monthsAvailable() {
   const set = new Set(lessons.map(l => l.date.slice(0, 7)));
@@ -492,6 +543,7 @@ function renderCalendar(month) {
       <div><b>${words}</b> 個詞彙</div>
       <div><b>${lessons.length}</b> 個文法</div>
     </section>
+    ${n3Section()}
 
     <section>
       <h2>全部練習</h2>
@@ -645,10 +697,11 @@ function renderLesson(lesson) {
     </section>
 
     <section>
-      <h2>文法：${esc(lesson.grammar.point)}</h2>
+      <h2>文法：${esc(lesson.grammar.point)}${n3ByNo[lesson.n3] ? `<span class="badge">N3 #${lesson.n3}</span>` : ""}</h2>
       ${lesson.grammar.explain.map(p => `<div>${ruby(p)}</div>`).join("")}
       <ol>${lesson.grammar.examples.map(([jp, yue]) =>
         `<li>${ruby(jp)} ${speakBtn(jp)}<br><span class="muted">${esc(yue || "")}</span></li>`).join("")}</ol>
+      ${n3Ref(lesson.n3)}
     </section>
 
     <section>
