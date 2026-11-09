@@ -2,6 +2,192 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-09",
+    "weekday": "一",
+    "title": "イギリスの天気と傘",
+    "intro": "英國天氣變幻莫測，次次出街都要諗帶唔帶遮。今日開始跟 N3 文法表學：#106「〜たびに」（每當…就…）。",
+    "vocab": [
+      [
+        "変わりやすい",
+        "かわりやすい",
+        "容易變"
+      ],
+      [
+        "出かける",
+        "でかける",
+        "出街"
+      ],
+      [
+        "傘",
+        "かさ",
+        "遮"
+      ],
+      [
+        "さす",
+        "さす",
+        "擔（遮）"
+      ],
+      [
+        "置いていく",
+        "おいていく",
+        "留低、唔帶"
+      ],
+      [
+        "気がする",
+        "きがする",
+        "覺得、好似"
+      ],
+      [
+        "びしょぬれ",
+        "びしょぬれ",
+        "濕晒"
+      ],
+      [
+        "フード付き",
+        "ふーどつき",
+        "有帽（嘅衫、褸）"
+      ]
+    ],
+    "grammar": {
+      "point": "〜たびに（每當…就…）",
+      "explain": [
+        "意思係「每次…都…」：每逢做某件事，後面嘅事都一定會發生。",
+        "動詞辭書形＋たびに：行く → 行くたびに、会う → 会うたびに",
+        "名詞＋の＋たびに：旅行のたびに、雨のたびに",
+        "同「〜とき（は）いつも」差唔多，但「たびに」更強調「次次都係咁」。",
+        "前面要係重複發生嘅事，只發生一次嘅事唔用（一次嘅用「〜たら」）。"
+      ],
+      "examples": [
+        [
+          "この歌（うた）を聞（き）くたびに、北海道（ほっかいどう）を思（おも）い出（だ）します。",
+          "每次聽呢首歌，都會諗起北海道。"
+        ],
+        [
+          "祖母（そぼ）は会（あ）うたびに、お菓子（かし）をくれます。",
+          "婆婆每次見到我都俾零食我。"
+        ],
+        [
+          "出張（しゅっちょう）のたびに、お土産（みやげ）を買（か）ってきます。",
+          "每次出差都會買手信返嚟。"
+        ]
+      ]
+    },
+    "n3": 106,
+    "passage": "イギリスの天気（てんき）はとても変（か）わりやすいです。出（で）かけるたびに、空（そら）を見（み）て、傘（かさ）を持（も）っていくかどうか考（かんが）えます。でも、傘（かさ）を家（いえ）に置（お）いていくたびに、雨（あめ）が降（ふ）ってくる気（き）がします。先週（せんしゅう）は、外（そと）に出（で）るたびに雨（あめ）が降（ふ）って、三回（さんかい）もびしょぬれになりました。イギリス人（じん）の友達（ともだち）は「雨（あめ）のたびに傘（かさ）をさす人（ひと）は少（すく）ないよ」と笑（わら）います。わたしも最近（さいきん）は、フード付（つ）きのコートを着（き）て出（で）かけるようになりました。",
+    "questions": [
+      [
+        "「わたし」は出（で）かけるたびに、何（なに）を考（かんが）えますか。",
+        "傘（かさ）を持（も）っていくかどうか考（かんが）えます。"
+      ],
+      [
+        "先週（せんしゅう）はどうなりましたか。",
+        "外（そと）に出（で）るたびに雨（あめ）が降（ふ）って、三回（さんかい）もびしょぬれになりました。"
+      ],
+      [
+        "最近（さいきん）、「わたし」は何（なに）を着（き）て出（で）かけますか。",
+        "フード付（つ）きのコートを着（き）て出（で）かけます。"
+      ]
+    ],
+    "exercises": [
+      [
+        "變たびに形：会（あ）う／旅行（りょこう） → ？",
+        "会（あ）うたびに／旅行（りょこう）のたびに"
+      ],
+      [
+        "填充：この写真（しゃしん）を ＿＿＿ たびに、笑（わら）ってしまいます。（見る）",
+        "見（み）る"
+      ],
+      [
+        "揀助詞：試合（しあい）＿＿ たびに、緊張（きんちょう）します。（の／に／を）",
+        "の"
+      ],
+      [
+        "啱定錯：明日（あした）、駅（えき）に行（い）くたびに、切符（きっぷ）を買（か）います。",
+        "錯。「たびに」講重複發生嘅事，一次性嘅事唔用：明日（あした）、駅（えき）に行（い）ったら、切符（きっぷ）を買（か）います。"
+      ],
+      [
+        "翻譯：我每次去日本都會浸溫泉。",
+        "日本（にほん）に行（い）くたびに、温泉（おんせん）に入（はい）ります。"
+      ]
+    ],
+    "challenge": "用「〜たびに」寫一句：你每次做某件事，都一定會發生（或者會做）咩？",
+    "en": {
+      "title": "British Weather and Umbrellas",
+      "intro": "同一個故事嘅英式英文版：講英國天氣同擔遮，順便學 every time … / whenever …（每當…就…）。",
+      "passage": "The weather in Britain changes all the time. Every time I go out, I look at the sky and wonder whether to take an umbrella. But it feels like every time I leave my umbrella at home, it starts to rain. Last week, it rained every time I stepped outside, and I got soaked three times. My British friend laughs and says, \"Hardly anyone puts up an umbrella every time it rains.\" These days, I've started going out in a coat with a hood too.",
+      "vocab": [
+        [
+          "changes all the time",
+          "成日變"
+        ],
+        [
+          "wonder whether",
+          "諗緊應唔應該"
+        ],
+        [
+          "leave … at home",
+          "留喺屋企"
+        ],
+        [
+          "step outside",
+          "行出門口"
+        ],
+        [
+          "get soaked",
+          "濕晒"
+        ],
+        [
+          "hardly anyone",
+          "冇乜人"
+        ],
+        [
+          "put up an umbrella",
+          "擔遮"
+        ],
+        [
+          "a coat with a hood",
+          "有帽嘅褸"
+        ]
+      ],
+      "phrase": {
+        "point": "every time … / whenever …（每當…就…）",
+        "explain": [
+          "日文「〜たびに」= 每次…都…，英文用 every time + 句子，或者 whenever。",
+          "Every time I go out, I …（每次出街我都…）；名詞版：every time it rains、on every trip。",
+          "英國人講天氣好鍾意講 It's chucking it down!（落緊大雨）同 Typical!（又係咁！）"
+        ],
+        "examples": [
+          [
+            "Every time I hear this song, I think of Hokkaido.",
+            "每次聽呢首歌，都會諗起北海道。"
+          ],
+          [
+            "My gran gives me sweets whenever she sees me.",
+            "婆婆每次見到我都俾糖我。（英式 gran、sweets）"
+          ],
+          [
+            "Every time I go on a work trip, I bring back souvenirs.",
+            "每次出差都會買手信返嚟。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What does the writer wonder every time they go out?",
+          "Whether to take an umbrella."
+        ],
+        [
+          "What happened last week?",
+          "It rained every time they stepped outside, and they got soaked three times."
+        ],
+        [
+          "What does the writer wear these days?",
+          "A coat with a hood."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-06",
     "weekday": "五",
     "title": "新しいフラットに引っ越し",
