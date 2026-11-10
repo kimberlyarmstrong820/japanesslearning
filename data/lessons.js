@@ -2,6 +2,193 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-10",
+    "weekday": "二",
+    "title": "ロンドンで試合のついでに",
+    "intro": "去倫敦打劍道比賽，順便買日本食材、食拉麵、打 Pokémon GO 道館。學 N3 #107「〜ついでに」（順便…）。",
+    "vocab": [
+      [
+        "寄る",
+        "よる",
+        "順路入去、經過"
+      ],
+      [
+        "食材",
+        "しょくざい",
+        "食材"
+      ],
+      [
+        "せっかく",
+        "せっかく",
+        "難得"
+      ],
+      [
+        "味噌",
+        "みそ",
+        "麵豉醬"
+      ],
+      [
+        "海苔",
+        "のり",
+        "紫菜"
+      ],
+      [
+        "屋",
+        "や",
+        "…舖（ラーメン屋＝拉麵舖）"
+      ],
+      [
+        "帰り",
+        "かえり",
+        "返程"
+      ],
+      [
+        "試合",
+        "しあい",
+        "比賽"
+      ]
+    ],
+    "grammar": {
+      "point": "〜ついでに（順便…）",
+      "explain": [
+        "意思係「趁做A，順便做B」：主要目的係A，B係順手做埋嘅。",
+        "名詞＋の＋ついでに：買い物のついでに、散歩のついでに",
+        "動詞辭書形／た形＋ついでに：駅へ行くついでに、外に出たついでに",
+        "成日同「寄る」（順路入去）一齊用：散歩のついでに、郵便局に寄ります。",
+        "B通常係比較細、順手嘅事；主次調轉就會好怪。"
+      ],
+      "examples": [
+        [
+          "散歩（さんぽ）のついでに、郵便局（ゆうびんきょく）に寄（よ）ります。",
+          "散步順便去郵局。"
+        ],
+        [
+          "コンビニへ行（い）くついでに、ゴミを出（だ）してきます。",
+          "去便利店，順便倒埋垃圾。"
+        ],
+        [
+          "東京（とうきょう）に出張（しゅっちょう）したついでに、友達（ともだち）に会（あ）いました。",
+          "去東京出差，順便見咗朋友。"
+        ]
+      ]
+    },
+    "n3": 107,
+    "passage": "先週（せんしゅう）の土曜日（どようび）、剣道（けんどう）の試合（しあい）でロンドンへ行（い）きました。せっかくなので、試合（しあい）のついでに、日本（にほん）の食材（しょくざい）の店（みせ）に寄（よ）りました。お店（みせ）では、味噌（みそ）や海苔（のり）、日本（にほん）のお菓子（かし）を買（か）いました。店（みせ）を出（で）たついでに、近（ちか）くのラーメン屋（や）で昼（ひる）ご飯（はん）も食（た）べました。帰（かえ）りに駅（えき）へ行（い）くついでに、ポケモンGOのジムで少（すこ）しバトルもしました。一日（いちにち）でいろいろなことができて、とても楽（たの）しかったです。",
+    "questions": [
+      [
+        "「わたし」はどうしてロンドンへ行（い）きましたか。",
+        "剣道（けんどう）の試合（しあい）があったからです。"
+      ],
+      [
+        "試合（しあい）のついでに、どこに寄（よ）りましたか。",
+        "日本（にほん）の食材（しょくざい）の店（みせ）に寄（よ）りました。"
+      ],
+      [
+        "駅（えき）へ行（い）くついでに、何（なに）をしましたか。",
+        "ポケモンGOのジムで少（すこ）しバトルをしました。"
+      ]
+    ],
+    "exercises": [
+      [
+        "揀助詞：買（か）い物（もの）＿＿ ついでに、銀行（ぎんこう）に寄（よ）ります。（の／に／を）",
+        "の"
+      ],
+      [
+        "填充：郵便局（ゆうびんきょく）へ ＿＿＿ ついでに、切手（きって）も買（か）いました。（行く）",
+        "行（い）った（「行（い）く」都得）"
+      ],
+      [
+        "改句子（用ついでに）：駅（えき）へ行（い）きます。パンも買（か）います。",
+        "駅（えき）へ行（い）くついでに、パンも買（か）います。"
+      ],
+      [
+        "邊句自然啲？（a）旅行（りょこう）のついでに、仕事（しごと）をしました。（b）出張（しゅっちょう）のついでに、観光（かんこう）をしました。",
+        "（b）。主要目的係出差，觀光係順便；（a）主次調轉咗，聽落好怪。"
+      ],
+      [
+        "翻譯：我去剪頭髮，順便買咗本雜誌。",
+        "髪（かみ）を切（き）りに行（い）ったついでに、雑誌（ざっし）を買（か）いました。"
+      ]
+    ],
+    "challenge": "用「〜ついでに」寫一句：你最近做咩嘅時候，順便做咗啲咩？",
+    "en": {
+      "title": "Kendo in London, Plus a Bit of Shopping",
+      "intro": "同一個故事嘅英式英文版：去倫敦比賽順便周圍逛，順便學 while I'm at it / pop into / on my way（順便…）。",
+      "passage": "Last Saturday, I went to London for a kendo match. Since I was there anyway, I popped into a Japanese food shop after the match. In the shop, I bought miso, nori and some Japanese snacks. Once I was out of the shop, I grabbed lunch at a ramen place nearby while I was at it. On my way back to the station, I also did a few Pokémon GO gym battles. I managed to do loads of things in one day, and it was great fun.",
+      "vocab": [
+        [
+          "pop into",
+          "順便入去（英式口語）"
+        ],
+        [
+          "while I was at it",
+          "順便"
+        ],
+        [
+          "since I was there anyway",
+          "反正都去到"
+        ],
+        [
+          "food shop",
+          "食品店"
+        ],
+        [
+          "snacks",
+          "零食"
+        ],
+        [
+          "grab lunch",
+          "隨便食個午餐"
+        ],
+        [
+          "on my way back",
+          "返程途中"
+        ],
+        [
+          "loads of",
+          "好多（英式口語）"
+        ]
+      ],
+      "phrase": {
+        "point": "while I'm at it / pop into / on my way（順便…）",
+        "explain": [
+          "日文「〜ついでに」= 順便…，英文最常用 while I'm at it / while you're at it。",
+          "順路入去：pop into（好英式）：I'll pop into the shop on my way home.",
+          "on my way (to / back) = 喺去／返嘅路上順便做。",
+          "英國人叫人順便幫手：While you're at it, could you put the kettle on?（你順便煲埋水啦）"
+        ],
+        "examples": [
+          [
+            "I'll pop into the post office on my walk.",
+            "散步順便去郵局。"
+          ],
+          [
+            "I'm going to the shop, so I'll take the rubbish out while I'm at it.",
+            "去便利店，順便倒埋垃圾。"
+          ],
+          [
+            "While I was in Tokyo on business, I met up with a friend.",
+            "去東京出差，順便見咗朋友。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Why did the writer go to London?",
+          "For a kendo match."
+        ],
+        [
+          "Where did they pop into after the match?",
+          "A Japanese food shop."
+        ],
+        [
+          "What did they do on their way back to the station?",
+          "A few Pokémon GO gym battles."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-09",
     "weekday": "一",
     "title": "イギリスの天気と傘",
