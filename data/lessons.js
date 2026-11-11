@@ -2,6 +2,192 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-11",
+    "weekday": "三",
+    "title": "昇段審査の前の一週間",
+    "intro": "劍道升段考試前一個星期，感冒都要硬撐。學 N3 #108「〜わけにはいかない」（因為道理、責任，唔可以…）。",
+    "vocab": [
+      [
+        "昇段審査",
+        "しょうだんしんさ",
+        "（劍道）升段考試"
+      ],
+      [
+        "風邪をひく",
+        "かぜをひく",
+        "感冒"
+      ],
+      [
+        "稽古",
+        "けいこ",
+        "練習（武道）"
+      ],
+      [
+        "うつす",
+        "うつす",
+        "傳染（俾人）"
+      ],
+      [
+        "無理をする",
+        "むりをする",
+        "勉強自己、硬撐"
+      ],
+      [
+        "あきらめる",
+        "あきらめる",
+        "放棄"
+      ],
+      [
+        "誘う",
+        "さそう",
+        "約、邀請"
+      ],
+      [
+        "合格する",
+        "ごうかくする",
+        "合格、考過"
+      ]
+    ],
+    "grammar": {
+      "point": "〜わけにはいかない（道理上唔可以…）",
+      "explain": [
+        "意思係「（因為責任、人情、常識）唔可以…」。唔係冇能力，而係環境、道理上唔准自己咁做。",
+        "動詞辭書形＋わけにはいかない：休む → 休むわけにはいかない",
+        "ない形＋わけにはいかない ＝「唔可以唔…」＝ 一定要：行かないわけにはいかない（唔去唔得）",
+        "同「〜できない」比：できない係能力上做唔到；わけにはいかない係道理上唔應該。",
+        "禮貌講法：〜わけにはいきません；加「も」：〜わけにもいかない（又唔可以…）。"
+      ],
+      "examples": [
+        [
+          "大切（たいせつ）な会議（かいぎ）なので、遅（おく）れるわけにはいきません。",
+          "係重要會議，唔可以遲到。"
+        ],
+        [
+          "友達（ともだち）の結婚式（けっこんしき）だから、行（い）かないわけにはいかない。",
+          "係朋友婚禮，唔去唔得。"
+        ],
+        [
+          "車（くるま）で来（き）たので、お酒（さけ）を飲（の）むわけにはいきません。",
+          "揸車嚟，唔可以飲酒。"
+        ]
+      ]
+    },
+    "n3": 108,
+    "passage": "来週（らいしゅう）の日曜日（にちようび）、剣道（けんどう）の昇段審査（しょうだんしんさ）があります。昨日（きのう）から少（すこ）し風邪（かぜ）をひいていますが、審査（しんさ）の前（まえ）なので、稽古（けいこ）を休（やす）むわけにはいきません。でも、ほかの人（ひと）にうつすわけにもいかないので、マスクをして行（い）きました。先生（せんせい）に「無理（むり）をするな」と言（い）われましたが、ここであきらめるわけにはいきません。夜（よる）は友達（ともだち）に飲（の）みに誘（さそ）われましたが、明日（あした）も朝稽古（あさげいこ）があるので、行（い）くわけにはいきませんでした。審査（しんさ）に合格（ごうかく）するまで、がんばらないわけにはいきません。",
+    "questions": [
+      [
+        "来週（らいしゅう）の日曜日（にちようび）、何（なに）がありますか。",
+        "剣道（けんどう）の昇段審査（しょうだんしんさ）があります。"
+      ],
+      [
+        "どうしてマスクをして行（い）きましたか。",
+        "ほかの人（ひと）に風邪（かぜ）をうつすわけにはいかないからです。"
+      ],
+      [
+        "どうして友達（ともだち）と飲（の）みに行（い）きませんでしたか。",
+        "明日（あした）も朝稽古（あさげいこ）があるからです。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：明日（あした）は試験（しけん）だから、今夜（こんや）は ＿＿＿ わけにはいきません。（遊ぶ）",
+        "遊（あそ）ぶ"
+      ],
+      [
+        "填充（一定要）：先生（せんせい）に頼（たの）まれたので、＿＿＿ わけにはいかない。（手伝う）",
+        "手伝（てつだ）わない"
+      ],
+      [
+        "揀啱嘅：わたしは泳（およ）ぐ（a. ことができません　b. わけにはいきません）。（我唔識游水）",
+        "a。唔識游水係能力問題，唔係道理上唔可以。"
+      ],
+      [
+        "改句子：仕事（しごと）があるから、休（やす）めない。（用わけにはいかない）",
+        "仕事（しごと）があるから、休（やす）むわけにはいかない。"
+      ],
+      [
+        "翻譯：佢幫過我咁多，我唔可以拒絕佢。",
+        "彼（かれ）にはたくさん助（たす）けてもらったので、断（ことわ）るわけにはいきません。"
+      ]
+    ],
+    "challenge": "用「〜わけにはいかない」寫一句：有冇一件事，你好想做（或者唔想做），但係因為責任或者人情而唔可以？",
+    "en": {
+      "title": "The Week Before My Kendo Grading",
+      "intro": "同一個故事嘅英式英文版：劍道升段考試前硬撐，順便學 can't afford to … / can't really … / I've got to …（道理上唔可以／一定要）。",
+      "passage": "Next Sunday, I've got my kendo grading. I've had a bit of a cold since yesterday, but with the grading coming up, I can't afford to miss practice. But I can't go round giving it to everyone else either, so I wore a mask. My teacher told me not to overdo it, but I can't give up now. In the evening, a friend asked me out for a drink, but I've got early practice again tomorrow, so I couldn't really go. I've simply got to keep going until I pass.",
+      "vocab": [
+        [
+          "grading",
+          "（劍道）升段考試"
+        ],
+        [
+          "have a cold",
+          "感冒"
+        ],
+        [
+          "can't afford to …",
+          "唔可以（承受唔起）…"
+        ],
+        [
+          "give it to someone",
+          "傳染俾人"
+        ],
+        [
+          "overdo it",
+          "搞到太過、硬撐"
+        ],
+        [
+          "give up",
+          "放棄"
+        ],
+        [
+          "ask someone out for a drink",
+          "約人去飲嘢"
+        ],
+        [
+          "I've got to …",
+          "我一定要…（英式口語）"
+        ]
+      ],
+      "phrase": {
+        "point": "can't afford to … / can't really … / I've got to …",
+        "explain": [
+          "日文「〜わけにはいかない」唔係「冇能力」，而係道理、責任上唔可以，英文常用 I can't really … / I can't afford to …。",
+          "「唔可以唔…＝一定要」（〜ないわけにはいかない）：I've got to … / I have no choice but to …",
+          "英國人推辭邀請好婉轉：I'd love to, but I can't really tonight.（好想去，但今晚真係唔得）"
+        ],
+        "examples": [
+          [
+            "It's an important meeting, so I can't afford to be late.",
+            "係重要會議，唔可以遲到。"
+          ],
+          [
+            "It's my friend's wedding, so I've got to go.",
+            "係朋友婚禮，唔去唔得。"
+          ],
+          [
+            "I drove here, so I can't really have a drink.",
+            "揸車嚟，唔可以飲酒。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What has the writer got next Sunday?",
+          "Their kendo grading."
+        ],
+        [
+          "Why did the writer wear a mask?",
+          "Because they can't go round giving their cold to everyone else."
+        ],
+        [
+          "Why didn't they go for a drink?",
+          "Because they've got early practice again tomorrow."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-10",
     "weekday": "二",
     "title": "ロンドンで試合のついでに",
