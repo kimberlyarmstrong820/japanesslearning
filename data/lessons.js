@@ -2,6 +2,193 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-12",
+    "weekday": "四",
+    "title": "異世界に転生するとしたら",
+    "intro": "如果轉生去異世界，你想做勇者定魔法使？學 N3 #109「〜としたら／とすれば／とすると」（假設…嘅話）。",
+    "vocab": [
+      [
+        "異世界",
+        "いせかい",
+        "異世界"
+      ],
+      [
+        "転生する",
+        "てんせいする",
+        "轉生"
+      ],
+      [
+        "魔法使い",
+        "まほうつかい",
+        "魔法使"
+      ],
+      [
+        "空を飛ぶ",
+        "そらをとぶ",
+        "喺天上飛"
+      ],
+      [
+        "お別れ",
+        "おわかれ",
+        "分別、道別"
+      ],
+      [
+        "勇者",
+        "ゆうしゃ",
+        "勇者"
+      ],
+      [
+        "魔物",
+        "まもの",
+        "魔物"
+      ],
+      [
+        "薬草",
+        "やくそう",
+        "藥草"
+      ]
+    ],
+    "grammar": {
+      "point": "〜としたら／〜とすれば／〜とすると（假設…嘅話）",
+      "explain": [
+        "意思係「假設…嘅話」：講一個未發生、可能唔會發生嘅情況，再講結果或者問意見。",
+        "普通形＋としたら／とすれば／とすると：行くとしたら、魔法が使えるとすれば、学生だとすると",
+        "成日同「もし」「仮に（かりに）」一齊用：もし宝くじが当たったとしたら…",
+        "としたら最口語最常用；とすれば 比較書面；とすると 多數係「按呢個假設推論落去」。",
+        "後面可以接問題、希望、推測（〜たい、〜でしょう、〜かもしれない）。"
+      ],
+      "examples": [
+        [
+          "もし一億円（いちおくえん）あるとしたら、何（なに）を買（か）いますか。",
+          "如果有一億円，你會買咩？"
+        ],
+        [
+          "北海道（ほっかいどう）に住（す）むとすれば、冬（ふゆ）の寒（さむ）さに慣（な）れなければなりません。",
+          "如果住北海道，就要習慣冬天嘅凍。"
+        ],
+        [
+          "仮（かり）に電車（でんしゃ）が遅（おく）れたとすると、会議（かいぎ）に間（ま）に合（あ）わないでしょう。",
+          "假設火車遲咗，就會趕唔切開會。"
+        ]
+      ]
+    },
+    "n3": 109,
+    "passage": "もし異世界（いせかい）に転生（てんせい）するとしたら、あなたは何（なに）になりたいですか。わたしは、魔法使（まほうつか）いになりたいです。魔法（まほう）が使（つか）えるとしたら、まず空（そら）を飛（と）んでみたいです。でも、フリーレンのように千年（せんねん）も生（い）きるとすれば、友達（ともだち）とのお別（わか）れがつらいかもしれません。勇者（ゆうしゃ）になるとすると、毎日（まいにち）魔物（まもの）と戦（たたか）わなければならないので、ちょっと大変（たいへん）です。やっぱり、のんびり薬草（やくそう）を育（そだ）てる魔法使（まほうつか）いがいちばんいいと思（おも）います。",
+    "questions": [
+      [
+        "「わたし」は異世界（いせかい）で何（なに）になりたいですか。",
+        "魔法使（まほうつか）いになりたいです。"
+      ],
+      [
+        "魔法（まほう）が使（つか）えるとしたら、まず何（なに）をしてみたいですか。",
+        "空（そら）を飛（と）んでみたいです。"
+      ],
+      [
+        "どうして勇者（ゆうしゃ）はちょっと大変（たいへん）ですか。",
+        "毎日（まいにち）魔物（まもの）と戦（たたか）わなければならないからです。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：もし日本（にほん）に ＿＿＿ としたら、どの町（まち）がいいですか。（住む）",
+        "住（す）む"
+      ],
+      [
+        "填充：明日（あした）雨（あめ）＿＿ とすれば、試合（しあい）は中止（ちゅうし）でしょう。",
+        "だ"
+      ],
+      [
+        "改句子（用としたら）：もし時間（じかん）があったら、何（なに）をしますか。",
+        "もし時間（じかん）があるとしたら、何（なに）をしますか。"
+      ],
+      [
+        "揀啱嘅：仮（かり）に彼（かれ）が来（こ）ない（a. としたら　b. ついでに）、どうしますか。",
+        "a. としたら"
+      ],
+      [
+        "翻譯：如果可以用魔法，你想做咩？",
+        "魔法（まほう）が使（つか）えるとしたら、何（なに）をしたいですか。"
+      ]
+    ],
+    "challenge": "用「〜としたら」寫一句：如果你轉生去異世界，你想做咩職業？點解？",
+    "en": {
+      "title": "If I Were Reborn in Another World",
+      "intro": "同一個故事嘅英式英文版：如果轉生去異世界，順便學 If I were … / If I could …, I'd …（假設…嘅話）。",
+      "passage": "If you were reborn in another world, what would you want to be? I'd want to be a mage. If I could use magic, the first thing I'd try is flying. But if I lived for a thousand years like Frieren, saying goodbye to my friends might be really hard. If I became a hero, I'd have to fight monsters every day, which sounds a bit exhausting. All things considered, I think a laid-back mage who grows herbs would be the best.",
+      "vocab": [
+        [
+          "be reborn",
+          "轉生"
+        ],
+        [
+          "another world",
+          "異世界"
+        ],
+        [
+          "mage",
+          "魔法使"
+        ],
+        [
+          "fly",
+          "飛"
+        ],
+        [
+          "say goodbye",
+          "道別"
+        ],
+        [
+          "fight monsters",
+          "打魔物"
+        ],
+        [
+          "exhausting",
+          "好攰"
+        ],
+        [
+          "laid-back",
+          "悠閒、輕鬆"
+        ]
+      ],
+      "phrase": {
+        "point": "If I were … / If I could …, I'd …（假設…嘅話）",
+        "explain": [
+          "日文「〜としたら」講未發生、可能唔會發生嘅假設，英文用第二條件句：If + 過去式, I'd (would) …",
+          "If I could use magic, I'd fly.（如果識魔法，我就會飛）",
+          "正式啲用 were：If I were a hero …；英國人口語都成日講 If I was …",
+          "英國人講發夢：If I won the lottery, I'd …（如果中咗彩票，我就會…）"
+        ],
+        "examples": [
+          [
+            "If you had a hundred million yen, what would you buy?",
+            "如果有一億円，你會買咩？"
+          ],
+          [
+            "If I lived in Hokkaido, I'd have to get used to the cold.",
+            "如果住北海道，就要習慣凍。"
+          ],
+          [
+            "If the train were late, we'd miss the meeting.",
+            "假設火車遲咗，我哋就會趕唔切開會。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What would the writer want to be in another world?",
+          "A mage."
+        ],
+        [
+          "What would they try first if they could use magic?",
+          "Flying."
+        ],
+        [
+          "Why would being a hero be exhausting?",
+          "Because they'd have to fight monsters every day."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-11",
     "weekday": "三",
     "title": "昇段審査の前の一週間",
