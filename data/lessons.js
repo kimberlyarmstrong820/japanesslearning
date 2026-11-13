@@ -2,6 +2,193 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-13",
+    "weekday": "五",
+    "title": "秋が深まるとともに",
+    "intro": "英國十一月，葉落晒、朝早有霜、四點就天黑。學 N3 #110「〜とともに」（隨著…／同…一齊）。",
+    "vocab": [
+      [
+        "深まる",
+        "ふかまる",
+        "（季節）變深、漸濃"
+      ],
+      [
+        "葉",
+        "は",
+        "葉"
+      ],
+      [
+        "霜",
+        "しも",
+        "霜"
+      ],
+      [
+        "近づく",
+        "ちかづく",
+        "接近"
+      ],
+      [
+        "夕方",
+        "ゆうがた",
+        "傍晚"
+      ],
+      [
+        "準備",
+        "じゅんび",
+        "準備"
+      ],
+      [
+        "イルミネーション",
+        "いるみねーしょん",
+        "燈飾"
+      ],
+      [
+        "変化",
+        "へんか",
+        "變化"
+      ]
+    ],
+    "grammar": {
+      "point": "〜とともに（隨著…／同…一齊）",
+      "explain": [
+        "有兩個意思。①「隨著…」：一樣嘢變，另一樣都跟住變。気温が下がるとともに、葉が落ちる。",
+        "②「同…一齊」：比「と一緒に」書面、正式。家族とともに暮らす。",
+        "接續：名詞＋とともに（時代とともに、家族とともに）；動詞辭書形＋とともに（近づくとともに）",
+        "①嘅意思同「〜につれて」好似，前後兩邊都係慢慢變化嘅事。",
+        "仲有「同時」嘅用法：ベルが鳴るとともに、走り出した。（鐘一響，就同時跑出去）"
+      ],
+      "examples": [
+        [
+          "年（とし）をとるとともに、体力（たいりょく）が落（お）ちてきました。",
+          "隨著年紀大，體力都差咗。"
+        ],
+        [
+          "仲間（なかま）とともに、最後（さいご）まで戦（たたか）いました。",
+          "同伙伴一齊打到最後。"
+        ],
+        [
+          "夜（よる）が明（あ）けるとともに、山（やま）を登（のぼ）り始（はじ）めました。",
+          "天一光，就同時開始爬山。"
+        ]
+      ]
+    },
+    "n3": 110,
+    "passage": "十一月（じゅういちがつ）に入（はい）って、秋（あき）が深（ふか）まるとともに、庭（にわ）の木（き）の葉（は）もほとんど落（お）ちました。気温（きおん）が下（さ）がるとともに、朝（あさ）は霜（しも）が見（み）えるようになりました。イギリスでは、冬（ふゆ）が近（ちか）づくとともに、夕方（ゆうがた）四時（よじ）ごろにはもう暗（くら）くなります。町（まち）では、クリスマスの準備（じゅんび）とともに、通（とお）りのイルミネーションも始（はじ）まりました。週末（しゅうまつ）は家族（かぞく）とともに、庭（にわ）に春（はる）の球根（きゅうこん）を植（う）えました。寒（さむ）くなるのは少（すこ）しさびしいですが、季節（きせつ）の変化（へんか）とともに暮（く）らすのは楽（たの）しいです。",
+    "questions": [
+      [
+        "秋（あき）が深（ふか）まるとともに、庭（にわ）の木（き）はどうなりましたか。",
+        "葉（は）がほとんど落（お）ちました。"
+      ],
+      [
+        "冬（ふゆ）が近（ちか）づくとともに、イギリスの夕方（ゆうがた）はどうなりますか。",
+        "四時（よじ）ごろにはもう暗（くら）くなります。"
+      ],
+      [
+        "週末（しゅうまつ）、だれと何（なに）をしましたか。",
+        "家族（かぞく）とともに、庭（にわ）に春（はる）の球根（きゅうこん）を植（う）えました。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：時代（じだい）＿＿＿＿、言葉（ことば）も変（か）わります。",
+        "とともに"
+      ],
+      [
+        "填充：町（まち）が ＿＿＿ とともに、人（ひと）も増（ふ）えました。（大きくなる）",
+        "大（おお）きくなる"
+      ],
+      [
+        "分類：「友達（ともだち）とともに旅行（りょこう）した」嘅「とともに」係①隨著，定②一齊？",
+        "②一齊（＝友達（ともだち）と一緒（いっしょ）に）"
+      ],
+      [
+        "改句子（用とともに）：気温（きおん）が上（あ）がると、花（はな）が咲（さ）き始（はじ）めます。",
+        "気温（きおん）が上（あ）がるとともに、花（はな）が咲（さ）き始（はじ）めます。"
+      ],
+      [
+        "翻譯：隨住冬天接近，日頭越嚟越短。",
+        "冬（ふゆ）が近（ちか）づくとともに、昼（ひる）が短（みじか）くなります。"
+      ]
+    ],
+    "challenge": "用「〜とともに」寫兩句：一句係「隨著…」，一句係「同…一齊」。",
+    "en": {
+      "title": "As Autumn Deepens",
+      "intro": "同一個故事嘅英式英文版：英國深秋，順便學 as … / along with / together with（隨著…／同…一齊）。",
+      "passage": "Now that we're into November, most of the leaves have fallen from the trees in the garden as autumn deepens. As the temperature drops, there's frost on the ground in the mornings. In Britain, as winter gets closer, it's already dark by about four in the afternoon. In town, the Christmas lights have gone up along with all the Christmas preparations. At the weekend, I planted spring bulbs in the garden together with my family. It's a bit sad that it's getting colder, but I enjoy living with the changing seasons.",
+      "vocab": [
+        [
+          "as autumn deepens",
+          "隨住秋意漸濃"
+        ],
+        [
+          "frost",
+          "霜"
+        ],
+        [
+          "get closer",
+          "接近"
+        ],
+        [
+          "dark by four",
+          "四點就天黑"
+        ],
+        [
+          "Christmas lights",
+          "聖誕燈飾"
+        ],
+        [
+          "go up",
+          "（燈飾）掛起"
+        ],
+        [
+          "along with",
+          "連同、一齊"
+        ],
+        [
+          "the changing seasons",
+          "季節變化"
+        ]
+      ],
+      "phrase": {
+        "point": "as … / along with / together with（隨著…／同…一齊）",
+        "explain": [
+          "日文「〜とともに」①隨著：英文用 as + 句子：As it gets colder, the leaves fall.",
+          "②同…一齊：英文用 together with / along with（正式啲），口語就係 with。",
+          "「同時」可以用 as soon as / at the same time as。",
+          "英國人講天黑得早會講 The nights are drawing in.（日頭越嚟越短）"
+        ],
+        "examples": [
+          [
+            "As I get older, I've got less energy.",
+            "隨著年紀大，體力都差咗。"
+          ],
+          [
+            "We fought to the very end together with our friends.",
+            "同伙伴一齊打到最後。"
+          ],
+          [
+            "We started climbing the mountain as the sun came up.",
+            "天一光，就開始爬山。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What has happened to the trees in the garden?",
+          "Most of the leaves have fallen."
+        ],
+        [
+          "What time does it get dark in Britain now?",
+          "By about four in the afternoon."
+        ],
+        [
+          "What did the writer do at the weekend?",
+          "They planted spring bulbs in the garden with their family."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-12",
     "weekday": "四",
     "title": "異世界に転生するとしたら",
