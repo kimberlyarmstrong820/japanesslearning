@@ -2,6 +2,191 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-16",
+    "weekday": "一",
+    "title": "雪まつりに行くとなると",
+    "intro": "計劃明年二月去札幌雪祭，一諗就發現好多嘢要準備。學 N3 #111「〜となると」（一旦真係要…就…）。",
+    "vocab": [
+      [
+        "雪まつり",
+        "ゆきまつり",
+        "雪祭"
+      ],
+      [
+        "時期",
+        "じき",
+        "時期、季節"
+      ],
+      [
+        "いっぱい",
+        "いっぱい",
+        "爆滿"
+      ],
+      [
+        "予約",
+        "よやく",
+        "預訂"
+      ],
+      [
+        "マイナス",
+        "まいなす",
+        "零下"
+      ],
+      [
+        "度",
+        "ど",
+        "度"
+      ],
+      [
+        "かなり",
+        "かなり",
+        "相當、幾"
+      ],
+      [
+        "雪像",
+        "せつぞう",
+        "雪雕"
+      ]
+    ],
+    "grammar": {
+      "point": "〜となると（一旦真係要…就…）",
+      "explain": [
+        "意思係「一旦真係要…／如果變成…嘅話」，就會有某個（通常係麻煩、要準備嘅）現實結果。",
+        "普通形＋となると：行くとなると、留学するとなると；名詞＋となると：冬の北海道となると",
+        "同「〜としたら」比：としたら係純粹假設；となると多數係「真係會發生／差唔多決定咗」，再講現實後果。",
+        "後面成日係「大変だ」「お金がかかる」「〜なければならない」呢類現實問題。"
+      ],
+      "examples": [
+        [
+          "犬（いぬ）を飼（か）うとなると、毎日（まいにち）散歩（さんぽ）させなければなりません。",
+          "一旦養狗，就要日日帶佢散步。"
+        ],
+        [
+          "結婚式（けっこんしき）となると、準備（じゅんび）が大変（たいへん）です。",
+          "講到婚禮，準備就好辛苦。"
+        ],
+        [
+          "社長（しゃちょう）が来（く）るとなると、部屋（へや）を掃除（そうじ）しないと。",
+          "如果老闆真係嚟，就要執下間房喇。"
+        ]
+      ]
+    },
+    "n3": 111,
+    "passage": "来年（らいねん）の二月（にがつ）、札幌（さっぽろ）の雪（ゆき）まつりに行（い）こうと思（おも）っています。でも、雪（ゆき）まつりの時期（じき）に行（い）くとなると、ホテルはすぐにいっぱいになります。だから、今（いま）から予約（よやく）しておかなければなりません。それに、マイナス十度（じゅうど）の札幌（さっぽろ）となると、イギリスの冬（ふゆ）のコートでは寒（さむ）すぎるかもしれません。一週間（いっしゅうかん）旅行（りょこう）するとなると、お金（かね）もかなりかかりそうです。それでも、大（おお）きな雪像（せつぞう）を見（み）るのが楽（たの）しみです。",
+    "questions": [
+      [
+        "「わたし」はいつ、どこへ行（い）こうと思（おも）っていますか。",
+        "来年（らいねん）の二月（にがつ）、札幌（さっぽろ）の雪（ゆき）まつりに行（い）こうと思（おも）っています。"
+      ],
+      [
+        "どうして今（いま）から予約（よやく）しなければなりませんか。",
+        "雪（ゆき）まつりの時期（じき）に行（い）くとなると、ホテルがすぐにいっぱいになるからです。"
+      ],
+      [
+        "イギリスの冬（ふゆ）のコートはどうですか。",
+        "マイナス十度（じゅうど）の札幌（さっぽろ）では、寒（さむ）すぎるかもしれません。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：日本（にほん）で ＿＿＿ となると、ビザが必要（ひつよう）です。（働く）",
+        "働（はたら）く"
+      ],
+      [
+        "填充：真夏（まなつ）の沖縄（おきなわ）＿＿＿＿、日焼（ひや）け止（ど）めが必要（ひつよう）です。",
+        "となると"
+      ],
+      [
+        "揀啱嘅：車（くるま）を買（か）う（a. となると　b. たびに）、駐車場（ちゅうしゃじょう）も探（さが）さなければならない。",
+        "a. となると"
+      ],
+      [
+        "改句子（用となると）：一人（ひとり）で引（ひ）っ越（こ）しするなら、大変（たいへん）です。",
+        "一人（ひとり）で引（ひ）っ越（こ）しするとなると、大変（たいへん）です。"
+      ],
+      [
+        "翻譯：如果真係去日本讀書，就要更努力學日文。",
+        "日本（にほん）に留学（りゅうがく）するとなると、日本語（にほんご）をもっと頑張（がんば）らなければなりません。"
+      ]
+    ],
+    "challenge": "用「〜となると」寫一句：如果你真係去日本住一年，有咩要準備？",
+    "en": {
+      "title": "Planning for the Snow Festival",
+      "intro": "同一個故事嘅英式英文版：計劃去札幌雪祭，順便學 if I'm going to … / when it comes to …（一旦真係要…）。",
+      "passage": "I'm thinking of going to the Sapporo Snow Festival next February. But if I'm going during the festival, the hotels will fill up really quickly. So I'll have to book now. On top of that, when it comes to Sapporo at minus ten degrees, my British winter coat might not be warm enough. If I'm travelling for a whole week, it's going to cost quite a lot too. Even so, I'm really looking forward to seeing the huge snow sculptures.",
+      "vocab": [
+        [
+          "snow festival",
+          "雪祭"
+        ],
+        [
+          "fill up",
+          "爆滿"
+        ],
+        [
+          "book",
+          "預訂"
+        ],
+        [
+          "on top of that",
+          "仲有、加上"
+        ],
+        [
+          "when it comes to …",
+          "講到…"
+        ],
+        [
+          "minus ten degrees",
+          "零下十度"
+        ],
+        [
+          "cost quite a lot",
+          "幾使錢"
+        ],
+        [
+          "snow sculpture",
+          "雪雕"
+        ]
+      ],
+      "phrase": {
+        "point": "if I'm going to … / when it comes to …（一旦真係要…）",
+        "explain": [
+          "日文「〜となると」講「真係要做嘅話，現實上就…」，英文用 if I'm going to … / if we're actually …",
+          "名詞版：when it comes to …（講到…）：When it comes to winter in Hokkaido, you need proper boots.",
+          "英國人講好貴會講 It'll cost an arm and a leg.（貴到嚇死人）"
+        ],
+        "examples": [
+          [
+            "If you're going to get a dog, you'll have to walk it every day.",
+            "一旦養狗，就要日日帶佢散步。"
+          ],
+          [
+            "When it comes to weddings, there's so much to organise.",
+            "講到婚禮，好多嘢要準備。（英式串法 organise）"
+          ],
+          [
+            "If the boss is actually coming, we'd better tidy up.",
+            "如果老闆真係嚟，就要執下喇。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "When is the writer thinking of going to Sapporo?",
+          "Next February, for the Snow Festival."
+        ],
+        [
+          "Why does the writer have to book now?",
+          "Because the hotels fill up really quickly during the festival."
+        ],
+        [
+          "What might not be warm enough?",
+          "Their British winter coat."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-13",
     "weekday": "五",
     "title": "秋が深まるとともに",
