@@ -120,6 +120,15 @@
   .n3 .m { color: var(--muted); }
   .badge { display: inline-block; font-size: .75rem; padding: 1px 8px; border-radius: 10px; margin-left: 6px;
            background: var(--accent); color: var(--accent-ink); vertical-align: middle; font-weight: 600; }
+  /* ---- 今日動詞 ---- */
+  .verb { width: 100%; border-collapse: collapse; margin-top: 6px; }
+  .verb th, .verb td { border: 1px solid var(--line); padding: 6px 8px; text-align: center; }
+  .verb th { background: var(--cal-done); font-weight: 600; font-size: .85rem; }
+  .verb th.row { text-align: left; white-space: nowrap; }
+  .verb td { font-size: 1.05rem; }
+  .verb .t { font-size: .75rem; color: var(--muted); display: block; }
+  body.quiz .verb td .f { filter: blur(6px); cursor: pointer; }
+  body.quiz .verb td .f.show { filter: none; }
   .ref { margin-top: 10px; padding: 10px 12px; border-radius: 10px; background: var(--cal-done); border: 1px dashed var(--sakura); }
 
   /* ---- 每日頁 ---- */
@@ -468,6 +477,35 @@ function n3Section() {
     </section>`;
 }
 
+// 每日頁：今日動詞（普通／丁寧 × 肯定／否定 × 非過去／過去，再加て形、ている）
+function verbSection(v) {
+  if (!v || !v.forms) return "";
+  const f = v.forms;
+  const cell = (k, tag) => f[k] ? `<td><span class="f">${ruby(f[k])}</span> ${speakBtn(f[k])}<span class="t">${tag}</span></td>` : "<td>—</td>";
+  // 「行く」+「いく」→「行（い）く」（送假名唔包入括號，振假名先會正確顯示）
+  let i = 0;
+  while (i < v.dict.length && i < v.read.length && v.dict.at(-1 - i) === v.read.at(-1 - i)) i++;
+  const dict = i ? `${v.dict.slice(0, -i)}（${v.read.slice(0, -i)}）${v.dict.slice(-i)}` : `${v.dict}（${v.read}）`;
+  return `<section>
+      <h2>🔁 今日動詞：${ruby(dict)} ${speakBtn(dict)}</h2>
+      <div class="muted">${esc(v.mean)}　·　${esc(v.type)}</div>
+      <table class="verb">
+        <tr><th class="row"></th><th>普通形（同朋友講）</th><th>丁寧形（ます形）</th></tr>
+        <tr><th class="row">現在／將來 ＋</th><td><span class="f">${ruby(dict)}</span> ${speakBtn(dict)}<span class="t">辭書形</span></td>${cell("masu", "ます")}</tr>
+        <tr><th class="row">現在／將來 －</th>${cell("nai", "ない形")}${cell("masen", "ません")}</tr>
+        <tr><th class="row">過去 ＋</th>${cell("ta", "た形")}${cell("mashita", "ました")}</tr>
+        <tr><th class="row">過去 －</th>${cell("nakatta", "なかった")}${cell("masendeshita", "ませんでした")}</tr>
+        <tr><th class="row">て形／ている</th>${cell("te", "て形（連接、請求）")}${cell("teiru", "ている（進行中／狀態）")}</tr>
+      </table>
+      ${v.note ? `<div class="muted" style="margin-top:6px">⚠️ ${ruby(v.note)}</div>` : ""}
+      <label class="muted" style="display:block;margin-top:8px"><input type="checkbox" id="verbQuiz"> 測驗模式（遮住答案，撳一格先睇）</label>
+      <details class="muted"><summary>日文「時態」點分？</summary>
+        日文只有「非過去」（現在／將來）同「過去」兩種時態；每種再分普通形／丁寧形、肯定／否定，所以有 8 個基本形。
+        「〜ている」唔係「現在式」，係講「進行中」（食べている＝食緊）或者「狀態」（結婚している＝已婚）。
+      </details>
+    </section>`;
+}
+
 // 每日頁：課本嗰張表嘅原本解釋同例句
 function n3Ref(no) {
   const g = n3ByNo[no];
@@ -663,6 +701,17 @@ function refreshVoiceMenu() {
   if (box) { box.innerHTML = voiceMenu(); wireVoiceMenu(); }
 }
 
+function wireVerbQuiz() {
+  const q = document.getElementById("verbQuiz");
+  if (!q) return;
+  document.body.classList.remove("quiz");
+  q.onchange = () => {
+    document.body.classList.toggle("quiz", q.checked);
+    view.querySelectorAll(".verb .f").forEach(el => el.classList.remove("show"));
+  };
+  view.querySelectorAll(".verb .f").forEach(el => el.onclick = () => el.classList.add("show"));
+}
+
 function wireReader() {
   document.getElementById("play").onclick = () => readPassage(0);
   document.getElementById("stop").onclick = stopAll;
@@ -671,6 +720,7 @@ function wireReader() {
     document.getElementById("rateVal").textContent = rate.toFixed(1) + "×";
   };
   document.getElementById("shadow").onchange = e => { shadow = e.target.checked; };
+  wireVerbQuiz();
   wireVoiceMenu();
   view.querySelectorAll(".passage .s").forEach(s =>
     s.onclick = () => readPassage(parseInt(s.dataset.i, 10)));
@@ -703,6 +753,7 @@ function renderLesson(lesson) {
         `<li>${ruby(jp)} ${speakBtn(jp)}<br><span class="muted">${esc(yue || "")}</span></li>`).join("")}</ol>
       ${n3Ref(lesson.n3)}
     </section>
+    ${verbSection(lesson.verb)}
 
     <section>
       <h2>練習</h2>
