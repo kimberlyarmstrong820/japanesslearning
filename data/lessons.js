@@ -2,6 +2,210 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-18",
+    "weekday": "三",
+    "title": "庭のロビン",
+    "intro": "英國冬天嘅花園有知更鳥（robin）嚟探，佢個樣好似識講嘢咁。學 N3 #113「〜とばかりに」（彷彿想講…咁）。",
+    "vocab": [
+      [
+        "ロビン",
+        "ろびん",
+        "知更鳥"
+      ],
+      [
+        "掘る",
+        "ほる",
+        "掘"
+      ],
+      [
+        "虫",
+        "むし",
+        "蟲"
+      ],
+      [
+        "餌",
+        "えさ",
+        "（動物）食物、飼料"
+      ],
+      [
+        "じっと",
+        "じっと",
+        "定定咁"
+      ],
+      [
+        "鳴く",
+        "なく",
+        "（雀鳥、動物）叫"
+      ],
+      [
+        "興味",
+        "きょうみ",
+        "興趣"
+      ],
+      [
+        "知らん顔",
+        "しらんかお",
+        "扮睇唔到、當冇事"
+      ]
+    ],
+    "grammar": {
+      "point": "〜とばかりに（彷彿想講…咁）",
+      "explain": [
+        "意思係「彷彿想講『…』咁」：用動作、表情表達出嚟，但冇真係講出口。",
+        "普通形（或者命令形、意向形、引用句）＋とばかりに：勝ったとばかりに、早くしろとばかりに、「どうぞ」とばかりに",
+        "主語通常係第三者（人或者動物），唔用嚟講自己。",
+        "後面接明顯嘅動作：大喜びする、にらむ、手を振る、飛んでくる…",
+        "同「〜ように」相近，但とばかりに語氣更強，好似成句說話寫晒喺面上。"
+      ],
+      "examples": [
+        [
+          "犬（いぬ）は散歩（さんぽ）に行（い）こうとばかりに、リードをくわえてきた。",
+          "隻狗好似話「去散步啦」咁，咬住條狗帶過嚟。"
+        ],
+        [
+          "彼女（かのじょ）はもう聞（き）きたくないとばかりに、耳（みみ）をふさいだ。",
+          "佢好似話「唔想再聽」咁，掩住對耳。"
+        ],
+        [
+          "店員（てんいん）は早（はや）く帰（かえ）れとばかりに、電気（でんき）を消（け）し始（はじ）めた。",
+          "店員好似叫人快啲走咁，開始熄燈。"
+        ]
+      ]
+    },
+    "n3": 113,
+    "verb": {
+      "dict": "待つ",
+      "read": "まつ",
+      "mean": "等",
+      "type": "五段動詞（つ → った／って）",
+      "forms": {
+        "masu": "待（ま）ちます",
+        "nai": "待（ま）たない",
+        "masen": "待（ま）ちません",
+        "ta": "待（ま）った",
+        "mashita": "待（ま）ちました",
+        "nakatta": "待（ま）たなかった",
+        "masendeshita": "待（ま）ちませんでした",
+        "te": "待（ま）って",
+        "teiru": "待（ま）っている"
+      },
+      "note": "つ結尾：ます形變「ち」（待ちます），ない形變「た」（待たない），た／て形變「った／って」。"
+    },
+    "passage": "冬（ふゆ）になると、庭（にわ）にロビンという小（ちい）さい鳥（とり）がよく来（き）ます。わたしが土（つち）を掘（ほ）ると、ロビンは「虫（むし）をちょうだい」とばかりに、すぐそばまで飛（と）んできます。今朝（けさ）は、早（はや）く餌（えさ）をくれとばかりに、窓（まど）の外（そと）でじっと待（ま）っていました。ところが、隣（となり）の猫（ねこ）が来（く）ると、ロビンは「ここはわたしの庭（にわ）だ」とばかりに、大（おお）きな声（こえ）で鳴（な）きました。猫（ねこ）は興味（きょうみ）がないとばかりに、知（し）らん顔（かお）で通（とお）り過（す）ぎていきました。小（ちい）さな庭（にわ）でも、毎日（まいにち）見（み）ていると本当（ほんとう）に面白（おもしろ）いです。",
+    "questions": [
+      [
+        "冬（ふゆ）になると、庭（にわ）に何（なに）が来（き）ますか。",
+        "ロビンという小（ちい）さい鳥（とり）が来（き）ます。"
+      ],
+      [
+        "今朝（けさ）、ロビンはどこで待（ま）っていましたか。",
+        "窓（まど）の外（そと）でじっと待（ま）っていました。"
+      ],
+      [
+        "猫（ねこ）が来（く）ると、ロビンは何（なに）をしましたか。",
+        "「ここはわたしの庭（にわ）だ」とばかりに、大（おお）きな声（こえ）で鳴（な）きました。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：犬（いぬ）は早（はや）く散歩（さんぽ）に ＿＿＿ とばかりに、玄関（げんかん）で待（ま）っている。（行く → 意向形）",
+        "行（い）こう"
+      ],
+      [
+        "揀啱嘅：彼（かれ）は「もう十分（じゅうぶん）だ」（a. とばかりに　b. とは）、席（せき）を立（た）った。",
+        "a. とばかりに"
+      ],
+      [
+        "啱定錯：わたしは早（はや）く帰（かえ）りたいとばかりに、時計（とけい）を見（み）た。",
+        "錯。「とばかりに」唔用嚟講自己，要講第三者：彼（かれ）は早（はや）く帰（かえ）りたいとばかりに、時計（とけい）を見（み）た。"
+      ],
+      [
+        "改句子（用とばかりに）：猫（ねこ）は「おなかがすいた」という顔（かお）で鳴（な）いた。",
+        "猫（ねこ）は「おなかがすいた」とばかりに鳴（な）いた。"
+      ],
+      [
+        "翻譯：佢好似話「我贏咗」咁，舉高雙手。",
+        "彼（かれ）は勝（か）ったとばかりに、両手（りょうて）を上（あ）げた。"
+      ]
+    ],
+    "challenge": "用「〜とばかりに」寫一句：形容你見過嘅一隻動物或者一個人嘅樣子。",
+    "en": {
+      "title": "The Robin in My Garden",
+      "intro": "同一個故事嘅英式英文版：英國花園嘅知更鳥，順便學 as if to say …（彷彿想講…咁）。",
+      "passage": "When winter comes, a little bird called a robin often visits my garden. When I dig the soil, the robin flies right up close as if to say, \"Give me a worm!\" This morning, it was waiting patiently outside the window, as if to say, \"Hurry up and feed me.\" But when the neighbour's cat came along, the robin sang loudly as if to say, \"This is my garden!\" The cat strolled past without a care, as if it couldn't be less interested. Even in a small garden, there's always something fun to watch if you look every day.",
+      "vocab": [
+        [
+          "robin",
+          "知更鳥"
+        ],
+        [
+          "dig the soil",
+          "掘泥"
+        ],
+        [
+          "worm",
+          "蟲（蚯蚓）"
+        ],
+        [
+          "patiently",
+          "好有耐性咁"
+        ],
+        [
+          "feed",
+          "餵"
+        ],
+        [
+          "neighbour's cat",
+          "隔籬屋隻貓（英式串法 neighbour）"
+        ],
+        [
+          "stroll past",
+          "慢慢行過"
+        ],
+        [
+          "couldn't be less interested",
+          "完全冇興趣"
+        ]
+      ],
+      "phrase": {
+        "point": "as if to say … / as though …（彷彿想講…咁）",
+        "explain": [
+          "日文「〜とばかりに」= 用動作表達「…」，英文最貼切係 as if to say, \"…\"。",
+          "形容樣子：as though / as if + 句子：The cat walked past as if it didn't care.",
+          "英國人好鍾意知更鳥，聖誕卡成日見到，又叫 robin redbreast。"
+        ],
+        "examples": [
+          [
+            "The dog brought me its lead, as if to say, \"Let's go for a walk!\"",
+            "隻狗咬住條狗帶過嚟，好似話「去散步啦」咁。"
+          ],
+          [
+            "She covered her ears as if to say she didn't want to hear any more.",
+            "佢掩住對耳，好似話唔想再聽。"
+          ],
+          [
+            "The staff started turning the lights off, as if to tell us to leave.",
+            "店員開始熄燈，好似叫人快啲走咁。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What visits the writer's garden in winter?",
+          "A little bird called a robin."
+        ],
+        [
+          "Where was the robin waiting this morning?",
+          "Outside the window."
+        ],
+        [
+          "What did the robin do when the cat came along?",
+          "It sang loudly, as if to say, \"This is my garden!\""
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-17",
     "weekday": "二",
     "title": "まさか合格するとは",
