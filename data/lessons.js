@@ -2,6 +2,210 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-19",
+    "weekday": "四",
+    "title": "日本とイギリス、反対のクリスマス",
+    "intro": "英國同日本點過聖誕同新年？差唔多啱啱相反！學 N3 #114「〜と反対に」（同…相反）。",
+    "vocab": [
+      [
+        "過ごし方",
+        "すごしかた",
+        "（日子）點樣過"
+      ],
+      [
+        "ずいぶん",
+        "ずいぶん",
+        "好、相當"
+      ],
+      [
+        "恋人",
+        "こいびと",
+        "情人、男女朋友"
+      ],
+      [
+        "お正月",
+        "おしょうがつ",
+        "新年"
+      ],
+      [
+        "大晦日",
+        "おおみそか",
+        "除夕（12月31日）"
+      ],
+      [
+        "七面鳥",
+        "しちめんちょう",
+        "火雞"
+      ],
+      [
+        "閉まる",
+        "しまる",
+        "關門"
+      ],
+      [
+        "それぞれ",
+        "それぞれ",
+        "各自"
+      ]
+    ],
+    "grammar": {
+      "point": "〜と反対に（同…相反）",
+      "explain": [
+        "意思係「同…相反」：前後兩樣嘢係完全相反嘅情況。",
+        "名詞＋と反対に：予想と反対に、兄と反対に",
+        "動詞／形容詞句子要加「の」變名詞：家族と過ごすのと反対に、兄がおとなしいのと反対に",
+        "單獨用：「それと反対に」「反対に」放句頭，等於「相反」。",
+        "「〜に反して」意思差唔多，比較書面。"
+      ],
+      "examples": [
+        [
+          "天気予報（てんきよほう）と反対（はんたい）に、今日（きょう）は一日中（いちにちじゅう）晴（は）れました。",
+          "同天氣預報相反，今日成日都天晴。"
+        ],
+        [
+          "姉（あね）が料理（りょうり）が得意（とくい）なのと反対（はんたい）に、わたしは全然（ぜんぜん）できません。",
+          "家姐好識煮，相反我就完全唔識。"
+        ],
+        [
+          "夏（なつ）は朝（あさ）早（はや）く明（あか）るくなるのと反対（はんたい）に、冬（ふゆ）は八時（はちじ）まで暗（くら）いです。",
+          "夏天好早就天光，相反冬天去到八點都仲黑。"
+        ]
+      ]
+    },
+    "n3": 114,
+    "verb": {
+      "dict": "過ごす",
+      "read": "すごす",
+      "mean": "過（日子、時間）",
+      "type": "五段動詞（す → した／して）",
+      "forms": {
+        "masu": "過（す）ごします",
+        "nai": "過（す）ごさない",
+        "masen": "過（す）ごしません",
+        "ta": "過（す）ごした",
+        "mashita": "過（す）ごしました",
+        "nakatta": "過（す）ごさなかった",
+        "masendeshita": "過（す）ごしませんでした",
+        "te": "過（す）ごして",
+        "teiru": "過（す）ごしている"
+      },
+      "note": "す結尾：ます形變「し」，ない形變「さ」，た／て形變「した／して」（唔會變促音）。"
+    },
+    "passage": "もうすぐクリスマスですが、日本（にほん）とイギリスでは過（す）ごし方（かた）がずいぶん違（ちが）います。イギリスではクリスマスを家族（かぞく）と過（す）ごすのと反対（はんたい）に、日本（にほん）では恋人（こいびと）や友達（ともだち）と過（す）ごす人（ひと）が多（おお）いです。また、日本（にほん）ではお正月（しょうがつ）を家族（かぞく）と過（す）ごしますが、イギリスはそれと反対（はんたい）に、大晦日（おおみそか）に友達（ともだち）とパーティーをします。クリスマスの食事（しょくじ）は、イギリスでは七面鳥（しちめんちょう）ですが、日本（にほん）ではフライドチキンが人気（にんき）です。お店（みせ）も、イギリスでは二十五日（にじゅうごにち）にほとんど閉（し）まるのと反対（はんたい）に、日本（にほん）ではいつも通（どお）り開（あ）いています。どちらの過（す）ごし方（かた）も、それぞれ楽（たの）しそうです。",
+    "questions": [
+      [
+        "イギリスでは、クリスマスをだれと過（す）ごしますか。",
+        "家族（かぞく）と過（す）ごします。"
+      ],
+      [
+        "日本（にほん）のクリスマスの食事（しょくじ）で人気（にんき）なのは何（なん）ですか。",
+        "フライドチキンです。"
+      ],
+      [
+        "二十五日（にじゅうごにち）、日本（にほん）のお店（みせ）はどうですか。",
+        "いつも通（どお）り開（あ）いています。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：予想（よそう）＿＿＿＿、試験（しけん）はとても簡単（かんたん）でした。",
+        "と反対（はんたい）に"
+      ],
+      [
+        "填充：兄（あに）が背（せ）が ＿＿＿ のと反対（はんたい）に、弟（おとうと）は小（ちい）さいです。（高い）",
+        "高（たか）い"
+      ],
+      [
+        "揀助詞：都会（とかい）がにぎやかな ＿＿ と反対（はんたい）に、田舎（いなか）は静（しず）かです。（の／が／を）",
+        "の"
+      ],
+      [
+        "改句子（用と反対に）：日本（にほん）の夏（なつ）は暑（あつ）い。イギリスの夏（なつ）は涼（すず）しい。",
+        "日本（にほん）の夏（なつ）が暑（あつ）いのと反対（はんたい）に、イギリスの夏（なつ）は涼（すず）しいです。"
+      ],
+      [
+        "翻譯：同我諗嘅相反，佢好開心。",
+        "わたしの考（かんが）えと反対（はんたい）に、彼（かれ）はとても喜（よろこ）んでいました。"
+      ]
+    ],
+    "challenge": "用「〜と反対に」寫一句：比較你住過嘅兩個地方（例如香港同英國）。",
+    "en": {
+      "title": "Opposite Christmases: Japan and Britain",
+      "intro": "同一個故事嘅英式英文版：日本同英國點過聖誕，順便學 unlike … / whereas … / the other way round（同…相反）。",
+      "passage": "Christmas is nearly here, but the way people spend it is quite different in Japan and Britain. Unlike in Britain, where people spend Christmas with their family, in Japan lots of people spend it with their partner or friends. Also, in Japan people spend New Year with their family, but it's the other way round in Britain, where people go to parties with friends on New Year's Eve. For Christmas dinner, people in Britain have turkey, but in Japan fried chicken is really popular. While nearly all the shops in Britain close on the twenty-fifth, in Japan they're open as usual. Both ways of spending the holidays sound fun in their own way.",
+      "vocab": [
+        [
+          "nearly here",
+          "就快到"
+        ],
+        [
+          "unlike …",
+          "同…唔同、同…相反"
+        ],
+        [
+          "partner",
+          "另一半"
+        ],
+        [
+          "the other way round",
+          "啱啱相反（英式）"
+        ],
+        [
+          "New Year's Eve",
+          "除夕"
+        ],
+        [
+          "turkey",
+          "火雞"
+        ],
+        [
+          "open as usual",
+          "照常開"
+        ],
+        [
+          "in their own way",
+          "各有各好"
+        ]
+      ],
+      "phrase": {
+        "point": "unlike … / whereas … / the other way round（同…相反）",
+        "explain": [
+          "日文「〜と反対に」= 同…相反，英文常用 unlike …（接名詞）或者 whereas / while + 句子。",
+          "Unlike my brother, I'm quite quiet.／My brother's quiet, whereas I'm loud.",
+          "英國人好常講 It's the other way round.（啱啱相反）；美式多數講 the other way around。"
+        ],
+        "examples": [
+          [
+            "Contrary to the forecast, it was sunny all day.",
+            "同天氣預報相反，今日成日都天晴。"
+          ],
+          [
+            "My sister's a brilliant cook, whereas I can't cook at all.",
+            "家姐好識煮，相反我就完全唔識。（英式口語 brilliant）"
+          ],
+          [
+            "In summer it gets light really early, but in winter it's the other way round.",
+            "夏天好早就天光，冬天就啱啱相反。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Who do people in Britain spend Christmas with?",
+          "Their family."
+        ],
+        [
+          "What's a popular Christmas meal in Japan?",
+          "Fried chicken."
+        ],
+        [
+          "What are the shops like in Japan on the twenty-fifth?",
+          "They're open as usual."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-18",
     "weekday": "三",
     "title": "庭のロビン",
