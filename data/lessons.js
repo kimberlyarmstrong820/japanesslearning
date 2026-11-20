@@ -2,6 +2,210 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-20",
+    "weekday": "五",
+    "title": "今年の北海道は大雪か",
+    "intro": "用新聞語氣講北海道今個冬天：大雪、滑雪場提早開、遊客創新高。學 N3 #115「〜と見られている」（被認為…／估計…）。",
+    "vocab": [
+      [
+        "例年",
+        "れいねん",
+        "往年、平常年份"
+      ],
+      [
+        "スキー場",
+        "すきーじょう",
+        "滑雪場"
+      ],
+      [
+        "予定",
+        "よてい",
+        "預定、計劃"
+      ],
+      [
+        "海外",
+        "かいがい",
+        "海外"
+      ],
+      [
+        "過去最多",
+        "かこさいた",
+        "歷來最多"
+      ],
+      [
+        "観光客",
+        "かんこうきゃく",
+        "遊客"
+      ],
+      [
+        "大雪",
+        "おおゆき",
+        "大雪"
+      ],
+      [
+        "注意",
+        "ちゅうい",
+        "小心、注意"
+      ]
+    ],
+    "grammar": {
+      "point": "〜と見られている（被認為…／估計…）",
+      "explain": [
+        "意思係「（大家／專家）認為…、估計…」，新聞、報告好常用，語氣客觀。",
+        "普通形＋と見られている：成功すると見られている、原因は事故だと見られている",
+        "「見られる」係「見る」嘅受身形：主語唔係講嘢嘅人，而係被估計嘅事。",
+        "類似講法：〜と考えられている、〜と言われている、〜と予想されている。",
+        "日常傾偈少用，多數喺新聞、天氣預報、報告度見到。"
+      ],
+      "examples": [
+        [
+          "犯人（はんにん）は東京（とうきょう）に逃（に）げたと見（み）られています。",
+          "犯人估計已經逃去東京。"
+        ],
+        [
+          "来年（らいねん）は物価（ぶっか）がさらに上（あ）がると見（み）られています。",
+          "估計明年物價會再升。"
+        ],
+        [
+          "事故（じこ）の原因（げんいん）はスピードの出（だ）しすぎだと見（み）られている。",
+          "意外原因估計係超速。"
+        ]
+      ]
+    },
+    "n3": 115,
+    "verb": {
+      "dict": "来る",
+      "read": "くる",
+      "mean": "嚟、來",
+      "type": "カ行變格動詞（不規則）",
+      "forms": {
+        "masu": "来（き）ます",
+        "nai": "来（こ）ない",
+        "masen": "来（き）ません",
+        "ta": "来（き）た",
+        "mashita": "来（き）ました",
+        "nakatta": "来（こ）なかった",
+        "masendeshita": "来（き）ませんでした",
+        "te": "来（き）て",
+        "teiru": "来（き）ている"
+      },
+      "note": "「来る」寫法唔變，但讀音會變：く（来る）／き（来ます、来た、来て）／こ（来ない）。"
+    },
+    "passage": "今日（きょう）のニュースによると、今年（ことし）の北海道（ほっかいどう）の冬（ふゆ）は、例年（れいねん）より雪（ゆき）が多（おお）くなると見（み）られています。スキー場（じょう）は、予定（よてい）より一週間（いっしゅうかん）早（はや）くオープンすると見（み）られています。また、この冬（ふゆ）は海外（かいがい）から過去（かこ）最多（さいた）の観光客（かんこうきゃく）が来（く）ると見（み）られています。特（とく）に、イギリスやオーストラリアから来（く）るスキー客（きゃく）が増（ふ）えているそうです。ただ、大雪（おおゆき）で電車（でんしゃ）や飛行機（ひこうき）が遅（おく）れることもあると見（み）られているので、注意（ちゅうい）が必要（ひつよう）です。雪（ゆき）まつりの時（とき）も、きっとにぎやかになるでしょう。",
+    "questions": [
+      [
+        "今年（ことし）の北海道（ほっかいどう）の冬（ふゆ）は、どうなると見（み）られていますか。",
+        "例年（れいねん）より雪（ゆき）が多（おお）くなると見（み）られています。"
+      ],
+      [
+        "スキー場（じょう）はいつオープンすると見（み）られていますか。",
+        "予定（よてい）より一週間（いっしゅうかん）早（はや）くオープンすると見（み）られています。"
+      ],
+      [
+        "どうして注意（ちゅうい）が必要（ひつよう）ですか。",
+        "大雪（おおゆき）で電車（でんしゃ）や飛行機（ひこうき）が遅（おく）れることもあると見（み）られているからです。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：明日（あした）は全国的（ぜんこくてき）に雨（あめ）に ＿＿＿ と見（み）られています。（なる）",
+        "なる"
+      ],
+      [
+        "填充：火事（かじ）の原因（げんいん）はたばこ ＿＿ と見（み）られている。",
+        "だ"
+      ],
+      [
+        "揀啱嘅（新聞語氣）：a. 犯人（はんにん）は男性（だんせい）だと見（み）られている。　b. 犯人（はんにん）は男性（だんせい）だと見（み）ている。",
+        "a。新聞客觀講「被認為」，用受身形「見（み）られている」。"
+      ],
+      [
+        "改句子（用と見られている）：専門家（せんもんか）は、景気（けいき）がよくなると考（かんが）えている。",
+        "景気（けいき）はよくなると見（み）られている。"
+      ],
+      [
+        "翻譯：估計今年嘅遊客會比舊年多。",
+        "今年（ことし）の観光客（かんこうきゃく）は去年（きょねん）より多（おお）くなると見（み）られています。"
+      ]
+    ],
+    "challenge": "用「〜と見られている」寫一句好似新聞咁嘅句子：講你住嘅城市嘅天氣或者活動。",
+    "en": {
+      "title": "Heavy Snow Expected in Hokkaido",
+      "intro": "同一個故事嘅英式英文版：新聞講北海道大雪，順便學 be expected to … / be thought to …（被認為…／估計…）。",
+      "passage": "According to today's news, Hokkaido is expected to get more snow than usual this winter. The ski resorts are expected to open a week earlier than planned. A record number of overseas tourists are also expected to visit this winter. In particular, there are apparently more and more skiers coming from Britain and Australia. However, heavy snow is thought likely to delay some trains and flights, so travellers should be careful. The Snow Festival is bound to be busy as well.",
+      "vocab": [
+        [
+          "according to …",
+          "根據…"
+        ],
+        [
+          "be expected to …",
+          "預計會…"
+        ],
+        [
+          "than usual",
+          "比平時"
+        ],
+        [
+          "ski resort",
+          "滑雪場"
+        ],
+        [
+          "a record number of …",
+          "創紀錄數量嘅…"
+        ],
+        [
+          "overseas tourists",
+          "海外遊客"
+        ],
+        [
+          "be thought to …",
+          "被認為…"
+        ],
+        [
+          "be bound to …",
+          "一定會…"
+        ]
+      ],
+      "phrase": {
+        "point": "be expected to … / be thought to …（被認為…／估計…）",
+        "explain": [
+          "日文「〜と見られている」係新聞用嘅客觀講法，英文都係用被動式：be expected to / be thought to / be believed to。",
+          "Prices are expected to rise.（估計物價會升）；The cause is thought to be speeding.（原因估計係超速）",
+          "英國新聞（例如 BBC）好常聽到：Police believe … / It is understood that …"
+        ],
+        "examples": [
+          [
+            "The suspect is thought to have fled to Tokyo.",
+            "犯人估計已經逃去東京。"
+          ],
+          [
+            "Prices are expected to rise even further next year.",
+            "估計明年物價會再升。"
+          ],
+          [
+            "The accident is believed to have been caused by speeding.",
+            "意外原因估計係超速。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What is Hokkaido expected to get this winter?",
+          "More snow than usual."
+        ],
+        [
+          "When are the ski resorts expected to open?",
+          "A week earlier than planned."
+        ],
+        [
+          "Why should travellers be careful?",
+          "Because heavy snow is thought likely to delay some trains and flights."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-19",
     "weekday": "四",
     "title": "日本とイギリス、反対のクリスマス",
