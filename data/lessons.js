@@ -2,6 +2,210 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-23",
+    "weekday": "一",
+    "title": "色違いが出ないかな",
+    "intro": "星期六係 Pokémon GO 社群日，但天氣預報話會落雨…學 N3 #116「〜ないかな」（好希望…啦）。",
+    "vocab": [
+      [
+        "コミュニティ・デイ",
+        "こみゅにてぃ・でい",
+        "（Pokémon GO）社群日"
+      ],
+      [
+        "予報",
+        "よほう",
+        "預報"
+      ],
+      [
+        "やむ",
+        "やむ",
+        "（雨、雪）停"
+      ],
+      [
+        "色違い",
+        "いろちがい",
+        "色違（異色）"
+      ],
+      [
+        "今回",
+        "こんかい",
+        "今次"
+      ],
+      [
+        "約束",
+        "やくそく",
+        "約定"
+      ],
+      [
+        "遅刻する",
+        "ちこくする",
+        "遲到"
+      ],
+      [
+        "とにかく",
+        "とにかく",
+        "總之"
+      ]
+    ],
+    "grammar": {
+      "point": "〜ないかな（好希望…啦）",
+      "explain": [
+        "意思係「好希望…啦」「會唔會…呢（好想會）」：自言自語咁講出個希望。",
+        "動詞ない形＋かな：やまないかな、来ないかな、ならないかな",
+        "形式係否定，但意思係正面嘅希望！やまないかな＝好想雨停（唔係「唔停？」）。",
+        "想加多啲感情可以拉長：〜ないかなあ。",
+        "同「〜たらいいな」意思差唔多：早く雨がやんだらいいな。"
+      ],
+      "examples": [
+        [
+          "早（はや）く冬休（ふゆやす）みにならないかな。",
+          "好想快啲放寒假。"
+        ],
+        [
+          "だれか手伝（てつだ）ってくれないかな。",
+          "有冇人可以幫吓手呢…"
+        ],
+        [
+          "明日（あした）、晴（は）れないかなあ。",
+          "希望聽日天晴啦。"
+        ]
+      ]
+    },
+    "n3": 116,
+    "verb": {
+      "dict": "会う",
+      "read": "あう",
+      "mean": "見面、見到",
+      "type": "五段動詞（う → った／って）",
+      "forms": {
+        "masu": "会（あ）います",
+        "nai": "会（あ）わない",
+        "masen": "会（あ）いません",
+        "ta": "会（あ）った",
+        "mashita": "会（あ）いました",
+        "nakatta": "会（あ）わなかった",
+        "masendeshita": "会（あ）いませんでした",
+        "te": "会（あ）って",
+        "teiru": "会（あ）っている"
+      },
+      "note": "う結尾嘅ない形係「わ」唔係「あ」：会わない（✗ 会あない）、買わない、言わない。"
+    },
+    "passage": "今度（こんど）の土曜日（どようび）は、ポケモンGOのコミュニティ・デイです。朝（あさ）からずっと雨（あめ）の予報（よほう）なので、早（はや）く雨（あめ）がやまないかなと思（おも）っています。今回（こんかい）のポケモンは色違（いろちが）いが出（で）やすいので、今年（ことし）こそ色違（いろちが）いが出（で）ないかな。友達（ともだち）のケンさんと公園（こうえん）で会（あ）う約束（やくそく）をしましたが、彼（かれ）はいつも遅刻（ちこく）します。土曜日（どようび）こそ、時間（じかん）通（どお）りに来（こ）ないかなあ。とにかく、早（はや）く土曜日（どようび）にならないかな。",
+    "questions": [
+      [
+        "今度（こんど）の土曜日（どようび）に何（なに）がありますか。",
+        "ポケモンGOのコミュニティ・デイがあります。"
+      ],
+      [
+        "どうして雨（あめ）がやまないかなと思（おも）っていますか。",
+        "朝（あさ）からずっと雨（あめ）の予報（よほう）だからです。"
+      ],
+      [
+        "ケンさんはいつもどうですか。",
+        "いつも遅刻（ちこく）します。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：早（はや）くバスが ＿＿＿ かな。（来る）",
+        "来（こ）ない"
+      ],
+      [
+        "填充：明日（あした）、雪（ゆき）が ＿＿＿ かなあ。（降る）",
+        "降（ふ）らない"
+      ],
+      [
+        "意思題：「早（はや）く春（はる）にならないかな」係咩意思？a. 唔想春天嚟　b. 好想春天快啲嚟",
+        "b。形式係否定，但意思係正面嘅希望。"
+      ],
+      [
+        "改句子（用ないかな）：早（はや）く荷物（にもつ）が届（とど）いたらいいな。",
+        "早（はや）く荷物（にもつ）が届（とど）かないかな。"
+      ],
+      [
+        "翻譯：好希望快啲到星期五啦。",
+        "早（はや）く金曜日（きんようび）にならないかな。"
+      ]
+    ],
+    "challenge": "用「〜ないかな」寫一句：你而家最希望發生咩事？",
+    "en": {
+      "title": "Fingers Crossed for a Shiny",
+      "intro": "同一個故事嘅英式英文版：等 Pokémon GO 社群日，順便學 I'm hoping … / I wish … would …（好希望…啦）。",
+      "passage": "This Saturday is Community Day in Pokémon GO. The forecast says it's going to rain all morning, so I'm hoping the rain stops soon. This time the Pokémon is more likely to be shiny, so I'm really hoping I get one this year. I've arranged to meet my friend Ken in the park, but he's always late. I do hope he turns up on time this Saturday. Anyway, I wish Saturday would hurry up and come!",
+      "vocab": [
+        [
+          "Community Day",
+          "（Pokémon GO）社群日"
+        ],
+        [
+          "forecast",
+          "天氣預報"
+        ],
+        [
+          "stop",
+          "（雨）停"
+        ],
+        [
+          "shiny",
+          "色違（異色）"
+        ],
+        [
+          "arrange to meet",
+          "約好見面"
+        ],
+        [
+          "turn up",
+          "出現、到"
+        ],
+        [
+          "on time",
+          "準時"
+        ],
+        [
+          "fingers crossed",
+          "祈住好運（英國口語）"
+        ]
+      ],
+      "phrase": {
+        "point": "I'm hoping … / I wish … would …（好希望…啦）",
+        "explain": [
+          "日文「〜ないかな」形式係否定，但意思係正面希望；英文用 I'm hoping … / I hope … / I wish … would …",
+          "I wish it would stop raining.（好希望雨停）",
+          "英國人祈好運會講 Fingers crossed!，仲會真係交叉手指。"
+        ],
+        "examples": [
+          [
+            "I wish the winter holidays would hurry up and come.",
+            "好想快啲放寒假。"
+          ],
+          [
+            "I don't suppose anyone could give me a hand?",
+            "有冇人可以幫吓手呢…（英式婉轉問法）"
+          ],
+          [
+            "Fingers crossed it's sunny tomorrow.",
+            "希望聽日天晴啦。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What's happening this Saturday?",
+          "Community Day in Pokémon GO."
+        ],
+        [
+          "Why is the writer hoping the rain stops?",
+          "Because the forecast says it's going to rain all morning."
+        ],
+        [
+          "What is Ken always like?",
+          "He's always late."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-20",
     "weekday": "五",
     "title": "今年の北海道は大雪か",
