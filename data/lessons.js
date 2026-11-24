@@ -2,6 +2,210 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-24",
+    "weekday": "二",
+    "title": "旅館には持っていかなくてもいい",
+    "intro": "第一次去日本旅館要帶咩？原來好多嘢都唔使帶！學 N3 #117「〜なくてもいい」（唔使…都得）。",
+    "vocab": [
+      [
+        "旅館",
+        "りょかん",
+        "日式旅館"
+      ],
+      [
+        "泊まる",
+        "とまる",
+        "住（酒店、旅館）"
+      ],
+      [
+        "浴衣",
+        "ゆかた",
+        "浴衣"
+      ],
+      [
+        "用意する",
+        "よういする",
+        "準備"
+      ],
+      [
+        "付く",
+        "つく",
+        "附帶、包埋"
+      ],
+      [
+        "楽",
+        "らく",
+        "輕鬆、方便"
+      ],
+      [
+        "チップ",
+        "ちっぷ",
+        "貼士、小費"
+      ],
+      [
+        "安心する",
+        "あんしんする",
+        "放心"
+      ]
+    ],
+    "grammar": {
+      "point": "〜なくてもいい（唔使…都得）",
+      "explain": [
+        "意思係「唔使…都得」：冇必要做，做唔做都冇問題。",
+        "動詞ない形去「い」，加「くてもいい」：持っていかない → 持っていかなくてもいい",
+        "禮貌：〜なくてもいいです；更客氣：〜なくてもかまいません（下一課 #118）。",
+        "相反意思係 〜なければならない（一定要）。問人：〜なくてもいいですか。（唔…得唔得？）",
+        "形容詞／名詞都得：高くなくてもいい（唔使貴）、日本語じゃなくてもいい（唔一定要日文）。"
+      ],
+      "examples": [
+        [
+          "明日（あした）は休（やす）みだから、早（はや）く起（お）きなくてもいい。",
+          "聽日放假，唔使早起。"
+        ],
+        [
+          "全部（ぜんぶ）食（た）べなくてもいいですよ。",
+          "唔使食晒㗎。"
+        ],
+        [
+          "予約（よやく）しなくてもいいですか。",
+          "唔訂位得唔得？"
+        ]
+      ]
+    },
+    "n3": 117,
+    "verb": {
+      "dict": "脱ぐ",
+      "read": "ぬぐ",
+      "mean": "除（衫、鞋）",
+      "type": "五段動詞（ぐ → いだ／いで）",
+      "forms": {
+        "masu": "脱（ぬ）ぎます",
+        "nai": "脱（ぬ）がない",
+        "masen": "脱（ぬ）ぎません",
+        "ta": "脱（ぬ）いだ",
+        "mashita": "脱（ぬ）ぎました",
+        "nakatta": "脱（ぬ）がなかった",
+        "masendeshita": "脱（ぬ）ぎませんでした",
+        "te": "脱（ぬ）いで",
+        "teiru": "脱（ぬ）いでいる"
+      },
+      "note": "ぐ結尾嘅た／て形係「いだ／いで」（有濁音）：脱いだ、泳いだ、急いで。く結尾就係「いた／いて」。"
+    },
+    "passage": "来年（らいねん）、初（はじ）めて日本（にほん）の旅館（りょかん）に泊（と）まります。旅館（りょかん）には浴衣（ゆかた）やタオルがあるので、パジャマは持（も）っていかなくてもいいそうです。部屋（へや）に入（はい）る前（まえ）に靴（くつ）を脱（ぬ）ぎますが、スリッパがあるので、自分（じぶん）のスリッパは用意（ようい）しなくてもいいです。夕食（ゆうしょく）と朝食（ちょうしょく）が付（つ）いているので、レストランを探（さが）さなくてもいいのも楽（らく）です。それに、日本（にほん）ではチップを払（はら）わなくてもいいと聞（き）いて、少（すこ）し安心（あんしん）しました。でも、温泉（おんせん）では体（からだ）をちゃんと洗（あら）わなければなりません。",
+    "questions": [
+      [
+        "どうしてパジャマは持（も）っていかなくてもいいですか。",
+        "旅館（りょかん）に浴衣（ゆかた）やタオルがあるからです。"
+      ],
+      [
+        "どうしてレストランを探（さが）さなくてもいいですか。",
+        "夕食（ゆうしょく）と朝食（ちょうしょく）が付（つ）いているからです。"
+      ],
+      [
+        "日本（にほん）では何（なに）を払（はら）わなくてもいいですか。",
+        "チップを払（はら）わなくてもいいです。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：今日（きょう）は雨（あめ）じゃないから、傘（かさ）を ＿＿＿ もいい。（持っていく）",
+        "持（も）っていかなくて"
+      ],
+      [
+        "填充：この本（ほん）は今日（きょう）＿＿＿ もいいですよ。（返す）",
+        "返（かえ）さなくて"
+      ],
+      [
+        "問答：「靴（くつ）を脱（ぬ）がなくてもいいですか。」「いいえ、＿＿＿。」",
+        "脱（ぬ）がなければなりません"
+      ],
+      [
+        "揀啱嘅：明日（あした）は休（やす）みなので、会社（かいしゃ）に（a. 行（い）かなくてもいい　b. 行（い）かなければならない）。",
+        "a. 行（い）かなくてもいい"
+      ],
+      [
+        "翻譯：你唔使咁擔心。",
+        "そんなに心配（しんぱい）しなくてもいいですよ。"
+      ]
+    ],
+    "challenge": "用「〜なくてもいい」寫兩句：喺英國同日本，各有咩嘢係唔使做嘅？",
+    "en": {
+      "title": "What You Don't Need to Bring to a Ryokan",
+      "intro": "同一個故事嘅英式英文版：第一次住日本旅館，順便學 don't need to … / don't have to …（唔使…）。",
+      "passage": "Next year, I'm staying at a Japanese ryokan for the first time. The ryokan provides a yukata and towels, so apparently I don't need to bring pyjamas. You take your shoes off before going into the room, but there are slippers, so I don't have to bring my own. Dinner and breakfast are included, so it's nice not having to look for a restaurant. On top of that, I was relieved to hear that you don't need to tip in Japan. But in the hot springs, you do have to wash yourself properly.",
+      "vocab": [
+        [
+          "stay at",
+          "住喺"
+        ],
+        [
+          "provide",
+          "提供"
+        ],
+        [
+          "pyjamas",
+          "睡衣（英式串法）"
+        ],
+        [
+          "take your shoes off",
+          "除鞋"
+        ],
+        [
+          "slippers",
+          "拖鞋"
+        ],
+        [
+          "included",
+          "包埋"
+        ],
+        [
+          "tip",
+          "俾貼士"
+        ],
+        [
+          "relieved",
+          "放心、鬆一口氣"
+        ]
+      ],
+      "phrase": {
+        "point": "don't need to … / don't have to …（唔使…）",
+        "explain": [
+          "日文「〜なくてもいい」= 唔使…，英文用 don't need to / don't have to / needn't。",
+          "注意：don't have to（唔使）≠ mustn't（唔准）！",
+          "英式講法：You needn't bother.（唔使麻煩喇）；英國餐廳好多時已經包 service charge，所以唔使另外俾貼士。"
+        ],
+        "examples": [
+          [
+            "It's my day off tomorrow, so I don't need to get up early.",
+            "聽日放假，唔使早起。"
+          ],
+          [
+            "You don't have to eat it all.",
+            "唔使食晒㗎。"
+          ],
+          [
+            "Do we need to book, or can we just turn up?",
+            "要唔要訂位，定係直接去就得？"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Why doesn't the writer need to bring pyjamas?",
+          "Because the ryokan provides a yukata and towels."
+        ],
+        [
+          "Why don't they need to look for a restaurant?",
+          "Because dinner and breakfast are included."
+        ],
+        [
+          "What don't you need to do in Japan?",
+          "You don't need to tip."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-23",
     "weekday": "一",
     "title": "色違いが出ないかな",
