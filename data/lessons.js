@@ -2,6 +2,210 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-25",
+    "weekday": "三",
+    "title": "剣道の体験に来ませんか",
+    "intro": "約朋友去劍道體驗班：冇道具、冇道着都冇問題！學 N3 #118「〜なくてもかまわない」（唔…都冇所謂）。",
+    "vocab": [
+      [
+        "体験",
+        "たいけん",
+        "體驗"
+      ],
+      [
+        "道具",
+        "どうぐ",
+        "用具"
+      ],
+      [
+        "竹刀",
+        "しない",
+        "竹刀"
+      ],
+      [
+        "道着",
+        "どうぎ",
+        "道着（練習服）"
+      ],
+      [
+        "動きやすい",
+        "うごきやすい",
+        "方便郁"
+      ],
+      [
+        "途中",
+        "とちゅう",
+        "中途"
+      ],
+      [
+        "気軽",
+        "きがる",
+        "輕鬆、隨意"
+      ],
+      [
+        "喜ぶ",
+        "よろこぶ",
+        "開心"
+      ]
+    ],
+    "grammar": {
+      "point": "〜なくてもかまわない（唔…都冇所謂）",
+      "explain": [
+        "意思係「唔…都冇所謂／冇問題」，同「〜なくてもいい」差唔多，但更客氣、正式。",
+        "動詞ない形去「い」，加「くてもかまわない」：買わない → 買わなくてもかまわない",
+        "禮貌講法：〜なくてもかまいません（職員、老師對客人好常用）。",
+        "名詞／な形容詞：道着じゃなくてもかまわない；い形容詞：新しくなくてもかまわない。",
+        "肯定版：〜てもかまわない（做都冇問題）：途中で帰ってもかまいません。"
+      ],
+      "examples": [
+        [
+          "急（いそ）がなくてもかまいませんよ。",
+          "唔使趕都冇問題㗎。"
+        ],
+        [
+          "名前（なまえ）は書（か）かなくてもかまいません。",
+          "唔寫名都得。"
+        ],
+        [
+          "高（たか）くなくてもかまわないので、暖（あたた）かいコートがほしい。",
+          "唔使貴都得，想要件暖嘅褸。"
+        ]
+      ]
+    },
+    "n3": 118,
+    "verb": {
+      "dict": "帰る",
+      "read": "かえる",
+      "mean": "返（屋企）、回去",
+      "type": "五段動詞（例外：似一段，但係五段）",
+      "forms": {
+        "masu": "帰（かえ）ります",
+        "nai": "帰（かえ）らない",
+        "masen": "帰（かえ）りません",
+        "ta": "帰（かえ）った",
+        "mashita": "帰（かえ）りました",
+        "nakatta": "帰（かえ）らなかった",
+        "masendeshita": "帰（かえ）りませんでした",
+        "te": "帰（かえ）って",
+        "teiru": "帰（かえ）っている"
+      },
+      "note": "「帰る」係〜える結尾，似一段動詞，但其實係五段：帰らない（✗ 帰ない）、帰ります（✗ 帰ます）。同類：入る、走る、知る、切る。"
+    },
+    "passage": "来週（らいしゅう）の土曜日（どようび）、わたしの道場（どうじょう）で剣道（けんどう）の体験（たいけん）クラスがあります。友達（ともだち）のエマを誘（さそ）ったら、「道具（どうぐ）を何（なに）も持（も）っていないけど、大丈夫（だいじょうぶ）？」と聞（き）かれました。先生（せんせい）によると、竹刀（しない）は道場（どうじょう）のを使（つか）えるので、買（か）わなくてもかまわないそうです。服（ふく）も、動（うご）きやすければ、道着（どうぎ）じゃなくてもかまいません。疲（つか）れたら、最後（さいご）までいなくてもかまわないので、途中（とちゅう）で帰（かえ）ってもいいです。エマは「それなら気軽（きがる）に行（い）ける」と喜（よろこ）んでいました。",
+    "questions": [
+      [
+        "エマはどうして心配（しんぱい）していましたか。",
+        "道具（どうぐ）を何（なに）も持（も）っていないからです。"
+      ],
+      [
+        "竹刀（しない）はどうして買（か）わなくてもかまいませんか。",
+        "道場（どうじょう）のを使（つか）えるからです。"
+      ],
+      [
+        "疲（つか）れたら、どうしてもいいですか。",
+        "途中（とちゅう）で帰（かえ）ってもいいです。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：今日中（きょうじゅう）に ＿＿＿ もかまいません。（返事する）",
+        "返事（へんじ）しなくて"
+      ],
+      [
+        "填充：ペンは黒（くろ） ＿＿＿ もかまわない。（じゃない）",
+        "じゃなくて"
+      ],
+      [
+        "揀啱嘅（店員對客人講）：a. 予約（よやく）しなくてもかまいません。　b. 予約（よやく）しなくてもいいよ。",
+        "a。「かまいません」比較客氣、正式。"
+      ],
+      [
+        "改句子（用なくてもかまわない）：靴（くつ）を脱（ぬ）がなくてもいいです。",
+        "靴（くつ）を脱（ぬ）がなくてもかまいません。"
+      ],
+      [
+        "翻譯：你唔嚟都冇問題。",
+        "来（こ）なくてもかまいません。"
+      ]
+    ],
+    "challenge": "用「〜なくてもかまいません」寫一句：假設你係店員或者老師，同客人／學生講。",
+    "en": {
+      "title": "Come and Try Kendo!",
+      "intro": "同一個故事嘅英式英文版：約朋友去劍道體驗班，順便學 it doesn't matter if you don't … / there's no need to …（唔…都冇所謂）。",
+      "passage": "Next Saturday, there's a kendo taster session at my dojo. When I invited my friend Emma, she asked, \"I haven't got any equipment, is that all right?\" According to my teacher, you can use the dojo's bamboo swords, so it doesn't matter if you don't buy one. As for clothes, it's fine not to wear a kendo uniform, as long as you can move easily. If you get tired, you don't have to stay till the end, so you can go home early. Emma was pleased and said, \"In that case, I'll happily give it a go.\"",
+      "vocab": [
+        [
+          "taster session",
+          "體驗班（英式）"
+        ],
+        [
+          "equipment",
+          "用具"
+        ],
+        [
+          "is that all right?",
+          "得唔得？"
+        ],
+        [
+          "it doesn't matter if …",
+          "…都冇所謂"
+        ],
+        [
+          "uniform",
+          "制服、道着"
+        ],
+        [
+          "as long as",
+          "只要"
+        ],
+        [
+          "till the end",
+          "到最後"
+        ],
+        [
+          "give it a go",
+          "試吓"
+        ]
+      ],
+      "phrase": {
+        "point": "it doesn't matter if you don't … / there's no need to …（唔…都冇所謂）",
+        "explain": [
+          "日文「〜なくてもかまわない」比「なくてもいい」客氣，英文常用 It doesn't matter if you don't … / It's fine not to … / There's no need to …",
+          "店員、老師好常講：There's no need to book.（唔使訂位）",
+          "英國人講「冇問題」：No worries! / That's absolutely fine.；體驗班叫 taster session，好英式。"
+        ],
+        "examples": [
+          [
+            "There's no need to rush.",
+            "唔使趕都冇問題。"
+          ],
+          [
+            "It doesn't matter if you don't write your name.",
+            "唔寫名都得。"
+          ],
+          [
+            "It doesn't have to be expensive, I just want a warm coat.",
+            "唔使貴都得，想要件暖嘅褸。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Why was Emma worried?",
+          "Because she hasn't got any equipment."
+        ],
+        [
+          "Why doesn't she need to buy a bamboo sword?",
+          "Because she can use the dojo's ones."
+        ],
+        [
+          "What can you do if you get tired?",
+          "You can go home early."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-24",
     "weekday": "二",
     "title": "旅館には持っていかなくてもいい",
