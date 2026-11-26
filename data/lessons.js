@@ -2,6 +2,210 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-26",
+    "weekday": "四",
+    "title": "クリスマスプレゼント、何にする？",
+    "intro": "諗緊聖誕禮物送咩好…學 N3 #119「〜など／〜なんか／〜なんて」（…之類，同埋輕視、謙虛、驚訝嘅語氣）。",
+    "vocab": [
+      [
+        "マフラー",
+        "まふらー",
+        "頸巾"
+      ],
+      [
+        "暖かい",
+        "あたたかい",
+        "暖"
+      ],
+      [
+        "ほしい",
+        "ほしい",
+        "想要"
+      ],
+      [
+        "いる",
+        "いる",
+        "需要（要）"
+      ],
+      [
+        "お菓子",
+        "おかし",
+        "零食、甜品"
+      ],
+      [
+        "手紙",
+        "てがみ",
+        "信"
+      ],
+      [
+        "一人ずつ",
+        "ひとりずつ",
+        "每人一個"
+      ],
+      [
+        "気持ち",
+        "きもち",
+        "心意、心情"
+      ]
+    ],
+    "grammar": {
+      "point": "〜など／〜なんか／〜なんて（…之類）",
+      "explain": [
+        "「など」：舉例（…之類），正式場合都用得：マフラーや手袋など",
+        "「なんか」：など嘅口語版，舉例或者提議：お菓子なんかどう？（例如零食點？）",
+        "「なんか／なんて」放喺名詞後面，仲可以表示輕視或者謙虛：プレゼントなんかいらない（禮物之類唔使喇）、わたしなんて…（我呢啲…）",
+        "「なんて」仲可以表示驚訝：こんなに寒いなんて！（竟然咁凍！），同 #112「〜とは」差唔多。",
+        "語氣：など（中性）＜ なんか（口語）＜ なんて（感情最強）"
+      ],
+      "examples": [
+        [
+          "週末（しゅうまつ）は掃除（そうじ）や洗濯（せんたく）などをします。",
+          "週末會做吓清潔、洗衫之類。"
+        ],
+        [
+          "飲（の）み物（もの）はお茶（ちゃ）なんかどうですか。",
+          "飲品要唔要茶之類？"
+        ],
+        [
+          "わたしなんて、まだまだです。",
+          "我呢啲仲差好遠。"
+        ]
+      ]
+    },
+    "n3": 119,
+    "verb": {
+      "dict": "書く",
+      "read": "かく",
+      "mean": "寫",
+      "type": "五段動詞（く → いた／いて）",
+      "forms": {
+        "masu": "書（か）きます",
+        "nai": "書（か）かない",
+        "masen": "書（か）きません",
+        "ta": "書（か）いた",
+        "mashita": "書（か）きました",
+        "nakatta": "書（か）かなかった",
+        "masendeshita": "書（か）きませんでした",
+        "te": "書（か）いて",
+        "teiru": "書（か）いている"
+      },
+      "note": "く結尾嘅た／て形係「いた／いて」：書いた、聞いた、歩いて。唯一例外係「行く → 行った」。"
+    },
+    "passage": "もうすぐクリスマスなので、家族（かぞく）へのプレゼントを考（かんが）えています。母（はは）には、マフラーや手袋（てぶくろ）など、暖（あたた）かいものがいいと思（おも）います。友達（ともだち）のケンさんに「何（なに）がほしい？」と聞（き）いたら、「プレゼントなんかいらないよ」と言（い）われました。でも、日本（にほん）のお菓子（かし）なんかどうかなと思（おも）っています。忙（いそが）しくて手紙（てがみ）なんて書（か）く時間（じかん）がないと思（おも）っていましたが、やっぱり一人（ひとり）ずつカードを書（か）くことにしました。高（たか）いものじゃなくても、気持（きも）ちが大切（たいせつ）ですね。",
+    "questions": [
+      [
+        "母（はは）にはどんなものがいいと思（おも）っていますか。",
+        "マフラーや手袋（てぶくろ）など、暖（あたた）かいものです。"
+      ],
+      [
+        "ケンさんは何（なん）と言（い）いましたか。",
+        "「プレゼントなんかいらないよ」と言（い）いました。"
+      ],
+      [
+        "「わたし」は最後（さいご）にどうすることにしましたか。",
+        "一人（ひとり）ずつカードを書（か）くことにしました。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充（舉例）：机（つくえ）の上（うえ）に本（ほん）やペン ＿＿ があります。",
+        "など"
+      ],
+      [
+        "填充（提議，口語）：お土産（みやげ）は日本（にほん）のお茶（ちゃ）＿＿＿ どう？",
+        "なんか"
+      ],
+      [
+        "揀啱嘅（驚訝）：彼（かれ）が来（こ）ない（a. なんて　b. など）、信（しん）じられない。",
+        "a. なんて"
+      ],
+      [
+        "意思題：「わたしなんか、まだまだです」係咩語氣？",
+        "謙虛（我呢啲仲差好遠）。"
+      ],
+      [
+        "翻譯：咁貴嘅嘢我唔使喇。",
+        "そんな高（たか）いものなんていらないよ。"
+      ]
+    ],
+    "challenge": "用「など／なんか／なんて」各寫一句：講你今年想送咩聖誕禮物。",
+    "en": {
+      "title": "What Shall I Get Everyone for Christmas?",
+      "intro": "同一個故事嘅英式英文版：諗聖誕禮物，順便學 like … / or something / that sort of thing（…之類）。",
+      "passage": "Christmas is nearly here, so I'm thinking about presents for my family. For my mum, I think something warm, like a scarf or gloves, would be nice. When I asked my friend Ken what he wanted, he said, \"Oh, I don't need anything like that.\" Still, I'm wondering about something like Japanese snacks. I thought I was too busy to write letters and that sort of thing, but in the end I decided to write a card for each person. It doesn't have to be expensive, it's the thought that counts.",
+      "vocab": [
+        [
+          "present",
+          "禮物"
+        ],
+        [
+          "mum",
+          "媽媽（英式）"
+        ],
+        [
+          "something like …",
+          "例如…之類"
+        ],
+        [
+          "scarf",
+          "頸巾"
+        ],
+        [
+          "or something",
+          "…之類（口語）"
+        ],
+        [
+          "and that sort of thing",
+          "…嗰類嘢"
+        ],
+        [
+          "in the end",
+          "最後"
+        ],
+        [
+          "it's the thought that counts",
+          "心意最重要"
+        ]
+      ],
+      "phrase": {
+        "point": "like … / or something / that sort of thing（…之類）",
+        "explain": [
+          "日文「など／なんか」舉例，英文用 like … / such as …，口語會講 … or something。",
+          "「なんか／なんて」帶輕視：英文用 anything like that / that sort of thing。",
+          "英國人收禮會講 You shouldn't have!（你唔使咁客氣！）；送禮會講 It's the thought that counts.（心意最重要）"
+        ],
+        "examples": [
+          [
+            "At the weekend, I do the cleaning, the washing and that sort of thing.",
+            "週末會做吓清潔、洗衫之類。"
+          ],
+          [
+            "How about a cup of tea or something?",
+            "飲杯茶之類好唔好？"
+          ],
+          [
+            "Oh, I'm nowhere near that good.",
+            "我呢啲仲差好遠。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "What does the writer want to get for their mum?",
+          "Something warm, like a scarf or gloves."
+        ],
+        [
+          "What did Ken say?",
+          "He said he didn't need anything like that."
+        ],
+        [
+          "What did the writer decide to do in the end?",
+          "Write a card for each person."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-25",
     "weekday": "三",
     "title": "剣道の体験に来ませんか",
