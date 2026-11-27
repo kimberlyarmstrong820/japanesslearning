@@ -2,6 +2,210 @@
 // 漢字讀音用全形括號寫，例如 花火（はなび），網頁會自動變成振假名，朗讀時會自動略過括號。
 window.LESSONS = [
   {
+    "date": "2026-11-27",
+    "weekday": "五",
+    "title": "冬の朝はなかなか起きられない",
+    "intro": "英國冬天朝早又黑又凍，點都起唔到身…學 N3 #121「なかなか〜ない」（點都…唔到）。",
+    "vocab": [
+      [
+        "目覚まし時計",
+        "めざましどけい",
+        "鬧鐘"
+      ],
+      [
+        "鳴る",
+        "なる",
+        "響"
+      ],
+      [
+        "布団",
+        "ふとん",
+        "被、被鋪"
+      ],
+      [
+        "やっと",
+        "やっと",
+        "終於"
+      ],
+      [
+        "氷",
+        "こおり",
+        "冰"
+      ],
+      [
+        "停留所",
+        "ていりゅうじょ",
+        "巴士站"
+      ],
+      [
+        "紅茶",
+        "こうちゃ",
+        "紅茶"
+      ],
+      [
+        "元気が出る",
+        "げんきがでる",
+        "有精神"
+      ]
+    ],
+    "grammar": {
+      "point": "なかなか〜ない（點都…唔到）",
+      "explain": [
+        "意思係「點都…唔到／好難先…」：好努力或者等咗好耐，但係仲未有想要嘅結果。",
+        "なかなか＋動詞ない形：なかなか来ない（點等都唔嚟）、なかなか寝られない（點都瞓唔着）",
+        "成日同可能形一齊用：起きられない、取れない、覚えられない。",
+        "注意：「なかなか」接肯定就變咗「幾…、相當…」：なかなかおいしい（幾好食）。",
+        "同「全然〜ない」唔同：全然係完全冇；なかなか係想做但好難做到。"
+      ],
+      "examples": [
+        [
+          "漢字（かんじ）がなかなか覚（おぼ）えられません。",
+          "漢字點都記唔到。"
+        ],
+        [
+          "注文（ちゅうもん）した本（ほん）がなかなか届（とど）かない。",
+          "訂咗嘅書點等都未到。"
+        ],
+        [
+          "風邪（かぜ）がなかなか治（なお）りません。",
+          "感冒一直都未好。"
+        ]
+      ]
+    },
+    "n3": 121,
+    "verb": {
+      "dict": "起きる",
+      "read": "おきる",
+      "mean": "起身",
+      "type": "一段動詞（〜iる）",
+      "forms": {
+        "masu": "起（お）きます",
+        "nai": "起（お）きない",
+        "masen": "起（お）きません",
+        "ta": "起（お）きた",
+        "mashita": "起（お）きました",
+        "nakatta": "起（お）きなかった",
+        "masendeshita": "起（お）きませんでした",
+        "te": "起（お）きて",
+        "teiru": "起（お）きている"
+      },
+      "note": "一段動詞去「る」就變：起きない、起きた、起きて。可能形係「起きられる」（今日課文：なかなか起きられません）。"
+    },
+    "passage": "イギリスの冬（ふゆ）の朝（あさ）は、外（そと）がまだ暗（くら）くて寒（さむ）いので、なかなか起（お）きられません。目覚（めざ）まし時計（どけい）が鳴（な）っても、布団（ふとん）からなかなか出（で）られません。やっと起（お）きても、車（くるま）の窓（まど）が凍（こお）っていて、氷（こおり）がなかなか取（と）れません。バスで行（い）こうと思（おも）って停留所（ていりゅうじょ）で待（ま）っていても、バスはなかなか来（き）ません。でも、熱（あつ）い紅茶（こうちゃ）を飲（の）むと、やっと元気（げんき）が出（で）ます。早（はや）く春（はる）にならないかなあ。",
+    "questions": [
+      [
+        "どうして冬（ふゆ）の朝（あさ）はなかなか起（お）きられませんか。",
+        "外（そと）がまだ暗（くら）くて寒（さむ）いからです。"
+      ],
+      [
+        "車（くるま）の窓（まど）はどうでしたか。",
+        "凍（こお）っていて、氷（こおり）がなかなか取（と）れませんでした。"
+      ],
+      [
+        "何（なに）をすると元気（げんき）が出（で）ますか。",
+        "熱（あつ）い紅茶（こうちゃ）を飲（の）むと、元気（げんき）が出（で）ます。"
+      ]
+    ],
+    "exercises": [
+      [
+        "填充：電車（でんしゃ）がなかなか ＿＿＿。（来る）",
+        "来（き）ません"
+      ],
+      [
+        "填充：夜（よる）、なかなか ＿＿＿。（寝られる → 否定）",
+        "寝（ね）られない"
+      ],
+      [
+        "意思題：「このラーメンはなかなかおいしい」係咩意思？",
+        "呢碗拉麵幾好食。「なかなか」接肯定＝相當、幾。"
+      ],
+      [
+        "揀啱嘅：毎日（まいにち）練習（れんしゅう）しているのに、（a. なかなか　b. 全然（ぜんぜん））上手（じょうず）になりません。（努力咗但好難進步）",
+        "a. なかなか"
+      ],
+      [
+        "翻譯：個名點都諗唔起。",
+        "名前（なまえ）がなかなか思（おも）い出（だ）せません。"
+      ]
+    ],
+    "challenge": "用「なかなか〜ない」寫一句：最近有咩事點努力都做唔到？",
+    "en": {
+      "title": "I Just Can't Get Up on Winter Mornings",
+      "intro": "同一個故事嘅英式英文版：英國冬天起唔到身，順便學 just can't … / won't … / take ages（點都…唔到）。",
+      "passage": "On winter mornings in Britain, it's still dark and cold outside, so I just can't get up. Even when my alarm goes off, I can't bring myself to get out of bed. When I finally do get up, the car windows are frozen, and the ice just won't come off. If I decide to take the bus and wait at the stop, the bus takes ages to come. But once I have a hot cup of tea, I finally perk up. I wish spring would hurry up!",
+      "vocab": [
+        [
+          "alarm goes off",
+          "鬧鐘響"
+        ],
+        [
+          "can't bring myself to …",
+          "點都唔肯…"
+        ],
+        [
+          "frozen",
+          "結冰"
+        ],
+        [
+          "won't come off",
+          "點都弄唔走"
+        ],
+        [
+          "bus stop",
+          "巴士站"
+        ],
+        [
+          "take ages",
+          "好耐（英式口語）"
+        ],
+        [
+          "a cuppa",
+          "一杯茶（英式口語）"
+        ],
+        [
+          "perk up",
+          "精神返"
+        ]
+      ],
+      "phrase": {
+        "point": "just can't … / won't … / take ages（點都…唔到）",
+        "explain": [
+          "日文「なかなか〜ない」= 好努力都做唔到，英文用 I just can't … / it won't … / it takes ages to …",
+          "死物「唔肯郁」用 won't：The ice won't come off.／The car won't start.",
+          "英國人等巴士好鍾意講 It's taking ages!；冬天起身靠 a cuppa（一杯熱茶）。"
+        ],
+        "examples": [
+          [
+            "I just can't remember kanji.",
+            "漢字點都記唔到。"
+          ],
+          [
+            "The book I ordered is taking ages to arrive.",
+            "訂咗嘅書點等都未到。"
+          ],
+          [
+            "I can't seem to shake off this cold.",
+            "感冒一直都未好。"
+          ]
+        ]
+      },
+      "questions": [
+        [
+          "Why can't the writer get up on winter mornings?",
+          "Because it's still dark and cold outside."
+        ],
+        [
+          "What happened with the car windows?",
+          "They were frozen, and the ice wouldn't come off."
+        ],
+        [
+          "What helps the writer perk up?",
+          "A hot cup of tea."
+        ]
+      ]
+    }
+  },
+  {
     "date": "2026-11-26",
     "weekday": "四",
     "title": "クリスマスプレゼント、何にする？",
